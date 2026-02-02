@@ -133,9 +133,21 @@
 
   function renderTypeOptions(items) {
     if (!typeSelect) return;
-    const types = Array.from(new Set(items.map((pub) => pub.type).filter((type) => type)))
-      .sort((a, b) => a.localeCompare(b));
+    const types = Array.from(new Set(
+      items
+        .map((pub) => (pub.type || '').toString().trim())
+        .filter((type) => type)
+    )).sort((a, b) => a.localeCompare(b));
+
     typeSelect.innerHTML = '<option value="all">All types</option>';
+    if (!types.length) {
+      const option = document.createElement('option');
+      option.value = 'all';
+      option.textContent = 'No types available';
+      typeSelect.appendChild(option);
+      return;
+    }
+
     types.forEach((type) => {
       const option = document.createElement('option');
       option.value = String(type);
