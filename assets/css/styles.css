@@ -639,3 +639,13 @@ blockquote {
   color: var(--muted);
   background: linear-gradient(135deg, rgba(15, 92, 110, 0.08), rgba(142, 63, 47, 0.08));
 }
+
+
+.projects-list {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.projects-list .card {
+  width: 100%;
+}
