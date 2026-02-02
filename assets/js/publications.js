@@ -24,22 +24,11 @@
     if (Array.isArray(pub.authors)) {
       return pub.authors.join(', ');
     }
-    if (typeof pub.authors === 'string') {
-      return pub.authors;
-    }
-    return '';
-  }
-
-  function getDoi(pub) {
-    if (pub.doi) return pub.doi;
-    if (pub.links && pub.links.doi) {
-      return pub.links.doi.replace(/^https?:\/\/doi\.org\//i, '');
-    }
     return '';
   }
 
   function buildVenueLine(pub) {
-    const journal = pub.journal || pub.venue || '';
+    const journal = pub.journal || '';
     const volume = pub.volume || '';
     const issue = pub.issue || '';
     const pages = pub.pages || '';
@@ -70,28 +59,62 @@
   }
 
   function renderDoiLine(pub) {
-    const doiValue = getDoi(pub);
-    if (!doiValue) return '';
-    const doi = escapeHtml(doiValue);
-    return `<div class="pub-doi"><a href="https://doi.org/${doi}" target="_blank" rel="noopener">doi: ${doi}</a></div>`;
+    if (!pub.doi) return '';
+    const doi = escapeHtml(pub.doi);
+    return `<div class="pub-doi"><a href="${pub.doi_url || `https://doi.org/${doi}`}" target="_blank" rel="noopener">doi: ${doi}</a></div>`;
+  }
+
+  function renderCitationPanel(pub) {
+    const total = pub.citations_total || 0;
+    const years = pub.citations_last5 ? pub.citations_last5.years : [];
+    const counts = pub.citations_last5 ? pub.citations_last5.counts : [];
+    const maxCount = Math.max(1, ...counts);
+
+    const bars = counts.map((count, idx) => {
+      const height = Math.round((count / maxCount) * 40);
+      const yearLabel = years[idx] || '';
+      return `
+        <g>
+          <rect x="${idx * 22}" y="${44 - height}" width="14" height="${height}" rx="2" class="pub-bar" />
+          <title>${yearLabel}: ${count} citations</title>
+        </g>`;
+    }).join('');
+
+    const labels = years.map((year, idx) => `
+      <text x="${idx * 22 + 7}" y="58" text-anchor="middle" class="pub-bar-label">${year ? String(year).slice(2) : ''}</text>
+    `).join('');
+
+    return `
+      <a class="pub-metrics" href="${pub.openalex_url}" target="_blank" rel="noopener" aria-label="Open OpenAlex page for this work">
+        <div class="pub-metrics-total">Citations: ${total}</div>
+        <svg class="pub-chart" viewBox="0 0 110 60" role="img" aria-label="Citations over last five years">
+          ${bars}
+          ${labels}
+        </svg>
+      </a>`;
   }
 
   function renderPublication(pub) {
     const authors = formatAuthors(pub);
+    const titleLink = pub.doi_url || pub.openalex_url || '#';
     return `
-      <article class="pub-item">
-        <h3 class="pub-title">${escapeHtml(pub.title)}</h3>
-        ${authors ? `<div class="pub-authors">${escapeHtml(authors)}</div>` : ''}
-        ${!authors ? '<div class="pub-authors missing">Authors: (add in overrides)</div>' : ''}
-        ${buildVenueLine(pub)}
-        ${renderDoiLine(pub)}
+      <article class="pub-item pub-row">
+        <div class="pub-main">
+          <h3 class="pub-title"><a href="${titleLink}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a></h3>
+          ${authors ? `<div class="pub-authors">${escapeHtml(authors)}</div>` : ''}
+          ${!authors ? '<div class="pub-authors missing">Authors: (add in overrides)</div>' : ''}
+          ${buildVenueLine(pub)}
+          ${renderDoiLine(pub)}
+        </div>
+        <div class="pub-side">
+          ${renderCitationPanel(pub)}
+        </div>
       </article>`;
   }
 
   function renderSelected(items) {
     if (!selectedList) return;
-    const selected = items.filter((pub) => pub.selected).slice(0, 8);
-    const list = selected.length ? selected : items.slice(0, 5);
+    const list = items.slice(0, 5);
     selectedList.innerHTML = list.map(renderPublication).join('');
   }
 
@@ -133,21 +156,9 @@
 
   function renderTypeOptions(items) {
     if (!typeSelect) return;
-    const types = Array.from(new Set(
-      items
-        .map((pub) => (pub.type || '').toString().trim())
-        .filter((type) => type)
-    )).sort((a, b) => a.localeCompare(b));
-
+    const types = Array.from(new Set(items.map((pub) => pub.type).filter((type) => type)))
+      .sort((a, b) => a.localeCompare(b));
     typeSelect.innerHTML = '<option value="all">All types</option>';
-    if (!types.length) {
-      const option = document.createElement('option');
-      option.value = 'all';
-      option.textContent = 'No types available';
-      typeSelect.appendChild(option);
-      return;
-    }
-
     types.forEach((type) => {
       const option = document.createElement('option');
       option.value = String(type);
@@ -171,10 +182,7 @@
       pub.title,
       formatAuthors(pub),
       pub.journal,
-      pub.venue,
-      pub.type,
-      pub.doi,
-      pub.tags ? pub.tags.join(' ') : ''
+      pub.doi
     ].join(' ').toLowerCase();
     return haystack.includes(query);
   }
@@ -193,6 +201,9 @@
         const yearA = a.year || 0;
         const yearB = b.year || 0;
         if (yearA !== yearB) return yearB - yearA;
+        const journalA = a.journal || '';
+        const journalB = b.journal || '';
+        if (journalA !== journalB) return journalA.localeCompare(journalB);
         return (a.title || '').localeCompare(b.title || '');
       });
 

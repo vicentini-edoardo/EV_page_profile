@@ -53,8 +53,7 @@
           if (yearA !== yearB) return yearB - yearA;
           return (a.title || '').localeCompare(b.title || '');
         });
-        const selected = sorted.filter((pub) => pub.selected).slice(0, 3);
-        const items = (selected.length ? selected : sorted.slice(0, 3));
+        const items = sorted.slice(0, 3);
         selectedList.innerHTML = items
           .map((pub) => {
             const authors = formatAuthors(pub);

@@ -1,4 +1,4 @@
-name: Update publications from ORCID
+name: Update publications from OpenAlex
 
 on:
   schedule:
@@ -23,22 +23,21 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Sync ORCID publications
+      - name: Sync OpenAlex publications
         env:
-          ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
-          ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO }}
           ORCID_ID: ${{ secrets.ORCID_ID }}
-          ORCID_ENV: ${{ secrets.ORCID_ENV }}
-        run: python scripts/update_publications_from_orcid.py
+        run: python scripts/update_publications_openalex.py
 
       - name: Commit changes
         run: |
-          if git diff --quiet assets/data/publications.json; then
-            echo "No changes to publications.json"
+          if git diff --quiet assets/data/publications.json assets/data/publications.openalex.raw.json; then
+            echo "No changes to publications"
             exit 0
           fi
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add assets/data/publications.json assets/data/publications.orcid.json
-          git commit -m "Update publications from ORCID"
+          git add assets/data/publications.json assets/data/publications.openalex.raw.json
+          git commit -m "Update publications from OpenAlex"
           git push
