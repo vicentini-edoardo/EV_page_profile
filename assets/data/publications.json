@@ -41,6 +41,44 @@
     }
   },
   {
+    "openalex_id": "https://openalex.org/W7124169504",
+    "openalex_url": "https://openalex.org/W7124169504",
+    "title": "s-SNOM Visualization of Plasmon Polariton Waves Traversing the Channel of a Graphene Field-effect Transistor",
+    "authors": [
+      "Andrei Bylinkin",
+      "Elham Talvari",
+      "Edoardo Vicentini",
+      "Florian Ludwig",
+      "J. A. Delgado-Notario",
+      "Rainer Hillenbrand",
+      "Hartmut G. Roskos"
+    ],
+    "journal": "",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "1-2",
+    "doi": "10.1109/irmmw-thz61557.2025.11320063",
+    "doi_url": "https://doi.org/10.1109/irmmw-thz61557.2025.11320063",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
     "openalex_id": "https://openalex.org/W4417454619",
     "openalex_url": "https://openalex.org/W4417454619",
     "title": "Real-space observation of flat-band ultrastrong coupling between optical phonons and surface plasmon polaritons",
@@ -57,7 +95,7 @@
       "Javier Aizpurua",
       "Rainer Hillenbrand"
     ],
-    "journal": "",
+    "journal": "Nature Materials",
     "year": 2025,
     "volume": "",
     "issue": "",
@@ -99,7 +137,7 @@
       "Javier Aizpurua",
       "Rainer Hillenbrand"
     ],
-    "journal": "",
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
     "year": 2025,
     "volume": "",
     "issue": "",
@@ -141,51 +179,13 @@
       "Javier Aizpurua",
       "Rainer Hillenbrand"
     ],
-    "journal": "",
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
     "year": 2025,
     "volume": "",
     "issue": "",
     "pages": "",
     "doi": "10.5281/zenodo.17599548",
     "doi_url": "https://doi.org/10.5281/zenodo.17599548",
-    "citations_total": 0,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W7124169504",
-    "openalex_url": "https://openalex.org/W7124169504",
-    "title": "s-SNOM Visualization of Plasmon Polariton Waves Traversing the Channel of a Graphene Field-effect Transistor",
-    "authors": [
-      "Andrei Bylinkin",
-      "Elham Talvari",
-      "Edoardo Vicentini",
-      "Florian Ludwig",
-      "J. A. Delgado-Notario",
-      "Rainer Hillenbrand",
-      "Hartmut G. Roskos"
-    ],
-    "journal": "",
-    "year": 2025,
-    "volume": "",
-    "issue": "",
-    "pages": "1-2",
-    "doi": "10.1109/irmmw-thz61557.2025.11320063",
-    "doi_url": "https://doi.org/10.1109/irmmw-thz61557.2025.11320063",
     "citations_total": 0,
     "citations_last5": {
       "years": [
@@ -257,7 +257,7 @@
       "Kerry J. Vahala",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "EPJ Web of Conferences",
     "year": 2023,
     "volume": "287",
     "issue": "",
@@ -283,6 +283,56 @@
     }
   },
   {
+    "openalex_id": "https://openalex.org/W4368374237",
+    "openalex_url": "https://openalex.org/W4368374237",
+    "title": "Real-space observation of ultraconfined in-plane anisotropic acoustic terahertz plasmon polaritons",
+    "authors": [
+      "S Chen",
+      "Pengliang Leng",
+      "Andrea Kone\u010dn\u00e1",
+      "Evgeny Modin",
+      "Martin Gutierrez\u2010Amigo",
+      "Edoardo Vicentini",
+      "Beatriz Mart\u00edn\u2010Garc\u00eda",
+      "Mar\u00eda Barra\u2010Burillo",
+      "Iris Niehues",
+      "Carlos Maciel-Escudero",
+      "Xin Xie",
+      "Luis E. Hueso",
+      "Emilio Artacho",
+      "Javier Aizpurua",
+      "Ion Errea",
+      "Maia G. Vergniory",
+      "Andrey Chuvilin",
+      "Faxian Xiu",
+      "Rainer Hillenbrand"
+    ],
+    "journal": "Nature Materials",
+    "year": 2023,
+    "volume": "22",
+    "issue": "7",
+    "pages": "860-866",
+    "doi": "10.1038/s41563-023-01547-8",
+    "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
+    "citations_total": 48,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        8,
+        20,
+        19,
+        1
+      ]
+    }
+  },
+  {
     "openalex_id": "https://openalex.org/W4377096925",
     "openalex_url": "https://openalex.org/W4377096925",
     "title": "High-resolution mid-infrared spectroscopy based on ultrafast Cr:ZnSe laser",
@@ -294,7 +344,7 @@
       "P. Laporta",
       "G. Galzerano"
     ],
-    "journal": "",
+    "journal": "Optics Express",
     "year": 2023,
     "volume": "31",
     "issue": "13",
@@ -331,7 +381,7 @@
       "Martin Schnell",
       "Rainer Hillenbrand"
     ],
-    "journal": "",
+    "journal": "Optics Express",
     "year": 2023,
     "volume": "31",
     "issue": "4",
@@ -369,7 +419,7 @@
       "Rainer Hillenbrand",
       "Martin Schnell"
     ],
-    "journal": "",
+    "journal": "Optics Express",
     "year": 2023,
     "volume": "31",
     "issue": "14",
@@ -395,56 +445,6 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W4368374237",
-    "openalex_url": "https://openalex.org/W4368374237",
-    "title": "Real-space observation of ultraconfined in-plane anisotropic acoustic terahertz plasmon polaritons",
-    "authors": [
-      "S Chen",
-      "Pengliang Leng",
-      "Andrea Kone\u010dn\u00e1",
-      "Evgeny Modin",
-      "Martin Gutierrez\u2010Amigo",
-      "Edoardo Vicentini",
-      "Beatriz Mart\u00edn\u2010Garc\u00eda",
-      "Mar\u00eda Barra\u2010Burillo",
-      "Iris Niehues",
-      "Carlos Maciel-Escudero",
-      "Xin Xie",
-      "Luis E. Hueso",
-      "Emilio Artacho",
-      "Javier Aizpurua",
-      "Ion Errea",
-      "Maia G. Vergniory",
-      "Andrey Chuvilin",
-      "Faxian Xiu",
-      "Rainer Hillenbrand"
-    ],
-    "journal": "",
-    "year": 2023,
-    "volume": "22",
-    "issue": "7",
-    "pages": "860-866",
-    "doi": "10.1038/s41563-023-01547-8",
-    "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 48,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        8,
-        20,
-        19,
-        1
-      ]
-    }
-  },
-  {
     "openalex_id": "https://openalex.org/W4290711235",
     "openalex_url": "https://openalex.org/W4290711235",
     "title": "Dual-Comb Digital Holography at Fast Sampling Rate",
@@ -454,7 +454,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Conference on Lasers and Electro-Optics",
     "year": 2022,
     "volume": "15",
     "issue": "",
@@ -490,7 +490,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Conference on Lasers and Electro-Optics",
     "year": 2021,
     "volume": "",
     "issue": "",
@@ -516,78 +516,6 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W3157190052",
-    "openalex_url": "https://openalex.org/W3157190052",
-    "title": "Dual-comb hyperspectral digital holography",
-    "authors": [
-      "Edoardo Vicentini",
-      "Zhenhai Wang",
-      "Kasper Van Gasse",
-      "Theodor W. H\u00e4nsch",
-      "N. Picqu\u00e9"
-    ],
-    "journal": "",
-    "year": 2021,
-    "volume": "15",
-    "issue": "12",
-    "pages": "890-894",
-    "doi": "10.1038/s41566-021-00892-x",
-    "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 0,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W3217098938",
-    "openalex_url": "https://openalex.org/W3217098938",
-    "title": "Dual-comb hyperspectral digital holography",
-    "authors": [
-      "Edoardo Vicentini",
-      "Zhenhai Wang",
-      "Kasper Van Gasse",
-      "Theodor W. H\u00e4nsch",
-      "N. Picqu\u00e9"
-    ],
-    "journal": "",
-    "year": 2021,
-    "volume": "",
-    "issue": "",
-    "pages": "",
-    "doi": "",
-    "doi_url": "",
-    "citations_total": 99,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        21,
-        23,
-        29,
-        24,
-        1
-      ]
-    }
-  },
-  {
     "openalex_id": "https://openalex.org/W3193363003",
     "openalex_url": "https://openalex.org/W3193363003",
     "title": "Dual-Comb Spectroscopy with Frequency Modulation",
@@ -599,7 +527,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Conference on Lasers and Electro-Optics",
     "year": 2021,
     "volume": "5",
     "issue": "",
@@ -625,47 +553,6 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W3164377791",
-    "openalex_url": "https://openalex.org/W3164377791",
-    "title": "Low-noise Yb:CALGO optical frequency comb",
-    "authors": [
-      "Lisa Marta Molteni",
-      "Francesco Canella",
-      "Federico Pirzio",
-      "M. Betz",
-      "Edoardo Vicentini",
-      "Nicola Coluccelli",
-      "Giuliano Piccinno",
-      "A. Agnesi",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2021,
-    "volume": "29",
-    "issue": "13",
-    "pages": "19495-19495",
-    "doi": "10.1364/oe.428603",
-    "doi_url": "https://doi.org/10.1364/oe.428603",
-    "citations_total": 5,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        2,
-        0,
-        2,
-        0
-      ]
-    }
-  },
-  {
     "openalex_id": "https://openalex.org/W4200612483",
     "openalex_url": "https://openalex.org/W4200612483",
     "title": "Single-Frequency Dy:ZBLAN Fiber Laser Tunable in the Wavelength Range From 2.925 to 3.250 $\\mu$m",
@@ -679,7 +566,7 @@
       "P. Laporta",
       "G. Galzerano"
     ],
-    "journal": "",
+    "journal": "Journal of Lightwave Technology",
     "year": 2021,
     "volume": "40",
     "issue": "8",
@@ -720,7 +607,7 @@
       "P. Laporta",
       "G. Galzerano"
     ],
-    "journal": "",
+    "journal": "Laser Congress 2021 (ASSL,LAC)",
     "year": 2021,
     "volume": "2",
     "issue": "",
@@ -746,6 +633,83 @@
     }
   },
   {
+    "openalex_id": "https://openalex.org/W3157190052",
+    "openalex_url": "https://openalex.org/W3157190052",
+    "title": "Dual-comb hyperspectral digital holography",
+    "authors": [
+      "Edoardo Vicentini",
+      "Zhenhai Wang",
+      "Kasper Van Gasse",
+      "Theodor W. H\u00e4nsch",
+      "N. Picqu\u00e9"
+    ],
+    "journal": "Nature Photonics",
+    "year": 2021,
+    "volume": "15",
+    "issue": "12",
+    "pages": "890-894",
+    "doi": "10.1038/s41566-021-00892-x",
+    "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3164377791",
+    "openalex_url": "https://openalex.org/W3164377791",
+    "title": "Low-noise Yb:CALGO optical frequency comb",
+    "authors": [
+      "Lisa Marta Molteni",
+      "Francesco Canella",
+      "Federico Pirzio",
+      "M. Betz",
+      "Edoardo Vicentini",
+      "Nicola Coluccelli",
+      "Giuliano Piccinno",
+      "A. Agnesi",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "Optics Express",
+    "year": 2021,
+    "volume": "29",
+    "issue": "13",
+    "pages": "19495-19495",
+    "doi": "10.1364/oe.428603",
+    "doi_url": "https://doi.org/10.1364/oe.428603",
+    "citations_total": 5,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        2,
+        0,
+        2,
+        0
+      ]
+    }
+  },
+  {
     "openalex_id": "https://openalex.org/W3162952254",
     "openalex_url": "https://openalex.org/W3162952254",
     "title": "Time-resolved dual-comb spectroscopy with a single electro-optic modulator",
@@ -756,7 +720,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Optics Letters",
     "year": 2021,
     "volume": "46",
     "issue": "16",
@@ -782,30 +746,24 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W3012175314",
-    "openalex_url": "https://openalex.org/W3012175314",
-    "title": "Absolute frequency metrology of the CHF3 8.6-\u00b5m ro-vibrational spectrum at <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si3.svg\"><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>\u2212</mml:mo><mml:mn>11</mml:mn></mml:mrow></mml:msup></mml:math> level",
+    "openalex_id": "https://openalex.org/W3217098938",
+    "openalex_url": "https://openalex.org/W3217098938",
+    "title": "Dual-comb hyperspectral digital holography",
     "authors": [
       "Edoardo Vicentini",
-      "P. Maddaloni",
-      "Roberto Aiello",
-      "Alessio Gambetta",
-      "Nicola Coluccelli",
-      "Lisa Marta Molteni",
-      "A. Castrillo",
-      "L. Gianfrani",
-      "Paolo De Natale",
-      "P. Laporta",
-      "G. Galzerano"
+      "Zhenhai Wang",
+      "Kasper Van Gasse",
+      "Theodor W. H\u00e4nsch",
+      "N. Picqu\u00e9"
     ],
-    "journal": "",
-    "year": 2020,
-    "volume": "248",
+    "journal": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
+    "year": 2021,
+    "volume": "",
     "issue": "",
-    "pages": "106963-106963",
-    "doi": "10.1016/j.jqsrt.2020.106963",
-    "doi_url": "https://doi.org/10.1016/j.jqsrt.2020.106963",
-    "citations_total": 1,
+    "pages": "",
+    "doi": "",
+    "doi_url": "",
+    "citations_total": 99,
     "citations_last5": {
       "years": [
         2022,
@@ -815,89 +773,11 @@
         2026
       ],
       "counts": [
-        0,
-        0,
-        1,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W3047278637",
-    "openalex_url": "https://openalex.org/W3047278637",
-    "title": "Absolute frequency stabilization of a QCL at 8.6\u2009\u2009\u00b5m by modulation transfer spectroscopy",
-    "authors": [
-      "Edoardo Vicentini",
-      "Alessio Gambetta",
-      "Nicola Coluccelli",
-      "Valentina Di Sarno",
-      "P. Maddaloni",
-      "Paolo De Natale",
-      "A. Castrillo",
-      "L. Gianfrani",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2020,
-    "volume": "45",
-    "issue": "17",
-    "pages": "4948-4948",
-    "doi": "10.1364/ol.401265",
-    "doi_url": "https://doi.org/10.1364/ol.401265",
-    "citations_total": 8,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        4,
-        1,
-        1,
-        2,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W3034506494",
-    "openalex_url": "https://openalex.org/W3034506494",
-    "title": "Accurate Measurement of Optical Resonator Finesse",
-    "authors": [
-      "G. Galzerano",
-      "Edoardo Suerra",
-      "Dario Giannotti",
-      "Francesco Canella",
-      "Edoardo Vicentini",
-      "S. Cialdi"
-    ],
-    "journal": "",
-    "year": 2020,
-    "volume": "69",
-    "issue": "11",
-    "pages": "9119-9123",
-    "doi": "10.1109/tim.2020.3001369",
-    "doi_url": "https://doi.org/10.1109/tim.2020.3001369",
-    "citations_total": 7,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        1,
-        2,
-        1,
-        2,
-        0
+        21,
+        23,
+        29,
+        24,
+        1
       ]
     }
   },
@@ -917,7 +797,7 @@
       "Bart Kuyken",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "arXiv (Cornell University)",
     "year": 2020,
     "volume": "",
     "issue": "",
@@ -958,7 +838,7 @@
       "Bart Kuyken",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "arXiv (Cornell University)",
     "year": 2020,
     "volume": "",
     "issue": "",
@@ -984,161 +864,6 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W3006377442",
-    "openalex_url": "https://openalex.org/W3006377442",
-    "title": "Coherent mid-infrared supercontinuum generation in tapered suspended-core As<sub>39</sub>Se<sub>61</sub> fibers pumped by a few-optical-cycle Cr:ZnSe laser",
-    "authors": [
-      "Stanislav O. Leonov",
-      "Yuchen Wang",
-      "V.S. Shiryaev",
-      "\u0413. \u0415. \u0421\u043d\u043e\u043f\u0430\u0442\u0438\u043d",
-      "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
-      "\u0412. \u0413. \u041f\u043b\u043e\u0442\u043d\u0438\u0447\u0435\u043d\u043a\u043e",
-      "Edoardo Vicentini",
-      "Alessio Gambetta",
-      "Nicola Coluccelli",
-      "C. Svelto",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2020,
-    "volume": "45",
-    "issue": "6",
-    "pages": "1346-1346",
-    "doi": "10.1364/ol.386429",
-    "doi_url": "https://doi.org/10.1364/ol.386429",
-    "citations_total": 28,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        7,
-        4,
-        5,
-        2,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W3085902136",
-    "openalex_url": "https://openalex.org/W3085902136",
-    "title": "Direct-frequency-comb spectroscopy by a scanning Fabry-P\u00e9rot microcavity resonator",
-    "authors": [
-      "Edoardo Vicentini",
-      "Alessio Gambetta",
-      "Nicola Coluccelli",
-      "Yuchen Wang",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2020,
-    "volume": "102",
-    "issue": "3",
-    "pages": "",
-    "doi": "10.1103/physreva.102.033510",
-    "doi_url": "https://doi.org/10.1103/physreva.102.033510",
-    "citations_total": 4,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        1,
-        1,
-        1,
-        1,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W3110907660",
-    "openalex_url": "https://openalex.org/W3110907660",
-    "title": "Dual-Comb Spectroscopy based on Single Electro-Optic Modulation",
-    "authors": [
-      "Jeong Hyun Huh",
-      "Zaijun Chen",
-      "Edoardo Vicentini",
-      "Theodor W. H\u00e4nsch",
-      "N. Picqu\u00e9"
-    ],
-    "journal": "",
-    "year": 2020,
-    "volume": "",
-    "issue": "",
-    "pages": "LM5F.3-LM5F.3",
-    "doi": "10.1364/ls.2020.lm5f.3",
-    "doi_url": "https://doi.org/10.1364/ls.2020.lm5f.3",
-    "citations_total": 3,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        1,
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W3087937261",
-    "openalex_url": "https://openalex.org/W3087937261",
-    "title": "Fiber laser system for standoff coherent Raman spectroscopy",
-    "authors": [
-      "Edoardo Vicentini",
-      "Alessio Gambetta",
-      "G. Galzerano",
-      "P. Laporta",
-      "Kelly Curtis",
-      "Kenneth J. McEwan",
-      "Christopher R. Howle",
-      "Nicola Coluccelli"
-    ],
-    "journal": "",
-    "year": 2020,
-    "volume": "45",
-    "issue": "21",
-    "pages": "5925-5925",
-    "doi": "10.1364/ol.404832",
-    "doi_url": "https://doi.org/10.1364/ol.404832",
-    "citations_total": 7,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        4,
-        1,
-        1,
-        1,
-        0
-      ]
-    }
-  },
-  {
     "openalex_id": "https://openalex.org/W3086303149",
     "openalex_url": "https://openalex.org/W3086303149",
     "title": "High-resolution dual-comb gas-phase spectroscopy with a mode-locked laser on a photonic chip",
@@ -1154,7 +879,7 @@
       "Bart Kuyken",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Conference on Lasers and Electro-Optics",
     "year": 2020,
     "volume": "13",
     "issue": "",
@@ -1162,6 +887,42 @@
     "doi": "10.1364/cleo_at.2020.jth4a.8",
     "doi_url": "https://doi.org/10.1364/cleo_at.2020.jth4a.8",
     "citations_total": 2,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3110907660",
+    "openalex_url": "https://openalex.org/W3110907660",
+    "title": "Dual-Comb Spectroscopy based on Single Electro-Optic Modulation",
+    "authors": [
+      "Jeong Hyun Huh",
+      "Zaijun Chen",
+      "Edoardo Vicentini",
+      "Theodor W. H\u00e4nsch",
+      "N. Picqu\u00e9"
+    ],
+    "journal": "Frontiers in Optics / Laser Science",
+    "year": 2020,
+    "volume": "",
+    "issue": "",
+    "pages": "LM5F.3-LM5F.3",
+    "doi": "10.1364/ls.2020.lm5f.3",
+    "doi_url": "https://doi.org/10.1364/ls.2020.lm5f.3",
+    "citations_total": 3,
     "citations_last5": {
       "years": [
         2022,
@@ -1191,7 +952,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Frontiers in Optics / Laser Science",
     "year": 2020,
     "volume": "",
     "issue": "",
@@ -1217,6 +978,122 @@
     }
   },
   {
+    "openalex_id": "https://openalex.org/W3107329645",
+    "openalex_url": "https://openalex.org/W3107329645",
+    "title": "Precise Mid-Infrared Dual-Comb Spectroscopy of Ethylene",
+    "authors": [
+      "Zhenhai Wang",
+      "Zaijun Chen",
+      "Chao Xing",
+      "Edoardo Vicentini",
+      "Theodor W. H\u00e4nsch",
+      "N. Picqu\u00e9"
+    ],
+    "journal": "Frontiers in Optics / Laser Science",
+    "year": 2020,
+    "volume": "",
+    "issue": "",
+    "pages": "FW7B.3-FW7B.3",
+    "doi": "10.1364/fio.2020.fw7b.3",
+    "doi_url": "https://doi.org/10.1364/fio.2020.fw7b.3",
+    "citations_total": 1,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3034506494",
+    "openalex_url": "https://openalex.org/W3034506494",
+    "title": "Accurate Measurement of Optical Resonator Finesse",
+    "authors": [
+      "G. Galzerano",
+      "Edoardo Suerra",
+      "Dario Giannotti",
+      "Francesco Canella",
+      "Edoardo Vicentini",
+      "S. Cialdi"
+    ],
+    "journal": "IEEE Transactions on Instrumentation and Measurement",
+    "year": 2020,
+    "volume": "69",
+    "issue": "11",
+    "pages": "9119-9123",
+    "doi": "10.1109/tim.2020.3001369",
+    "doi_url": "https://doi.org/10.1109/tim.2020.3001369",
+    "citations_total": 7,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        1,
+        2,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3012175314",
+    "openalex_url": "https://openalex.org/W3012175314",
+    "title": "Absolute frequency metrology of the CHF3 8.6-\u00b5m ro-vibrational spectrum at <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si3.svg\"><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>\u2212</mml:mo><mml:mn>11</mml:mn></mml:mrow></mml:msup></mml:math> level",
+    "authors": [
+      "Edoardo Vicentini",
+      "P. Maddaloni",
+      "Roberto Aiello",
+      "Alessio Gambetta",
+      "Nicola Coluccelli",
+      "Lisa Marta Molteni",
+      "A. Castrillo",
+      "L. Gianfrani",
+      "Paolo De Natale",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "Journal of Quantitative Spectroscopy and Radiative Transfer",
+    "year": 2020,
+    "volume": "248",
+    "issue": "",
+    "pages": "106963-106963",
+    "doi": "10.1016/j.jqsrt.2020.106963",
+    "doi_url": "https://doi.org/10.1016/j.jqsrt.2020.106963",
+    "citations_total": 1,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  },
+  {
     "openalex_id": "https://openalex.org/W3003051589",
     "openalex_url": "https://openalex.org/W3003051589",
     "title": "Nonlinear pulse compression to 22 fs at 15.6 \u00b5J by an all-solid-state multipass approach",
@@ -1232,7 +1109,7 @@
       "Christopher R. Howle",
       "Nicola Coluccelli"
     ],
-    "journal": "",
+    "journal": "Optics Express",
     "year": 2020,
     "volume": "28",
     "issue": "4",
@@ -1258,25 +1135,148 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W3107329645",
-    "openalex_url": "https://openalex.org/W3107329645",
-    "title": "Precise Mid-Infrared Dual-Comb Spectroscopy of Ethylene",
+    "openalex_id": "https://openalex.org/W3047278637",
+    "openalex_url": "https://openalex.org/W3047278637",
+    "title": "Absolute frequency stabilization of a QCL at 8.6\u2009\u2009\u00b5m by modulation transfer spectroscopy",
     "authors": [
-      "Zhenhai Wang",
-      "Zaijun Chen",
-      "Chao Xing",
       "Edoardo Vicentini",
-      "Theodor W. H\u00e4nsch",
-      "N. Picqu\u00e9"
+      "Alessio Gambetta",
+      "Nicola Coluccelli",
+      "Valentina Di Sarno",
+      "P. Maddaloni",
+      "Paolo De Natale",
+      "A. Castrillo",
+      "L. Gianfrani",
+      "P. Laporta",
+      "G. Galzerano"
     ],
-    "journal": "",
+    "journal": "Optics Letters",
     "year": 2020,
-    "volume": "",
-    "issue": "",
-    "pages": "FW7B.3-FW7B.3",
-    "doi": "10.1364/fio.2020.fw7b.3",
-    "doi_url": "https://doi.org/10.1364/fio.2020.fw7b.3",
-    "citations_total": 1,
+    "volume": "45",
+    "issue": "17",
+    "pages": "4948-4948",
+    "doi": "10.1364/ol.401265",
+    "doi_url": "https://doi.org/10.1364/ol.401265",
+    "citations_total": 8,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        4,
+        1,
+        1,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3006377442",
+    "openalex_url": "https://openalex.org/W3006377442",
+    "title": "Coherent mid-infrared supercontinuum generation in tapered suspended-core As<sub>39</sub>Se<sub>61</sub> fibers pumped by a few-optical-cycle Cr:ZnSe laser",
+    "authors": [
+      "Stanislav O. Leonov",
+      "Yuchen Wang",
+      "V.S. Shiryaev",
+      "\u0413. \u0415. \u0421\u043d\u043e\u043f\u0430\u0442\u0438\u043d",
+      "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
+      "\u0412. \u0413. \u041f\u043b\u043e\u0442\u043d\u0438\u0447\u0435\u043d\u043a\u043e",
+      "Edoardo Vicentini",
+      "Alessio Gambetta",
+      "Nicola Coluccelli",
+      "C. Svelto",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "Optics Letters",
+    "year": 2020,
+    "volume": "45",
+    "issue": "6",
+    "pages": "1346-1346",
+    "doi": "10.1364/ol.386429",
+    "doi_url": "https://doi.org/10.1364/ol.386429",
+    "citations_total": 28,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        7,
+        4,
+        5,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3087937261",
+    "openalex_url": "https://openalex.org/W3087937261",
+    "title": "Fiber laser system for standoff coherent Raman spectroscopy",
+    "authors": [
+      "Edoardo Vicentini",
+      "Alessio Gambetta",
+      "G. Galzerano",
+      "P. Laporta",
+      "Kelly Curtis",
+      "Kenneth J. McEwan",
+      "Christopher R. Howle",
+      "Nicola Coluccelli"
+    ],
+    "journal": "Optics Letters",
+    "year": 2020,
+    "volume": "45",
+    "issue": "21",
+    "pages": "5925-5925",
+    "doi": "10.1364/ol.404832",
+    "doi_url": "https://doi.org/10.1364/ol.404832",
+    "citations_total": 7,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        4,
+        1,
+        1,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W3085902136",
+    "openalex_url": "https://openalex.org/W3085902136",
+    "title": "Direct-frequency-comb spectroscopy by a scanning Fabry-P\u00e9rot microcavity resonator",
+    "authors": [
+      "Edoardo Vicentini",
+      "Alessio Gambetta",
+      "Nicola Coluccelli",
+      "Yuchen Wang",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "Physical review. A/Physical review, A",
+    "year": 2020,
+    "volume": "102",
+    "issue": "3",
+    "pages": "",
+    "doi": "10.1103/physreva.102.033510",
+    "doi_url": "https://doi.org/10.1103/physreva.102.033510",
+    "citations_total": 4,
     "citations_last5": {
       "years": [
         2022,
@@ -1287,9 +1287,9 @@
       ],
       "counts": [
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         0
       ]
     }
@@ -1394,7 +1394,7 @@
       "Laporta Paolo",
       "Galzerano Gianluca"
     ],
-    "journal": "",
+    "journal": "IEEE Conference Proceedings",
     "year": 2019,
     "volume": "2019",
     "issue": "",
@@ -1420,6 +1420,93 @@
     }
   },
   {
+    "openalex_id": "https://openalex.org/W2800847619",
+    "openalex_url": "https://openalex.org/W2800847619",
+    "title": "Versatile mid-infrared frequency-comb referenced sub-Doppler spectrometer",
+    "authors": [
+      "Alessio Gambetta",
+      "Edoardo Vicentini",
+      "Nicola Coluccelli",
+      "Yuchen Wang",
+      "Toney Teddy Fernandez",
+      "P. Maddaloni",
+      "Paolo De Natale",
+      "A. Castrillo",
+      "L. Gianfrani",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "APL Photonics",
+    "year": 2018,
+    "volume": "3",
+    "issue": "4",
+    "pages": "",
+    "doi": "10.1063/1.5025135",
+    "doi_url": "https://doi.org/10.1063/1.5025135",
+    "citations_total": 9,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        2,
+        1,
+        2,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W2809568832",
+    "openalex_url": "https://openalex.org/W2809568832",
+    "title": "Rovibrational fine structure and transition dipole moment of CF3H by frequency-comb-assisted saturated spectroscopy at 8.6\u00a0\u00b5m",
+    "authors": [
+      "Edoardo Vicentini",
+      "Alessio Gambetta",
+      "Nicola Coluccelli",
+      "Eugenio Fasci",
+      "A. Castrillo",
+      "L. Gianfrani",
+      "Valentina Di Sarno",
+      "P. Maddaloni",
+      "Adina Ceausu\u2013Velcescu",
+      "Paolo De Natale",
+      "Yuchen Wang",
+      "Toney Teddy Fernandez",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "Journal of Quantitative Spectroscopy and Radiative Transfer",
+    "year": 2018,
+    "volume": "217",
+    "issue": "",
+    "pages": "373-379",
+    "doi": "10.1016/j.jqsrt.2018.06.013",
+    "doi_url": "https://doi.org/10.1016/j.jqsrt.2018.06.013",
+    "citations_total": 3,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  {
     "openalex_id": "https://openalex.org/W2855479249",
     "openalex_url": "https://openalex.org/W2855479249",
     "title": "Broadband Fourier-transform coherent Raman spectroscopy with an ytterbium fiber laser",
@@ -1432,7 +1519,7 @@
       "P. Laporta",
       "G. Galzerano"
     ],
-    "journal": "",
+    "journal": "Optics Express",
     "year": 2018,
     "volume": "26",
     "issue": "15",
@@ -1469,7 +1556,7 @@
       "Yuchen Wang",
       "Edoardo Vicentini"
     ],
-    "journal": "",
+    "journal": "Proceedings of the 73rd International Symposium on Molecular Spectroscopy",
     "year": 2018,
     "volume": "",
     "issue": "",
@@ -1490,137 +1577,6 @@
         0,
         0,
         0,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W2809568832",
-    "openalex_url": "https://openalex.org/W2809568832",
-    "title": "Rovibrational fine structure and transition dipole moment of CF3H by frequency-comb-assisted saturated spectroscopy at 8.6\u00a0\u00b5m",
-    "authors": [
-      "Edoardo Vicentini",
-      "Alessio Gambetta",
-      "Nicola Coluccelli",
-      "Eugenio Fasci",
-      "A. Castrillo",
-      "L. Gianfrani",
-      "Valentina Di Sarno",
-      "P. Maddaloni",
-      "Adina Ceausu\u2013Velcescu",
-      "Paolo De Natale",
-      "Yuchen Wang",
-      "Toney Teddy Fernandez",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2018,
-    "volume": "217",
-    "issue": "",
-    "pages": "373-379",
-    "doi": "10.1016/j.jqsrt.2018.06.013",
-    "doi_url": "https://doi.org/10.1016/j.jqsrt.2018.06.013",
-    "citations_total": 3,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        1,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W2800847619",
-    "openalex_url": "https://openalex.org/W2800847619",
-    "title": "Versatile mid-infrared frequency-comb referenced sub-Doppler spectrometer",
-    "authors": [
-      "Alessio Gambetta",
-      "Edoardo Vicentini",
-      "Nicola Coluccelli",
-      "Yuchen Wang",
-      "Toney Teddy Fernandez",
-      "P. Maddaloni",
-      "Paolo De Natale",
-      "A. Castrillo",
-      "L. Gianfrani",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2018,
-    "volume": "3",
-    "issue": "4",
-    "pages": "",
-    "doi": "10.1063/1.5025135",
-    "doi_url": "https://doi.org/10.1063/1.5025135",
-    "citations_total": 9,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        2,
-        1,
-        2,
-        1,
-        0
-      ]
-    }
-  },
-  {
-    "openalex_id": "https://openalex.org/W2611277652",
-    "openalex_url": "https://openalex.org/W2611277652",
-    "title": "Absolute frequency measurements of CHF_3 Doppler-free ro-vibrational transitions at 86\u2009\u2009\u03bcm",
-    "authors": [
-      "Alessio Gambetta",
-      "Edoardo Vicentini",
-      "Yuchen Wang",
-      "Nicola Coluccelli",
-      "Eugenio Fasci",
-      "L. Gianfrani",
-      "A. Castrillo",
-      "Valentina Di Sarno",
-      "Luigi Santamaria Amato",
-      "P. Maddaloni",
-      "Paolo De Natale",
-      "P. Laporta",
-      "G. Galzerano"
-    ],
-    "journal": "",
-    "year": 2017,
-    "volume": "42",
-    "issue": "10",
-    "pages": "1911-1911",
-    "doi": "10.1364/ol.42.001911",
-    "doi_url": "https://doi.org/10.1364/ol.42.001911",
-    "citations_total": 13,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        2,
-        1,
-        1,
-        1,
         0
       ]
     }
@@ -1697,6 +1653,50 @@
         0,
         0,
         0,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W2611277652",
+    "openalex_url": "https://openalex.org/W2611277652",
+    "title": "Absolute frequency measurements of CHF_3 Doppler-free ro-vibrational transitions at 86\u2009\u2009\u03bcm",
+    "authors": [
+      "Alessio Gambetta",
+      "Edoardo Vicentini",
+      "Yuchen Wang",
+      "Nicola Coluccelli",
+      "Eugenio Fasci",
+      "L. Gianfrani",
+      "A. Castrillo",
+      "Valentina Di Sarno",
+      "Luigi Santamaria Amato",
+      "P. Maddaloni",
+      "Paolo De Natale",
+      "P. Laporta",
+      "G. Galzerano"
+    ],
+    "journal": "Optics Letters",
+    "year": 2017,
+    "volume": "42",
+    "issue": "10",
+    "pages": "1911-1911",
+    "doi": "10.1364/ol.42.001911",
+    "doi_url": "https://doi.org/10.1364/ol.42.001911",
+    "citations_total": 13,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        2,
+        1,
+        1,
+        1,
         0
       ]
     }
