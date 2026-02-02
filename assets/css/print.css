@@ -1,0 +1,52 @@
+@media print {
+  :root {
+    --bg: #ffffff;
+    --bg-alt: #ffffff;
+    --text: #000000;
+    --muted: #333333;
+    --border: #cccccc;
+  }
+
+  body {
+    background: #ffffff;
+    color: #000000;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .footer,
+  .header-actions,
+  .btn,
+  .toggle,
+  .filter-bar,
+  .tag-list,
+  .hero-actions,
+  .copy-button,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .card,
+  .hero-card,
+  .demo-panel {
+    box-shadow: none;
+    border: 1px solid #dddddd;
+  }
+
+  .cv-section {
+    break-inside: avoid;
+  }
+
+  .timeline-item {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications | Edoardo Vicentini</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/print.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">Edoardo Vicentini</div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="funding.html">Funding & Leadership</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="talks.html">Talks</a>
+        <a href="resources.html">Resources</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <a class="btn ghost" href="CV/CV_placeholder.pdf">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h1>Publications</h1>
+          <p class="tagline">Selected outputs with emphasis on my role, new results, and links for reproducibility.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Selected publications</h2>
+        <div id="selected-publications-list"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2>All publications</h2>
+          <p class="tagline">Filter by year, topic, and authorship.</p>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <select id="filter-year" aria-label="Filter by year"></select>
+        <input id="filter-search" type="search" placeholder="Search by keyword" aria-label="Search publications" />
+        <label class="toggle" for="filter-first-author">
+          <input id="filter-first-author" type="checkbox" />
+          <span>First-author only</span>
+        </label>
+      </div>
+
+      <div class="tag-list" id="filter-tags" aria-label="Filter by topic tag"></div>
+
+      <div id="publications-list" class="list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Edoardo Vicentini</strong>
+        <p class="footer-note">Postdoctoral Researcher  -  CIC nanoGUNE, Nanooptics Group</p>
+        <p class="footer-note">San Sebastian, Spain</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p class="footer-note">edoardo.vicentini@polimi.it</p>
+        <p class="footer-note">ORCID: 0000-0003-1850-2327</p>
+      </div>
+      <div>
+        <strong>Quick links</strong>
+        <p class="footer-note"><a href="projects.html">Projects</a>  -  <a href="resources.html">Resources</a>  -  <a href="cv.html">CV</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/publications.js"></script>
+</body>
+</html>

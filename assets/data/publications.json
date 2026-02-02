@@ -1,0 +1,82 @@
+{
+  "publications": [
+    {
+      "id": "vicentini2025comb",
+      "title": "Dual-comb nano-spectroscopy for ultrafast surface polaritons",
+      "authors": "E. Vicentini*, A. B. Collaborator, C. D. Partner",
+      "venue": "Journal of Nano-Optics",
+      "year": 2025,
+      "tags": ["frequency combs", "nano-FTIR", "polaritons"],
+      "firstAuthor": true,
+      "selected": true,
+      "links": {"doi": "#", "pdf": "#", "code": "#"},
+      "whatsNew": "Comb-based detection adapted to scattering-type near-field to reach sub-10 fs timing.",
+      "role": "Conceived the experiment, built the timing-stabilized interferometer, led analysis."
+    },
+    {
+      "id": "vicentini2024ultrafast",
+      "title": "Ultrafast pump-probe nano-FTIR with phase-resolved detection",
+      "authors": "E. Vicentini*, F. G. Collaborator, R. Hillenbrand",
+      "venue": "Nano Letters",
+      "year": 2024,
+      "tags": ["ultrafast", "s-SNOM", "strong coupling"],
+      "firstAuthor": true,
+      "selected": true,
+      "links": {"doi": "#", "pdf": "#"},
+      "whatsNew": "Phase-sensitive pump-probe protocol revealing coherent phonon-polariton transients.",
+      "role": "Designed measurement protocol, implemented lock-in phase retrieval."
+    },
+    {
+      "id": "vicentini2023metrology",
+      "title": "Frequency-comb metrology for nanoscale vibrational spectroscopy",
+      "authors": "E. Vicentini, N. Picque, T. W. Hansch",
+      "venue": "Optica",
+      "year": 2023,
+      "tags": ["frequency combs", "metrology"],
+      "firstAuthor": false,
+      "selected": true,
+      "links": {"doi": "#", "pdf": "#"},
+      "whatsNew": "Linked absolute frequency calibration to nanoscale vibrational maps.",
+      "role": "Integrated comb reference and validated calibration chain."
+    },
+    {
+      "id": "vicentini2022coupling",
+      "title": "Ultrastrong coupling in nano-cavity polaritons",
+      "authors": "A. Lead, E. Vicentini, B. Collaborator",
+      "venue": "Physical Review Letters",
+      "year": 2022,
+      "tags": ["strong coupling", "polaritons"],
+      "firstAuthor": false,
+      "selected": false,
+      "links": {"doi": "#"},
+      "whatsNew": "Observed Rabi splittings beyond the rotating-wave approximation.",
+      "role": "Contributed near-field spectroscopy measurements."
+    },
+    {
+      "id": "vicentini2021plasmon",
+      "title": "Plasmonic nano-antenna dynamics resolved with s-SNOM",
+      "authors": "E. Vicentini*, C. D. Partner",
+      "venue": "ACS Photonics",
+      "year": 2021,
+      "tags": ["plasmonics", "s-SNOM"],
+      "firstAuthor": true,
+      "selected": false,
+      "links": {"doi": "#", "pdf": "#"},
+      "whatsNew": "Mapped antenna damping with femtosecond resolution.",
+      "role": "Built the nano-antenna samples and coordinated data acquisition."
+    },
+    {
+      "id": "vicentini2020nearfield",
+      "title": "Near-field imaging of phonon polariton propagation",
+      "authors": "E. Vicentini, R. Hillenbrand",
+      "venue": "Applied Physics A",
+      "year": 2020,
+      "tags": ["phonon polaritons", "nano-FTIR"],
+      "firstAuthor": false,
+      "selected": false,
+      "links": {"doi": "#"},
+      "whatsNew": "Tracked polariton group velocity in anisotropic crystals.",
+      "role": "Performed near-field scans and extracted dispersion maps."
+    }
+  ]
+}

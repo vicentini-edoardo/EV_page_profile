@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "slug": "project-01",
+      "title": "Ultrafast nano-FTIR platform",
+      "year": "2025-ongoing",
+      "summary": "A modular pump-probe near-field microscope enabling femtosecond-resolved vibrational maps.",
+      "role": "Platform architect and experimental lead",
+      "methods": ["pump-probe timing", "heterodyne detection", "phase-resolved spectroscopy"]
+    },
+    {
+      "slug": "project-02",
+      "title": "Dual-comb surface metrology",
+      "year": "2024-2025",
+      "summary": "A frequency-comb readout chain for absolute calibration of nanoscale spectra.",
+      "role": "Comb integration and metrology pipeline",
+      "methods": ["dual-comb spectroscopy", "frequency referencing", "system identification"]
+    },
+    {
+      "slug": "project-03",
+      "title": "Polariton dynamics in nanocavities",
+      "year": "2022-2024",
+      "summary": "Near-field mapping of plasmon and phonon polariton lifetimes and propagation.",
+      "role": "Near-field imaging and analysis",
+      "methods": ["s-SNOM", "dispersion extraction", "data-driven modeling"]
+    }
+  ]
+}

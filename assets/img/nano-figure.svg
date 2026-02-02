@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Near-field scanning schematic">
+  <rect width="480" height="320" fill="#ffffff"/>
+  <rect x="40" y="220" width="400" height="40" fill="#e6e2db"/>
+  <path d="M80 220 L240 80 L400 220" fill="none" stroke="#0f5c6e" stroke-width="4"/>
+  <circle cx="240" cy="110" r="26" fill="#0f5c6e" opacity="0.8"/>
+  <line x1="240" y1="136" x2="240" y2="220" stroke="#8e3f2f" stroke-width="4"/>
+  <circle cx="240" cy="220" r="8" fill="#8e3f2f"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="14" fill="#5a6673">s-SNOM probe interaction</text>
+</svg>

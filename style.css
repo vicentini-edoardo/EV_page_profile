@@ -1,4 +1,4 @@
-/* Main styling for the scientific portfolio website of Edoardo Vicentini */
+/* Main styling for the scientific portfolio website of Edoardo Vicentini */
 
 /* Global resets */
 * {
@@ -199,12 +199,9 @@ section p {
   color: #6c757d;
 }
 
-
-
-
 /* Footer */
 footer {
-  background-color: #26292f;
+  background-color: #0d6efd;
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resources | Edoardo Vicentini</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/print.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">Edoardo Vicentini</div>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="projects.html">Projects</a>
+        <a href="funding.html">Funding & Leadership</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="talks.html">Talks</a>
+        <a href="resources.html">Resources</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <a class="btn ghost" href="CV/CV_placeholder.pdf">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h1>Resources</h1>
+          <p class="tagline">Software, datasets, and reproducibility notes.</p>
+        </div>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>nano-ftir-toolkit</h3>
+          <p>Processing utilities for demodulating near-field spectra.</p>
+          <a class="btn ghost" href="#">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>comb-calibration</h3>
+          <p>Frequency-comb calibration pipeline with traceable output.</p>
+          <a class="btn ghost" href="#">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>polariton-tracker</h3>
+          <p>Dispersion extraction and lifetime fitting toolkit.</p>
+          <a class="btn ghost" href="#">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2>Datasets</h2>
+          <p class="tagline">Placeholder repositories for open data sharing.</p>
+        </div>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Ultrafast nano-FTIR dataset</h3>
+          <p>Time-resolved spectra of phonon-polariton materials.</p>
+          <a class="btn ghost" href="#">Zenodo</a>
+        </div>
+        <div class="card">
+          <h3>Comb-referenced calibration set</h3>
+          <p>Absolute frequency calibration maps and metadata.</p>
+          <a class="btn ghost" href="#">Zenodo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid grid-2">
+        <div class="card">
+          <h2>Reproducibility notes</h2>
+          <ul>
+            <li>All analysis notebooks include raw-data provenance and calibration steps.</li>
+            <li>Hardware configurations are recorded with timing and phase-lock settings.</li>
+            <li>Signal processing pipelines maintain parameter logs for each run.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>How to cite</h2>
+          <p>Please cite the relevant publication and include dataset DOI if you reuse data or code. Suggested citation format:</p>
+          <blockquote>Vicentini, E. et al., "Title of work", Year. Dataset DOI or software version.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div>
+          <h2>Interactive demo</h2>
+          <p class="tagline">Adjust the slider to emulate changing spectral contrast.</p>
+        </div>
+      </div>
+      <div class="demo-panel">
+        <canvas id="demo-canvas" class="demo-canvas" aria-label="Spectral response demo"></canvas>
+        <label for="demo-slider">Contrast</label>
+        <input id="demo-slider" type="range" min="0.2" max="1.0" step="0.05" value="0.6" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Edoardo Vicentini</strong>
+        <p class="footer-note">Postdoctoral Researcher  -  CIC nanoGUNE, Nanooptics Group</p>
+        <p class="footer-note">San Sebastian, Spain</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p class="footer-note">edoardo.vicentini@polimi.it</p>
+        <p class="footer-note">ORCID: 0000-0003-1850-2327</p>
+      </div>
+      <div>
+        <strong>Quick links</strong>
+        <p class="footer-note"><a href="publications.html">Publications</a>  -  <a href="projects.html">Projects</a>  -  <a href="cv.html">CV</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-label="Polaritons propagation schematic">
+  <rect width="480" height="320" fill="#ffffff"/>
+  <rect x="40" y="200" width="400" height="60" fill="#f0ece6"/>
+  <path d="M60 200 C 120 160, 200 240, 260 200 S 360 160, 420 200" fill="none" stroke="#0f5c6e" stroke-width="4"/>
+  <circle cx="120" cy="200" r="10" fill="#8e3f2f"/>
+  <circle cx="220" cy="200" r="10" fill="#8e3f2f"/>
+  <circle cx="320" cy="200" r="10" fill="#8e3f2f"/>
+  <text x="40" y="40" font-family="Georgia, serif" font-size="14" fill="#5a6673">Surface polariton wavefront</text>
+</svg>
