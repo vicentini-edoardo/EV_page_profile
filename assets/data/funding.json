@@ -1,0 +1,90 @@
+{
+  "fellowships": [
+    {
+      "id": "101106434",
+      "title": "Advanced nanospectroscopy for mapping local conductivity in conductive metal-organic frameworks",
+      "acronym": "NAPOLEON",
+      "topic": "Conductive metal-organic frameworks",
+      "program": "Marie Sklodowska-Curie Actions - Postdoctoral Fellowships 2022",
+      "funder": "European Commission",
+      "beneficiary": "Dr. Edoardo Vicentini",
+      "host": "CIC nanoGUNE",
+      "dates": { "start": "2024-09-01", "end": "2026-08-31" },
+      "budget": { "amount": 181152.96, "currency": "EUR" },
+      "role": "Principal researcher",
+      "description": "Development of advanced near-field nanospectroscopy techniques to map local conductivity in conductive metal-organic frameworks, combining ultrafast excitation and quantitative nano-optical analysis."
+    },
+    {
+      "id": "FJC2021-046779-I",
+      "title": "Nanospectroscopy for mapping local conduction and chemical properties in polymeric conductors",
+      "acronym": "",
+      "topic": "Polymeric conductive materials",
+      "program": "Ministerio de Ciencia e Innovacion - Juan de la Cierva - formacion",
+      "funder": "Ministerio de Ciencia e Innovacion",
+      "beneficiary": "Dr. Edoardo Vicentini",
+      "host": "CIC nanoGUNE",
+      "dates": { "start": "2023-01-01", "end": "2024-12-31" },
+      "budget": { "amount": 64800, "currency": "EUR" },
+      "role": "Principal researcher",
+      "description": "Application of near-field optical nanospectroscopy to correlate local electrical conduction and chemical structure in polymeric conductive materials."
+    }
+  ],
+  "research_funding": [
+    {
+      "id": "PID2020-115221GA-C44",
+      "title": "Microscopia de campo cercano para la patologia ultraestructural sin marcadores",
+      "acronym": "",
+      "topic": "Label-free ultrastructural pathology",
+      "program": "Programa I+D Generacion de Conocimiento",
+      "funder": "Ministerio de Ciencia e Innovacion",
+      "beneficiary": "Dr. Martin Schnell",
+      "host": "CIC nanoGUNE",
+      "dates": { "start": "2021-09-01", "end": "2024-08-31" },
+      "budget": { "amount": 84700, "currency": "EUR" },
+      "role": "Researcher",
+      "description": "Development of label-free near-field optical microscopy approaches for ultrastructural pathology, enabling nanoscale contrast without external markers."
+    },
+    {
+      "id": "PID2021-123949OB-I00",
+      "title": "Advanced near-field optical nanospectroscopy and novel applications in material sciences and nanophotonics",
+      "acronym": "NANOSPEC",
+      "topic": "Material science and nanophotonics",
+      "program": "Proyectos I+D+i 2021",
+      "funder": "Spanish Ministry for Science, Innovation & Universities (MICIU)",
+      "beneficiary": "Prof. R. Hillenbrand",
+      "host": "CIC nanoGUNE",
+      "dates": { "start": "2022-01-01", "end": "2024-12-31" },
+      "budget": { "amount": 314600, "currency": "EUR" },
+      "role": "Researcher",
+      "description": "Advancement of near-field optical nanospectroscopy methods and their application to emerging problems in material science and nanophotonics."
+    },
+    {
+      "id": "ACC6003996",
+      "title": "A compact fiber-laser-based system for detection of hazardous biological agents via coherent Raman spectroscopy",
+      "acronym": "",
+      "topic": "Coherent Raman spectroscopy",
+      "program": "Defence Science and Technology Laboratory (DSTL)",
+      "funder": "Ministry of Defence, United Kingdom",
+      "beneficiary": "Prof. N. Coluccelli",
+      "host": "Polytechnic University of Milan",
+      "dates": { "start": "2018-10-01", "end": "2019-06-28" },
+      "budget": { "amount": 150000, "currency": "GBP" },
+      "role": "Researcher",
+      "description": "Development of a compact fiber-laser-based coherent Raman spectroscopy system for sensitive detection of hazardous biological agents."
+    },
+    {
+      "id": "140952",
+      "title": "EEM-Ecoenometer",
+      "acronym": "EEM-Ecoenometer",
+      "topic": "FTIR-based spectrometry for wine characterization",
+      "program": "POR FESR 2014-2020",
+      "funder": "Regione Lombardia",
+      "beneficiary": "Prof. N. Coluccelli",
+      "host": "Polytechnic University of Milan",
+      "dates": { "start": "2017-11-01", "end": "2019-05-31" },
+      "budget": { "amount": 430000, "currency": "EUR" },
+      "role": "Researcher",
+      "description": "Development of an FTIR-based spectrometer and analysis software for quantitative wine characterization and quality assessment."
+    }
+  ]
+}

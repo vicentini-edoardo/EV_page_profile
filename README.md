@@ -52,6 +52,25 @@ OPENALEX_API_KEY=... OPENALEX_MAILTO=you@example.com python scripts/update_publi
 
 OpenAlex citation bars use counts_by_year for the last five years.
 
+
+## Award photo slideshows
+
+Award photos are loaded from per-award folders using a manifest file:
+
+- Folder: `images/Awards/<award_slug>/`
+- Manifest: `images/Awards/<award_slug>/images.json`
+
+Example `images.json`:
+
+```
+{
+  "images": ["photo1.jpg", "photo2.png", "photo3.webp"]
+}
+```
+
+Supported formats: .jpg, .jpeg, .png, .webp.
+Slideshows rotate every 3.5 seconds and pause on hover.
+
 ## Build
 
 Run the project page generator before deployment:

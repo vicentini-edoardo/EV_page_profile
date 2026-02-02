@@ -114,7 +114,8 @@
 
   function renderSelected(items) {
     if (!selectedList) return;
-    const list = items.slice(0, 5);
+    const selected = items.filter((pub) => pub.selected);
+    const list = selected.length ? selected.slice(0, 8) : items.slice(0, 5);
     selectedList.innerHTML = list.map(renderPublication).join('');
   }
 

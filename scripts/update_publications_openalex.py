@@ -18,6 +18,7 @@ DEFAULT_ORCID = "0000-0003-1850-2327"
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 RAW_OUT = os.path.join(ROOT, "assets", "data", "publications.openalex.raw.json")
 FINAL_OUT = os.path.join(ROOT, "assets", "data", "publications.json")
+SELECTED_PATH = os.path.join(ROOT, "assets", "data", "publications.selected.json")
 
 
 def request_with_retry(url: str, params: Dict[str, Any]) -> Dict[str, Any]:
@@ -151,6 +152,20 @@ def map_work(work: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+
+
+def load_selected_dois(path: str) -> List[str]:
+    if not os.path.exists(path):
+        return []
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    if isinstance(data, list):
+        return [str(d).lower().strip() for d in data if str(d).strip()]
+    return []
+
+
 def sort_key(item: Dict[str, Any]):
     year = item.get("year") or 0
     journal = item.get("journal") or ""
@@ -191,6 +206,11 @@ def main() -> int:
     mapped.sort(key=sort_key)
 
     doi_count = sum(1 for item in mapped if item.get("doi"))
+
+    selected_dois = load_selected_dois(SELECTED_PATH)
+    if selected_dois:
+        for item in mapped:
+            item["selected"] = item.get("doi", "").lower() in selected_dois
 
     write_json(RAW_OUT, mapped)
 

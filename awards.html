@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Edoardo Vicentini</title>
+  <title>Awards | Edoardo Vicentini</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/print.css" />
 </head>
@@ -36,13 +36,28 @@
     <section class="section">
       <div class="section-header">
         <div>
-          <h1>Projects</h1>
-          <p class="tagline">Ongoing and completed experimental platforms, with dedicated project pages.</p>
+          <h1>Awards</h1>
+          <p class="tagline">Selected recognitions and prizes in nano-optics, metrology, and ultrafast spectroscopy.</p>
         </div>
       </div>
-      <div id="projects-grid" class="projects-list"></div>
+      <div id="awards-content">
+        <p>Loading awards data...</p>
+      </div>
+      <noscript>
+        <p>Enable JavaScript to view awards.</p>
+      </noscript>
     </section>
   </main>
+
+  <div id="lightbox-modal" class="lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close">&times;</button>
+      <button id="lightbox-prev" class="lightbox-nav" type="button" aria-label="Previous image">&#10094;</button>
+      <button id="lightbox-next" class="lightbox-nav" type="button" aria-label="Next image">&#10095;</button>
+      <img id="lightbox-image" alt="" />
+      <p id="lightbox-caption"></p>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container footer-grid">
@@ -58,12 +73,12 @@
       </div>
       <div>
         <strong>Quick links</strong>
-        <p class="footer-note"><a href="publications.html">Publications</a>  -  <a href="resources.html">Resources</a>  -  <a href="cv.html">CV</a></p>
+        <p class="footer-note"><a href="projects.html">Projects</a>  -  <a href="resources.html">Resources</a>  -  <a href="cv.html">CV</a></p>
       </div>
     </div>
   </footer>
 
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/awards.js"></script>
 </body>
 </html>

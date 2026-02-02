@@ -1,0 +1,42 @@
+{
+  "awards": [
+    {
+      "slug": "helmholtz-prize",
+      "title": "Helmholtz Prize",
+      "year": 2022,
+      "subtitle": "Precision measurements",
+      "description": [
+        "The Helmholtz Prize is awarded every two years for outstanding scientific and technological work in precision measurements across physics, chemistry, and medicine.",
+        "The dual-comb hyperspectral digital holography technique I developed represents a breakthrough in scan-free wavefront reconstruction and three-dimensional metrology, highlighting the transformative potential of frequency-comb spectroscopy in advanced imaging."
+      ]
+    },
+    {
+      "slug": "bernard-couillaud-prize",
+      "title": "Bernard J. Couillaud Prize in Ultrafast Lasers",
+      "year": 2023,
+      "subtitle": "Optica Foundation and Coherent, Inc.",
+      "description": [
+        "Awarded by the Optica Foundation and Coherent, Inc., this prestigious prize recognizes early-stage professionals for exceptional contributions to ultrafast laser technology.",
+        "The award acknowledges my work on ultrafast spectroscopy methods for precision measurement and imaging."
+      ]
+    },
+    {
+      "slug": "young-investigators-prize-iuma",
+      "title": "Young Investigators Prize IUMA",
+      "year": 2022,
+      "subtitle": "Materials Institute, University of Alicante",
+      "description": [
+        "Award for young investigators conferred by the Materials Institute of the University of Alicante (IUMA)."
+      ]
+    },
+    {
+      "slug": "best-scientific-communication",
+      "title": "Best Scientific Communication",
+      "year": 2021,
+      "subtitle": "Italian Physical Society - 107th National Congress",
+      "description": [
+        "Award for best presentation in the category \"Applied physics, accelerators and cultural heritage\" at the 107th National Congress of the Italian Physical Society."
+      ]
+    }
+  ]
+}
