@@ -951,3 +951,54 @@ blockquote {
     width: 100%;
   }
 }
+
+.btn.disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+.conference-card {
+  display: grid;
+  gap: 1.4rem;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.2rem;
+}
+
+.conference-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.conference-title {
+  margin: 0;
+}
+
+.conference-event {
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+.conference-date,
+.conference-authors,
+.conference-notes {
+  color: var(--muted);
+  margin-top: 0.35rem;
+}
+
+.conference-download {
+  margin-top: 0.8rem;
+}
+
+.award-slideshow {
+  cursor: pointer;
+}

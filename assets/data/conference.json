@@ -1,0 +1,245 @@
+{
+  "presentations": [
+    {
+      "slug": "spp11-usc-2025",
+      "type": "Oral presentation",
+      "title": "Real-Space Observation of Ultrastrong Coupling Between Optical Phonons and Surface Plasmon Polaritons",
+      "event": "The 11th International Conference on Surface Plasmon Photonics",
+      "location": "Tokyo, Japan",
+      "dates": {
+        "start": "2025-05-19",
+        "end": "2025-05-23"
+      },
+      "authors": [],
+      "notes": "International congress",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/spp11.pdf"
+      }
+    },
+    {
+      "slug": "nanolight-2024-pseudoheterodyne",
+      "type": "Poster",
+      "title": "Multi-wavelength pseudoheterodyne interferometry for near-field imaging",
+      "event": "Nanolight",
+      "location": "Benasque, Spain",
+      "dates": {
+        "start": "2024-02-25",
+        "end": "2024-03-02"
+      },
+      "authors": [],
+      "notes": "National Congress",
+      "download": {
+        "label": "Download poster",
+        "path": "assets/files/conference/nanolight2024.pdf"
+      }
+    },
+    {
+      "slug": "we-hera-seminar-2022-dualcomb",
+      "type": "Invited",
+      "title": "Dual-comb hyperspectral digital holography",
+      "event": "High-Precision Measurements and Searches for New Physics, 766. WE-Heraeus-Seminar",
+      "location": "",
+      "dates": {
+        "start": "2022-05-09",
+        "end": "2022-05-13"
+      },
+      "authors": [],
+      "notes": "",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/we-hera-seminar-2022-dualcomb.pdf"
+      }
+    },
+    {
+      "slug": "cleo-2021-dualcomb-holography",
+      "type": "Oral presentation",
+      "title": "Dual-comb digital holography with high spectral resolution",
+      "event": "Conference on Lasers and Electro-Optics (CLEO), OSA Technical Digest, Optical Society of America",
+      "location": "",
+      "dates": {
+        "start": "2021-05-09",
+        "end": "2021-05-14"
+      },
+      "authors": [
+        "E. Vicentini",
+        "Z. Wang",
+        "K. van Gasse",
+        "T. W. Hänsch",
+        "N. Picqué"
+      ],
+      "notes": "International congress",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/cleo2021.pdf"
+      }
+    },
+    {
+      "slug": "fio-2020-dualcomb-imaging",
+      "type": "Oral presentation",
+      "title": "High-Spectral-Resolution Imaging Spectroscopy with a Dual-Comb Interferometer",
+      "event": "Frontiers in Optics / Laser Science, OSA Technical Digest, Optical Society of America",
+      "location": "",
+      "dates": {
+        "start": "2020-09-14",
+        "end": "2020-09-17"
+      },
+      "authors": [
+        "E. Vicentini",
+        "Z. Chen",
+        "J. H. Huh",
+        "G. Galzerano",
+        "T. W. Hänsch",
+        "N. Picqué"
+      ],
+      "notes": "International congress",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/fio2020.pdf"
+      }
+    },
+    {
+      "slug": "cnr_talk_2022-dualcomb-imaging",
+      "type": "Oral presentation",
+      "title": "Hyperspectral imaging and holography by dual-comb spectroscopy",
+      "event": "CNR-IFN Talks 2022",
+      "location": "",
+      "dates": {
+        "start": "2022-05-06",
+        "end": "2022-05-06"
+      },
+      "authors": [
+        "E. Vicentini"
+      ],
+      "notes": "Invited presentation",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/CNRtalk2022.pdf"
+      }
+    },
+    {
+      "slug": "ringberg2023-s-SNOM",
+      "type": "Oral presentation",
+      "title": "Infrared nanoimaging and nanospectroscopy by near-field optical microscopy",
+      "event": "Workshop of Laser Spectroscopy Division, Ringberg Castle",
+      "location": "",
+      "dates": {
+        "start": "2023-08-28",
+        "end": "2023-09-01"
+      },
+      "authors": [
+        "E. Vicentini"
+      ],
+      "notes": "Invited presentation",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/Ringberg 2023.pdf"
+      }
+    },
+    {
+      "slug": "SIF2021",
+      "type": "Oral presentation",
+      "title": "High-resolution direct-comb spectrometer at 2.4 μm",
+      "event": "107° CONGRESSO NAZIONALE DELLA SIF (Società Italiana di Fisica)",
+      "location": "",
+      "dates": {
+        "start": "2023-08-28",
+        "end": "2023-09-01"
+      },
+      "authors": [
+        "E. Vicentini", 
+        "A. Rosina",
+        "M. Nobis",
+        "F. Canella",
+        "Y. Wang",
+        "P. Laporta",
+        "G. Galzerano"
+      ],
+      "notes": "Oral presentation",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/SIF2021.pdf"
+      }
+    },
+    {
+      "slug": "NanoguneSeminar2025",
+      "type": "Oral presentation",
+      "title": "Real-space observation of flat-band ultrastrong coupling between optical phonons and surface plasmon polaritons",
+      "event": "CIC nanoGUNE Seminar",
+      "location": "",
+      "dates": {
+        "start": "2025-10-27",
+        "end": "2025-10-27"
+      },
+      "authors": [
+        "E. Vicentini"
+      ],
+      "notes": "Seminar presentation",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/nanoguneseminar2025.pdf"
+      }
+    },
+    {
+      "slug": "Fotonica2018",
+      "type": "Oral presentation",
+      "title": "Ro-vibrational fine structure of CF3H by frequency-comb-assisted saturated spectroscopy at 8.6 µm",
+      "event": "Fotonica2018",
+      "location": "",
+      "dates": {
+        "start": "2018-05-23",
+        "end": "2018-05-25"
+      },
+      "authors": [
+        "E. Vicentini",
+        "A. Gambetta",
+        "N. Coluccelli",
+        "E. Fasci",
+        "A. Castrillo",
+        "L. Gianfrani",
+        "V. Di Sarno",
+        "P. Maddaloni",
+        "A. Ceausu-Velcescu",
+        "P. De Natale",
+        "Y. Wang",
+        "T.T. Fernandez",
+        "P. Laporta",
+        "G. Galzerano"
+      ],
+      "notes": "National Congress",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/Fotonica2018.pdf"
+      }
+    },
+    {
+      "slug": "DonostiaWorkshop2023",
+      "type": "Poster",
+      "title": "Multi-wavelength pseudoheterodyne interferometry for near-field imaging",
+      "event": "Near-field optical nanoscopy summer school and workshop",
+      "location": "Donostia-San Sebastian, Spain",
+      "dates": {
+        "start": "2023-06-06",
+        "end": "2023-06-09"
+      },
+      "authors": [
+        "E. Vicentini",
+        "W. Nuansing",
+        "I. Niehues",
+        "I. Amenabar",
+        "A. M. Bittner",
+        "R. Hillenbrand",
+        "M. Schnell"
+      ],
+      "notes": "poster presentation",
+      "download": {
+        "label": "Download poster",
+        "path": "assets/files/conference/posterDonostia2023.pdf"
+      }
+    }
+    
+
+
+
+  ]
+}

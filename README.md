@@ -4,7 +4,7 @@ A multi-page, academic-first personal website designed for GitHub Pages. It uses
 
 ## Structure
 
-- `index.html`, `research.html`, `publications.html`, `projects.html`, `funding.html`, `teaching.html`, `talks.html`, `resources.html`, `cv.html`, `contact.html`
+- `index.html`, `research.html`, `publications.html`, `projects.html`, `funding.html`, `teaching.html`, `conference.html`, `resources.html`, `cv.html`, `contact.html`
 - `assets/` contains CSS, JS, data, and SVG illustrations
 - `projects/` contains individual project pages
 - `CV/` contains a placeholder PDF
@@ -52,6 +52,15 @@ OPENALEX_API_KEY=... OPENALEX_MAILTO=you@example.com python scripts/update_publi
 
 OpenAlex citation bars use counts_by_year for the last five years.
 
+
+
+
+## Conference PDFs
+
+Update `assets/data/conference.json` to add or edit presentations; the `slug` must match the PDF filename.
+
+Add PDFs to `assets/files/conference/<slug>.pdf`. If the file is missing, the page shows "PDF coming soon".
+The conference page provides download links only (no inline preview).
 
 ## Award photo slideshows
 
