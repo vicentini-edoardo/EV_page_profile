@@ -24,7 +24,7 @@
   }
 
   const navLinks = document.querySelectorAll('.nav a');
-  const currentPath = window.location.pathname.replace(/\\/$/, '/index.html');
+  const currentPath = window.location.pathname.replace(/\/$/, '/index.html');
   navLinks.forEach((link) => {
     const href = link.getAttribute('href');
     if (!href) return;
@@ -37,18 +37,32 @@
 
   const selectedList = document.getElementById('selected-publications');
   if (selectedList) {
+    const formatAuthors = (pub) => {
+      if (Array.isArray(pub.authors)) return pub.authors.join(', ');
+      if (typeof pub.authors === 'string') return pub.authors;
+      return '';
+    };
+
     fetch('assets/data/publications.json')
       .then((response) => response.json())
       .then((data) => {
-        const selected = data.publications.filter((pub) => pub.selected).slice(0, 3);
-        const items = (selected.length ? selected : data.publications.slice(0, 3));
+        const publications = Array.isArray(data) ? data : (data.publications || []);
+        const sorted = publications.slice().sort((a, b) => {
+          const yearA = a.year || 0;
+          const yearB = b.year || 0;
+          if (yearA !== yearB) return yearB - yearA;
+          return (a.title || '').localeCompare(b.title || '');
+        });
+        const selected = sorted.filter((pub) => pub.selected).slice(0, 3);
+        const items = (selected.length ? selected : sorted.slice(0, 3));
         selectedList.innerHTML = items
           .map((pub) => {
+            const authors = formatAuthors(pub);
             return `
               <div class="list-item">
                 <strong>${pub.title}</strong>
-                <div class="meta">${pub.authors}</div>
-                <small>${pub.venue} (${pub.year})</small>
+                ${authors ? `<div class="meta">${authors}</div>` : ''}
+                <small>${pub.venue}${pub.year ? ` (${pub.year})` : ''}</small>
               </div>`;
           })
           .join('');
