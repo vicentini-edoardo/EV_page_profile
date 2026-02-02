@@ -745,6 +745,16 @@ blockquote {
   height: 60px;
 }
 
+
+.pub-grid line {
+  stroke: var(--border);
+  stroke-dasharray: 2 3;
+}
+
+.pub-grid-label {
+  fill: var(--muted);
+  font-size: 0.55rem;
+}
 .pub-bar {
   fill: var(--accent);
 }

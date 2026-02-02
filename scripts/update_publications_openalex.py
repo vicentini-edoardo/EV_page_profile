@@ -129,11 +129,27 @@ def map_work(work: Dict[str, Any]) -> Dict[str, Any]:
     authors = [a for a in authors if a]
 
     host_venue = work.get("host_venue", {}) or {}
-    journal = host_venue.get("display_name") or ""
+    primary_location = work.get("primary_location", {}) or {}
+    primary_source = primary_location.get("source", {}) or {}
+    first_location = (work.get("locations") or [{}])[0] or {}
+    first_source = (first_location.get("source") or {})
+
+    journal = (
+        host_venue.get("display_name")
+        or primary_source.get("display_name")
+        or first_source.get("display_name")
+        or ""
+    )
 
     biblio = work.get("biblio", {}) or {}
 
     counts = last_five_years_counts(work.get("counts_by_year", []) or [])
+
+    year = work.get("publication_year")
+    if not year:
+        pub_date = work.get("publication_date") or ""
+        if pub_date and len(pub_date) >= 4 and pub_date[:4].isdigit():
+            year = int(pub_date[:4])
 
     return {
         "openalex_id": openalex_id,
@@ -141,7 +157,7 @@ def map_work(work: Dict[str, Any]) -> Dict[str, Any]:
         "title": work.get("display_name") or "",
         "authors": authors,
         "journal": journal or "",
-        "year": work.get("publication_year"),
+        "year": year,
         "volume": biblio.get("volume") or "",
         "issue": biblio.get("issue") or "",
         "pages": extract_pages(biblio),

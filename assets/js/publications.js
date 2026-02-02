@@ -28,7 +28,7 @@
   }
 
   function buildVenueLine(pub) {
-    const journal = pub.journal || '';
+    const journal = pub.journal || pub.venue || '';
     const volume = pub.volume || '';
     const issue = pub.issue || '';
     const pages = pub.pages || '';
@@ -70,12 +70,26 @@
     const counts = pub.citations_last5 ? pub.citations_last5.counts : [];
     const maxCount = Math.max(1, ...counts);
 
+    const chartHeight = 40;
+    const chartTop = 4;
+    const chartBase = chartTop + chartHeight;
+    const tickValues = [0, Math.round(maxCount / 2), maxCount];
+
+    const gridLines = tickValues.map((value) => {
+      const y = chartBase - Math.round((value / maxCount) * chartHeight);
+      return `
+        <g class="pub-grid">
+          <line x1="0" y1="${y}" x2="110" y2="${y}" />
+          <text x="108" y="${y - 2}" text-anchor="end" class="pub-grid-label">${value}</text>
+        </g>`;
+    }).join('');
+
     const bars = counts.map((count, idx) => {
-      const height = Math.round((count / maxCount) * 40);
+      const height = Math.round((count / maxCount) * chartHeight);
       const yearLabel = years[idx] || '';
       return `
         <g>
-          <rect x="${idx * 22}" y="${44 - height}" width="14" height="${height}" rx="2" class="pub-bar" />
+          <rect x="${idx * 22}" y="${chartBase - height}" width="14" height="${height}" rx="2" class="pub-bar" />
           <title>${yearLabel}: ${count} citations</title>
         </g>`;
     }).join('');
@@ -88,6 +102,7 @@
       <a class="pub-metrics" href="${pub.openalex_url}" target="_blank" rel="noopener" aria-label="Open OpenAlex page for this work">
         <div class="pub-metrics-total">Citations: ${total}</div>
         <svg class="pub-chart" viewBox="0 0 110 60" role="img" aria-label="Citations over last five years">
+          ${gridLines}
           ${bars}
           ${labels}
         </svg>
