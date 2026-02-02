@@ -138,6 +138,24 @@ def fetch_work(api_base: str, orcid_id: str, putcode: int, token: str) -> Dict[s
     return response.json()
 
 
+def extract_value(value: Any) -> str:
+    if isinstance(value, dict):
+        return value.get("value") or ""
+    if isinstance(value, str):
+        return value
+    return ""
+
+
+def extract_authors(work: Dict[str, Any]) -> List[str]:
+    contributors = (work.get("contributors") or {}).get("contributor", [])
+    authors: List[str] = []
+    for contrib in contributors:
+        name = extract_value(contrib.get("credit-name"))
+        if name:
+            authors.append(name)
+    return authors
+
+
 def normalize_work(work: Dict[str, Any], orcid_id: str) -> Dict[str, Any]:
     title = (work.get("title", {}) or {}).get("title", {})
     title_value = title.get("value") or ""
@@ -148,11 +166,30 @@ def normalize_work(work: Dict[str, Any], orcid_id: str) -> Dict[str, Any]:
         if year_raw and str(year_raw).isdigit():
             year_value = int(year_raw)
     work_type = work.get("type") or ""
-    venue = (work.get("journal-title") or {}).get("value") or ""
+
+    journal = extract_value(work.get("journal-title"))
+
+    journal_volume = work.get("journal-volume") or {}
+    volume = extract_value(journal_volume.get("value") or (journal_volume.get("volume") or {}))
+
+    journal_issue = work.get("journal-issue") or {}
+    issue = extract_value(journal_issue.get("value") or (journal_issue.get("issue") or {}))
+
+    page_range = work.get("page-range") or {}
+    pages = extract_value(page_range)
+    if not pages and isinstance(page_range, dict):
+        start = extract_value(page_range.get("start"))
+        end = extract_value(page_range.get("end"))
+        if start or end:
+            pages = f"{start}-{end}" if start and end else start or end
+
+    publisher = extract_value(work.get("publisher") or work.get("publisher-name") or {})
+
+    authors = extract_authors(work)
 
     doi, links = extract_external_ids(work)
 
-    work_url = (work.get("url") or {}).get("value") or ""
+    work_url = extract_value(work.get("url"))
     if work_url:
         links["url"] = work_url
 
@@ -166,7 +203,13 @@ def normalize_work(work: Dict[str, Any], orcid_id: str) -> Dict[str, Any]:
         "title": title_value,
         "year": year_value,
         "type": work_type,
-        "venue": venue,
+        "journal": journal,
+        "venue": journal,
+        "volume": volume,
+        "issue": issue,
+        "pages": pages,
+        "publisher": publisher,
+        "authors": authors,
         "doi": doi,
         "links": links,
         "tags": [],
@@ -218,6 +261,9 @@ def apply_overrides(publications: List[Dict[str, Any]], overrides: List[Dict[str
             target["my_role"] = override["my_role"]
         if "authors" in override and isinstance(override["authors"], list):
             target["authors"] = override["authors"]
+        for field in ("journal", "volume", "issue", "pages", "publisher"):
+            if field in override:
+                target[field] = override[field]
         if "links" in override and isinstance(override["links"], dict):
             target_links = target.get("links", {})
             for key in ("pdf", "code", "data", "arxiv", "doi", "url"):
@@ -233,7 +279,19 @@ def ensure_required_fields(publications: List[Dict[str, Any]]) -> List[Dict[str,
         pub["title"] = pub.get("title") or ""
         pub["year"] = pub.get("year") if isinstance(pub.get("year"), int) else None
         pub["type"] = pub.get("type") or ""
-        pub["venue"] = pub.get("venue") or ""
+        pub["journal"] = pub.get("journal") or pub.get("venue") or ""
+        pub["venue"] = pub.get("venue") or pub.get("journal") or ""
+        pub["volume"] = pub.get("volume") or ""
+        pub["issue"] = pub.get("issue") or ""
+        pub["pages"] = pub.get("pages") or ""
+        pub["publisher"] = pub.get("publisher") or ""
+        authors = pub.get("authors")
+        if isinstance(authors, list):
+            pub["authors"] = [str(a) for a in authors if a]
+        elif isinstance(authors, str) and authors.strip():
+            pub["authors"] = [authors.strip()]
+        else:
+            pub["authors"] = []
         pub["doi"] = pub.get("doi") or ""
         pub["tags"] = pub.get("tags") if isinstance(pub.get("tags"), list) else []
         pub["selected"] = bool(pub.get("selected"))

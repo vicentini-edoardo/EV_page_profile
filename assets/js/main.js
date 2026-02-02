@@ -58,11 +58,12 @@
         selectedList.innerHTML = items
           .map((pub) => {
             const authors = formatAuthors(pub);
+            const journal = pub.journal || pub.venue || '';
             return `
               <div class="list-item">
                 <strong>${pub.title}</strong>
                 ${authors ? `<div class="meta">${authors}</div>` : ''}
-                <small>${pub.venue}${pub.year ? ` (${pub.year})` : ''}</small>
+                <small>${journal}${pub.year ? ` (${pub.year})` : ''}</small>
               </div>`;
           })
           .join('');

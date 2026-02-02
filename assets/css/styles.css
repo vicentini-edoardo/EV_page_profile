@@ -649,3 +649,90 @@ blockquote {
 .projects-list .card {
   width: 100%;
 }
+
+
+.pub-item {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.pub-authors.missing {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pub-venue {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.pub-doi {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.pub-doi a {
+  color: var(--accent);
+}
+
+.preview-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.preview-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.doi-preview {
+  margin-top: 0.6rem;
+}
+
+.doi-preview-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.7rem;
+  background: var(--bg-alt);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.doi-preview-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.doi-preview-meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.doi-preview-card.unavailable {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.btn.small {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+}
