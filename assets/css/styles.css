@@ -598,3 +598,44 @@ blockquote {
   border-left: 3px solid var(--accent);
   color: var(--muted);
 }
+
+
+.project-hero .meta {
+  margin: 0.4rem 0 0.8rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.project-section {
+  padding-top: 0.5rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 0.75rem;
+  margin: 0 0.35rem 0.35rem 0;
+  background: transparent;
+}
+
+.figure-placeholder {
+  margin: 0;
+  padding: 1rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+  text-align: center;
+}
+
+.figure-placeholder .figure-box {
+  height: 180px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  background: linear-gradient(135deg, rgba(15, 92, 110, 0.08), rgba(142, 63, 47, 0.08));
+}

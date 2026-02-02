@@ -82,6 +82,14 @@ Set these in the repository Settings -> Secrets and variables -> Actions:
 - **429 rate limiting**: the script retries with backoff; re-run later if the API is throttling.
 - **Scheduled workflow delays**: GitHub Actions scheduled runs can be delayed; use workflow_dispatch to run immediately.
 
+## Build
+
+Run the project page generator before deployment:
+
+```
+python3 scripts/generate_projects_pages.py
+```
+
 ## Local preview
 
 Open any HTML file in a browser. For full fetch support, use a simple local server (e.g. `python -m http.server`).
@@ -89,3 +97,11 @@ Open any HTML file in a browser. For full fetch support, use a simple local serv
 ## License
 
 MIT - see `LICENSE`.
+
+
+<!--
+Project pages checklist:
+- Run generator locally: python3 scripts/generate_projects_pages.py
+- Open projects.html and click through each project page
+- Confirm dark mode works within /projects/*.html
+-->

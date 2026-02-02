@@ -1,28 +1,108 @@
 {
   "projects": [
     {
-      "slug": "project-01",
-      "title": "Ultrafast nano-FTIR platform",
-      "year": "2025-ongoing",
-      "summary": "A modular pump-probe near-field microscope enabling femtosecond-resolved vibrational maps.",
-      "role": "Platform architect and experimental lead",
-      "methods": ["pump-probe timing", "heterodyne detection", "phase-resolved spectroscopy"]
+      "slug": "vibrational-usc-pumpprobe",
+      "title": "Vibrational strong–ultrastrong coupling by pump–probe nanospectroscopy",
+      "year": "2023–present",
+      "summary": "Real-space observation and control of vibrational strong and ultrastrong coupling at the nanoscale using femtosecond pump–probe near-field spectroscopy.",
+      "role": "Project lead; experimental design, pump–probe implementation, data analysis and interpretation",
+      "methods": [
+        "pump–probe nanospectroscopy",
+        "ultrafast near-field microscopy",
+        "strong and ultrastrong coupling analysis",
+        "time-resolved spectral mapping"
+      ]
     },
     {
-      "slug": "project-02",
-      "title": "Dual-comb surface metrology",
-      "year": "2024-2025",
-      "summary": "A frequency-comb readout chain for absolute calibration of nanoscale spectra.",
-      "role": "Comb integration and metrology pipeline",
-      "methods": ["dual-comb spectroscopy", "frequency referencing", "system identification"]
+      "slug": "thz-plasmon-polaritons-snom",
+      "title": "THz plasmon polariton imaging by s-SNOM",
+      "year": "2022–2023",
+      "summary": "Near-field imaging and dispersion analysis of terahertz plasmon polaritons in novel materials, revealing propagation, confinement, and damping mechanisms at THz frequencies.",
+      "role": "Near-field imaging and analysis lead",
+      "methods": [
+        "THz s-SNOM",
+        "plasmon polariton imaging",
+        "dispersion extraction",
+        "near-field signal demodulation"
+      ]
     },
     {
-      "slug": "project-03",
-      "title": "Polariton dynamics in nanocavities",
-      "year": "2022-2024",
-      "summary": "Near-field mapping of plasmon and phonon polariton lifetimes and propagation.",
-      "role": "Near-field imaging and analysis",
-      "methods": ["s-SNOM", "dispersion extraction", "data-driven modeling"]
+      "slug": "multifrequency-snom",
+      "title": "Multifrequency s-SNOM for nano-optical imaging",
+      "year": "2022–2023",
+      "summary": "Development of multifrequency scattering-type near-field microscopy schemes enabling simultaneous nano-imaging at multiple optical and infrared frequencies.",
+      "role": "Method development and experimental implementation",
+      "methods": [
+        "multifrequency near-field detection",
+        "pseudo-heterodyne interferometry",
+        "harmonic demodulation",
+        "nano-optical contrast mechanisms"
+      ]
+    },
+    {
+      "slug": "weak-molecular-absorption-snom",
+      "title": "Detection of weak molecular absorption in s-SNOM nanoimaging",
+      "year": "2021–present",
+      "summary": "Development of scattering-type near-field optical microscopy techniques for detecting weak molecular vibrational absorption beyond the conventional sensitivity limits of s-SNOM.",
+      "role": "Technique development and data analysis",
+      "methods": [
+        "nano-FTIR spectroscopy",
+        "weak-signal detection",
+        "background suppression strategies",
+        "near-field spectroscopy modeling"
+      ]
+    },
+    {
+      "slug": "dual-comb-digital-holography",
+      "title": "Dual-comb hyperspectral digital holography",
+      "year": "2020–2021",
+      "summary": "First demonstration of dual-comb spectroscopy applied to digital holography, enabling simultaneous high-resolution spectroscopy and three-dimensional imaging.",
+      "role": "Dual-comb integration and holographic data analysis",
+      "methods": [
+        "dual-comb spectroscopy",
+        "digital holography",
+        "frequency-comb metrology",
+        "hyperspectral 3D imaging"
+      ]
+    },
+    {
+      "slug": "dual-comb-hyperspectral-imaging",
+      "title": "Dual-comb spectroscopy for hyperspectral imaging in the near-infrared",
+      "year": "2019–2022",
+      "summary": "Development of a dual-comb spectrometer combining high spectral resolution with spatial imaging capabilities in the near-infrared spectral region.",
+      "role": "Spectrometer development and system characterization",
+      "methods": [
+        "dual-comb spectroscopy",
+        "near-infrared hyperspectral imaging",
+        "frequency stabilization",
+        "instrument response calibration"
+      ]
+    },
+    {
+      "slug": "direct-comb-gas-spectroscopy",
+      "title": "Direct frequency-comb spectroscopy in the near- and mid-infrared",
+      "year": "2017–2020",
+      "summary": "Realization of broadband, high-resolution frequency-comb-based spectrometers for multispecies gas analysis in the near- and mid-infrared spectral regions.",
+      "role": "Spectrometer implementation and experimental validation",
+      "methods": [
+        "direct frequency-comb spectroscopy",
+        "broadband molecular spectroscopy",
+        "mid-infrared optics",
+        "multispecies gas detection"
+      ]
+    },
+    {
+      "slug": "comb-assisted-laser-spectroscopy",
+      "title": "High-resolution comb-assisted laser spectroscopy",
+      "year": "2017–2020",
+      "summary": "Implementation of ultra-stable laser sources and frequency-comb referencing for high-resolution molecular spectroscopy in the near- and mid-infrared.",
+      "role": "Laser stabilization and spectroscopic measurements",
+      "methods": [
+        "comb-assisted spectroscopy",
+        "ultra-stable laser systems",
+        "high-resolution molecular spectroscopy",
+        "frequency referencing"
+      ]
     }
   ]
 }
