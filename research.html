@@ -26,8 +26,7 @@
       </nav>
       <div class="header-actions">
         <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
-        <a class="btn ghost" href="CV/CV_placeholder.pdf">Download CV</a>
-      </div>
+              </div>
     </div>
   </header>
 
@@ -45,173 +44,75 @@
       </div>
     </section>
 
-    <section class="research-layout">
-      <aside class="research-sidebar">
-        <div class="sticky">
-          <p class="sidebar-title">On this page</p>
-          <ul class="sidebar-nav">
-            <li><a href="#identity">Research identity</a></li>
-                        <li><a href="#pillar-snom">Pillar I — s-SNOM</a></li>
-            <li><a href="#pillar-ofc">Pillar II — Optical frequency combs</a></li>
-            <li><a href="#questions">Key scientific questions</a></li>
-            <li><a href="#philosophy">Experimental philosophy</a></li>
+    <div class="research-content">
+      <section class="card-block research-block" id="identity">
+        <h2>Research identity</h2>
+        <div class="view-scientific">
+          <p class="lead">Experimental physicist developing measurement platforms for quantitative surface light–matter interaction.</p>
+          <p>My background bridges two experimental traditions: optical frequency-comb metrology, developed during my PhD at Politecnico di Milano and expanded through a research stay at the Max Planck Institute for Quantum Optics; and near-field nano-optics, matured since 2022 at CIC nanoGUNE, where I develop s-SNOM-based methodologies.</p>
+          <p>I use this combination to access observables that standard optics cannot provide and to connect real-space measurements with predictive electrodynamic models.</p>
+        </div>
+        <div class="view-general">
+          <p>I build advanced optical instruments to study how light interacts with materials at very small scales and very short times. My training spans frequency-comb metrology (PhD in Milan and work at MPQ) and near-field microscopy (nanoGUNE since 2022).</p>
+        </div>
+      </section>
+
+      <section class="card-block research-block" id="positioning">
+        <h2>Positioning &amp; philosophy</h2>
+        <div class="view-scientific">
+          <p>When a physical phenomenon cannot be measured directly, the priority is to build the instrument that makes it observable.</p>
+          <p>I work at the interface between measurement science and nanophotonics, with the objective of turning near-field measurements into quantitative observables rather than qualitative images.</p>
+          <p>I treat instrumentation as a scientific contribution in its own right, focusing on parameter extraction—such as dispersion, damping, coupling strength, and transient response—so experiments can be compared directly with theory.</p>
+          <ul class="compact-list">
+            <li>Current focus: time-resolved near-field spectroscopy and strong/ultrastrong coupling observables.</li>
+            <li>Long-term aim: measurement protocols that make surface excitations predictable and controllable.</li>
           </ul>
         </div>
-      </aside>
+        <div class="view-general">
+          <p>Many phenomena become clear only once they can be measured directly. My goal is to build instruments that turn complex optical behavior into reliable, quantitative information.</p>
+        </div>
+      </section>
 
-      <div class="research-content">
-        <section id="identity" class="research-section">
-          <h2>Research Identity</h2>
-          <div class="view-scientific">
-            <p>Experimental physicist developing next-generation nano-optical measurement platforms for quantitative light–matter interaction.</p>
-            <p>My research is motivated by a simple premise: major advances in nanophotonics require not only new materials, but fundamentally new ways to measure them.</p>
-            <p>I design experimental architectures that merge nanoscale spatial resolution, ultrafast temporal access, and metrological spectral precision, enabling direct observation of physical processes that remain inaccessible to conventional optical techniques.</p>
-            <p>My scientific trajectory combines two complementary experimental cultures:</p>
-            <ul>
-              <li>Optical frequency-comb metrology, developed during my doctoral work at the Politecnico di Milano and expanded through research at the Max Planck Institute for Quantum Optics.</li>
-              <li>Near-field nano-optics, matured since 2022 at CIC nanoGUNE, where I develop s-SNOM-based methodologies to extract quantitative observables from real-space measurements.</li>
-            </ul>
-            <p>Together, these directions support a broad point of view on surface light–matter interaction, in which instrumentation is conceived not merely as a technical tool, but as a path toward predictive electrodynamics at the nanoscale.</p>
+      <section class="card-block research-block" id="pillar-snom">
+        <h2>Pillar — s-SNOM</h2>
+        <div class="view-scientific">
+          <p>s-SNOM is a near-field optical technique that circumvents the diffraction limit by localizing electromagnetic fields at the apex of a nanometric probe. It enables imaging and spectroscopy with spatial resolution determined by the probe rather than the wavelength of light. Since joining nanoGUNE in 2022, I have developed approaches that link real-space near-field signals to electrodynamic models and quantitative parameters.</p>
+          <div class="app-list">
+            <p class="app-item"><b>IR–THz nanoimaging</b> Reveals phonon and plasmon polaritons with wavelengths far below free-space radiation, enabling direct analysis of confinement, anisotropy, and dissipation.</p>
+            <p class="app-item"><b>Nanospectroscopy</b> Correlates chemical composition, electronic structure, and local optical response within nanometric volumes, enabling quantitative comparison with theory.</p>
+            <p class="app-item"><b>Ultrafast nanospectroscopy</b> Combines femtosecond pump–probe excitation with near-field detection to access non-equilibrium dynamics with spatial and temporal resolution.</p>
           </div>
-          <div class="view-general">
-            <p>I build advanced optical instruments that allow us to observe how light interacts with materials at extremely small scales and over extremely short times. These tools help reveal processes that are normally invisible and support the development of future photonic technologies.</p>
+        </div>
+        <div class="view-general">
+          <p>s-SNOM concentrates light with a sharp probe to observe optical behavior far below conventional microscope resolution.</p>
+          <div class="app-list">
+            <p class="app-item"><b>IR–THz nanoimaging</b> Visualizes surface waves and their propagation at the nanoscale.</p>
+            <p class="app-item"><b>Nanospectroscopy</b> Connects chemical composition with local optical response.</p>
+            <p class="app-item"><b>Ultrafast nanospectroscopy</b> Tracks how materials respond immediately after excitation.</p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="research-section">
-          <h2>Intellectual Positioning</h2>
-          <div class="view-scientific">
-            <p>When a physical phenomenon cannot be measured directly, the priority is to build the instrument that makes it observable.</p>
-            <p>My research operates at the interface between measurement science and nanophotonics, with the long-term objective of transforming nano-optics from a largely descriptive discipline into a quantitative and predictive framework.</p>
+      <section class="card-block research-block" id="pillar-ofc">
+        <h2>Pillar — Optical frequency combs</h2>
+        <div class="view-scientific">
+          <p>Optical frequency combs are laser sources whose spectra consist of evenly spaced, phase-coherent lines that function as rulers in frequency space. They connect optical measurements to primary standards and enable traceable, reproducible spectroscopy. My work with frequency combs began during my PhD at Politecnico di Milano and expanded at the Max Planck Institute for Quantum Optics, including dual-comb methods for spectroscopy and holography.</p>
+          <div class="app-list">
+            <p class="app-item"><b>Frequency metrology</b> Provides absolute calibration across broad bandwidths, ensuring reproducibility between experiments and laboratories.</p>
+            <p class="app-item"><b>Dual-comb spectroscopy</b> Replaces mechanical scanning with optical sampling, enabling rapid broadband acquisition with high spectral resolution.</p>
+            <p class="app-item"><b>Dual-comb holography</b> Extends metrological precision to coherent imaging, enabling scan-free wavefront reconstruction and hyperspectral three-dimensional measurements.</p>
           </div>
-        </section>
-
-        
-
-        <section id="pillar-snom" class="research-section">
-          <h2>Pillar I — s-SNOM</h2>
-          <div class="view-scientific">
-<p>s-SNOM is a near-field optical technique that circumvents the diffraction limit by localizing electromagnetic fields at the apex of a nanometric probe. It enables imaging and spectroscopy with spatial resolution determined by the probe rather than the wavelength of light.</p>
-            <h3>Vision</h3>
-            <p>To establish near-field nano-optics as a quantitative experimental science, capable of directly measuring the parameters that govern light–matter interaction at deeply subwavelength scales.</p>
-            <h3>Why this matters</h3>
-            <p>Many emergent properties of quantum and nanostructured materials originate on length scales far below the diffraction limit. s-SNOM enables these measurements. My work focuses on pushing the technique beyond imaging toward parameter extraction — including dispersion, damping, coupling strength, and transient response.</p>
-            <h3>Trajectory</h3>
-            <p>Since joining nanoGUNE in 2022, I have developed near-field approaches aimed at linking real-space observables with electrodynamic models.</p>
-
-            <div class="subsection">
-              <h4>IR–THz Nanoimaging</h4>
-              <p>Infrared and terahertz nanoimaging reveals phonon and plasmon polaritons whose wavelengths can be orders of magnitude smaller than free-space radiation. Mapping their propagation provides direct insight into confinement, anisotropy, and dissipation at material interfaces.</p>
-              <p class="emphasis">Scientific opportunity: Dispersion engineering and controlled surface-wave transport.</p>
-            </div>
-            <div class="subsection">
-              <h4>Nanospectroscopy</h4>
-              <p>Near-field spectroscopy correlates chemical composition, electronic structure, and local optical response within nanometric volumes. Phase-resolved implementations enable quantitative comparison with theory.</p>
-              <p class="emphasis">Scientific opportunity: Bridging microscopy and precision spectroscopy.</p>
-            </div>
-            <div class="subsection">
-              <h4>Ultrafast Nanospectroscopy</h4>
-              <p>Integrating femtosecond pump–probe excitation with near-field detection enables access to non-equilibrium dynamics with simultaneous spatial and temporal resolution.</p>
-              <p class="emphasis">Scientific opportunity: Revealing energy transfer pathways that govern active and hybrid photonic systems.</p>
-            </div>
+        </div>
+        <div class="view-general">
+          <p>Optical frequency combs are specialized lasers that produce perfectly ordered colors of light, enabling extremely accurate optical measurements.</p>
+          <div class="app-list">
+            <p class="app-item"><b>Frequency metrology</b> Acts as a precise ruler for light across broad bandwidths.</p>
+            <p class="app-item"><b>Dual-comb spectroscopy</b> Captures detailed spectra quickly without moving parts.</p>
+            <p class="app-item"><b>Dual-comb holography</b> Combines precise spectroscopy with three-dimensional imaging.</p>
           </div>
-
-          <div class="view-general">
-<p>s-SNOM is an advanced microscopy technique that concentrates light into extremely small regions using a sharp probe, allowing scientists to observe optical behavior far below the resolution of conventional microscopes.</p>
-            <h3>What it is</h3>
-            <p>Near-field microscopy uses a nanoscale probe to concentrate light into regions much smaller than its wavelength, allowing us to see optical behavior at the scale where many material properties originate.</p>
-            <h3>Why it matters</h3>
-            <p>Modern materials often behave differently at the nanoscale. Understanding these local responses is essential for designing faster electronics, improved sensors, and next-generation optical devices.</p>
-            <div class="subsection">
-              <h4>IR–THz Nanoimaging</h4>
-              <p>This technique lets us visualize how electromagnetic waves travel along a material surface, like watching ripples move across water but at a scale thousands of times smaller than a human hair.</p>
-              <p class="emphasis">Impact: Seeing these waves directly helps design materials that guide light more efficiently.</p>
-            </div>
-            <div class="subsection">
-              <h4>Nanospectroscopy</h4>
-              <p>Nanospectroscopy identifies the chemical and electronic properties of materials at extremely small scales.</p>
-              <p class="emphasis">Impact: It connects composition with function, helping researchers understand why materials behave the way they do.</p>
-            </div>
-            <div class="subsection">
-              <h4>Ultrafast Nanospectroscopy</h4>
-              <p>By combining ultrafast laser pulses with near-field microscopy, we can observe how materials respond immediately after being excited — essentially filming processes that occur in trillionths of a second.</p>
-              <p class="emphasis">Impact: Understanding these rapid processes is key to developing faster and more efficient technologies.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="pillar-ofc" class="research-section">
-     <h2>Pillar II — Optical Frequency Combs</h2>
-     <div class="view-scientific">
-<p>Optical frequency combs are laser sources whose spectra consist of evenly spaced, phase-coherent lines that function as precise rulers in frequency space. They provide a direct link between optical measurements and primary standards, forming the backbone of modern precision spectroscopy.</p>
-      <h3>Vision</h3>
-      <p>To transfer the rigor of precision metrology into complex optical measurement platforms, enabling experiments that are not only sensitive but traceable and reproducible.</p>
-      <h3>Why this matters</h3>
-      <p>Frequency combs transform spectroscopy from a relative measurement into an absolute one, connecting optical observations directly to primary standards.</p>
-      <h3>Trajectory</h3>
-      <p>My work with frequency combs began during my PhD at Politecnico di Milano and expanded at the Max Planck Institute for Quantum Optics, where I contributed to dual-comb methodologies for precision spectroscopy and holography.</p>
-
-      <div class="subsection">
-       <h4>Frequency Metrology</h4>
-       <p>Frequency combs provide absolute calibration across broad bandwidths, ensuring reproducibility between experiments and laboratories.</p>
-       <p class="emphasis">Scientific opportunity: Establishing reliable material parameters for precision spectroscopy.</p>
-      </div>
-      <div class="subsection">
-       <h4>Dual-Comb Spectroscopy</h4>
-       <p>Dual-comb spectroscopy replaces mechanical scanning with optical sampling, enabling rapid broadband acquisition while preserving high spectral resolution.</p>
-       <p class="emphasis">Scientific opportunity: Quantitative spectroscopy compatible with dynamic systems.</p>
-      </div>
-      <div class="subsection">
-       <h4>Dual-Comb Holography</h4>
-       <p>Dual-comb holography extends metrological precision to coherent imaging, enabling scan-free wavefront reconstruction and hyperspectral three-dimensional measurements.</p>
-       <p class="emphasis">Scientific opportunity: Linking spectral accuracy with spatial phase information.</p>
-      </div>
-     </div>
-
-     <div class="view-general">
-<p>Optical frequency combs are specialized lasers that produce perfectly ordered colors of light. This structure allows scientists to measure optical frequencies with extraordinary accuracy.</p>
-      <h3>What they are</h3>
-      <p>Frequency combs are laser sources whose light forms a perfectly ordered set of colors. This structure makes them ideal tools for extremely precise measurements.</p>
-      <h3>Why they matter</h3>
-      <p>They allow scientists to measure light with exceptional accuracy, improving everything from spectroscopy to imaging.</p>
-      <div class="subsection">
-       <h4>Frequency Metrology</h4>
-       <p>Frequency combs act as precise rulers for light.</p>
-       <p class="emphasis">Impact: Accurate measurements are the foundation of reliable science and technology.</p>
-      </div>
-      <div class="subsection">
-       <h4>Dual-Comb Spectroscopy</h4>
-       <p>This method records detailed spectra very quickly without moving mechanical parts.</p>
-       <p class="emphasis">Impact: Faster measurements allow researchers to study systems that change over time.</p>
-      </div>
-      <div class="subsection">
-       <h4>Dual-Comb Holography</h4>
-       <p>This technique combines precise spectroscopy with three-dimensional imaging.</p>
-       <p class="emphasis">Impact: It opens the door to highly accurate optical measurements that capture both structure and composition.</p>
-      </div>
-     </div>
-    </section>
-
-        <section id="questions" class="research-section">
-          <h2>Key Scientific Questions</h2>
-          <div class="view-scientific">
-            <ul>
-              <li>Which observables fundamentally govern polariton transport and dissipation?</li>
-              <li>How can nanoscale measurements achieve metrological reliability?</li>
-              <li>What experimental conditions enable controllable strong and ultrastrong coupling?</li>
-              <li>How can instrumentation reshape the questions we are able to ask?</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="philosophy" class="research-section">
-          <h2>Experimental Philosophy</h2>
-          <div class="view-scientific">
-            <p>I view instrumentation as a scientific contribution in its own right. By designing measurement platforms that unify spatial resolution, temporal access, and spectral accuracy, my objective is to transform nano-optics into a predictive discipline capable of guiding the next generation of photonic technologies.</p>
-          </div>
-        </section>
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -223,7 +124,7 @@
       </div>
       <div>
         <strong>Contact</strong>
-        <p class="footer-note">edoardo.vicentini@polimi.it</p>
+        <p class="footer-note">e.vicentini@nanogune.eu</p>
         <p class="footer-note">ORCID: 0000-0003-1850-2327</p>
       </div>
       <div>

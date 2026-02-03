@@ -1068,74 +1068,72 @@ blockquote {
   display: none;
 }
 
-.research-layout {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-.research-sidebar .sticky {
-  position: sticky;
-  top: 1.2rem;
-  padding: 1rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-alt);
-}
-
-.sidebar-title {
-  font-weight: 600;
-  margin-bottom: 0.6rem;
-}
-
-.sidebar-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 0.4rem;
-}
-
-.sidebar-nav a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.sidebar-nav a:hover {
-  color: var(--accent);
-}
-
-.research-content {
-  display: grid;
-  gap: 2.4rem;
-}
-
-.research-section h2 {
-  margin-bottom: 0.6rem;
-}
-
-.research-section h3 {
-  margin-top: 1.2rem;
-}
-
-.subsection {
-  margin-top: 1.1rem;
-  padding-top: 0.6rem;
-  border-top: 1px solid var(--border);
-}
-
-.emphasis {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
 @media (max-width: 900px) {
-  .research-layout {
-    grid-template-columns: 1fr;
-  }
+    .card-block {
+  background: var(--surface, #fff);
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
+  border-radius: 18px;
+  padding: 22px;
+  margin: 16px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
 
-  .research-sidebar .sticky {
-    position: static;
+html[data-theme="dark"] .card-block {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.research-block h2 {
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.research-block .lead {
+  font-weight: 600;
+}
+
+.app-list {
+  margin-top: 0.8rem;
+}
+
+.app-item {
+  margin-top: 10px;
+}
+
+.app-item b {
+  display: inline-block;
+  min-width: 220px;
+}
+
+.compact-list {
+  margin: 0.6rem 0 0;
+  padding-left: 1.1rem;
+}
+
+@media (max-width: 720px) {
+  .app-item b {
+    min-width: auto;
+    display: inline;
+  }
+}
+
+.cv-downloads {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.6rem 1rem;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
   }
 }
