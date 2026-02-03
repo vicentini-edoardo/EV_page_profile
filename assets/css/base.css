@@ -705,9 +705,19 @@ blockquote {
 
 .pub-row {
   display: grid;
-  grid-template-columns: 1fr minmax(140px, 180px);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   align-items: start;
+}
+
+.pub-row.has-media {
+  grid-template-columns: 160px 1fr;
+  align-items: start;
+}
+
+.pub-media {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .pub-title a {
@@ -766,6 +776,10 @@ blockquote {
 
 @media (max-width: 720px) {
   .pub-row {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-row.has-media {
     grid-template-columns: 1fr;
   }
 
@@ -1176,4 +1190,46 @@ html[data-theme="dark"] #research-page .card-block {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.12);
   box-shadow: none;
+}
+
+
+.pub-images {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0;
+}
+
+.pub-images img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
+  background: var(--bg-alt, #fff);
+}
+
+@media (max-width: 720px) {
+  .pub-images img {
+    width: 100%;
+  }
+}
+
+
+.pub-media {
+  width: 100%;
+}
+
+.pub-media img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
+  background: var(--bg-alt, #fff);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.pub-media img.is-visible {
+  opacity: 1;
 }

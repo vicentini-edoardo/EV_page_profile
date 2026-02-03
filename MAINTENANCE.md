@@ -47,3 +47,9 @@
 - Awards slideshow uses `assets/js/features/slideshow.js`.
 - Research view toggle uses `assets/js/features/toggleView.js`.
 - `talks.html` remains a redirect to `conference.html` for backward compatibility.
+
+## Publication images
+
+- Map DOI to one or more images in `assets/data/publication_images.json`.
+- Example: `"10.1038/s41566-021-00892-x": ["assets/img/publications/dual-comb-1.jpg", "assets/img/publications/dual-comb-2.jpg"]`
+- Place images in `assets/img/publications/`.

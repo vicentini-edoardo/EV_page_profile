@@ -111,3 +111,8 @@ Project pages checklist:
 - Structured lists live in `assets/data/*.json`.
 
 See `MAINTENANCE.md` for the folder structure and editing guidelines.
+
+## Publication images
+
+- Add a DOI→images mapping in `assets/data/publication_images.json`.
+- Put image files in `assets/img/publications/`.

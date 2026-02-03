@@ -71,11 +71,31 @@
       return `<div class="pub-doi"><a href="${pub.doi_url || `https://doi.org/${doi}`}" target="_blank" rel="noopener">doi: ${doi}</a></div>`;
     }
 
+
+    function getPublicationImages(pub) {
+      if (!pub.doi) return [];
+      const doiKey = normalizeDoi(pub.doi);
+      if (!doiKey) return [];
+      const images = imageMap[doiKey] || [];
+      return Array.isArray(images) ? images : [];
+    }
+
+    function renderImages(pub) {
+      const images = getPublicationImages(pub);
+      if (!images.length) return '';
+      const payload = encodeURIComponent(JSON.stringify(images));
+      const title = escapeHtml(pub.title);
+      return `<div class="pub-media pub-slideshow" data-images="${payload}" data-title="${title}"></div>`;
+    }
+
     function renderPublication(pub) {
       const authors = formatAuthors(pub);
       const titleLink = pub.doi_url || pub.openalex_url || '#';
+      const imagesHtml = renderImages(pub);
+      const mediaHtml = imagesHtml ? imagesHtml : '';
       return `
-      <article class="pub-item pub-row">
+      <article class="pub-item pub-row${imagesHtml ? ' has-media' : ''}">
+        ${mediaHtml}
         <div class="pub-main">
           <h3 class="pub-title"><a href="${titleLink}" target="_blank" rel="noopener">${escapeHtml(pub.title)}</a></h3>
           ${authors ? `<div class="pub-authors">${escapeHtml(authors)}</div>` : ''}
@@ -235,7 +255,35 @@
     function renderList() {
       const filtered = publications.filter(matchesFilters);
       listEl.innerHTML = filtered.map(renderPublication).join('');
+      initSlideshows();
     }
+
+
+    function initSlideshows() {
+      if (!global.SlideshowManager) return;
+      const containers = Array.from(document.querySelectorAll('.pub-slideshow'));
+      if (!containers.length) return;
+      global.SlideshowManager.clear();
+      containers.forEach((container) => {
+        const data = container.dataset.images || '';
+        let images = [];
+        try {
+          images = JSON.parse(decodeURIComponent(data));
+        } catch (err) {
+          images = [];
+        }
+        if (!Array.isArray(images) || !images.length) return;
+        const title = container.dataset.title || 'Publication figure';
+        global.SlideshowManager.createSlideshow({
+          container,
+          images,
+          intervalMs: 2000,
+          altBase: title,
+          enableLightbox: false
+        });
+      });
+    }
+
 
     const selectedFetch = fetch('assets/data/publications.selected.json')
       .then((response) => response.json())
@@ -246,7 +294,18 @@
       })
       .catch(() => {});
 
-    selectedFetch.then(() => fetch('assets/data/publications.json'))
+    selectedFetch.then(() => fetch('assets/data/publication_images.json')
+      .then((response) => response.json())
+      .then((data) => {
+        imageMap = data || {};
+        Object.keys(imageMap).forEach((key) => {
+          if (key.startsWith('_')) delete imageMap[key];
+        });
+      })
+      .catch(() => {
+        imageMap = {};
+      }))
+      .then(() => fetch('assets/data/publications.json'))
       .then((response) => response.json())
       .then((data) => {
         publications = Array.isArray(data) ? data : data.publications;
