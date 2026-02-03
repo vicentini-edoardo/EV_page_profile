@@ -194,12 +194,14 @@
     });
 
     const maxCount = Math.max(1, ...totals);
-    const chartHeight = 60;
-    const chartTop = 6;
+    const totalSum = totals.reduce((acc, val) => acc + val, 0);
+    const chartHeight = 64;
+    const chartTop = 10;
     const chartBase = chartTop + chartHeight;
+    const maxScale = Math.ceil(maxCount * 1.15);
 
     const bars = totals.map((count, idx) => {
-      const height = Math.round((count / maxCount) * chartHeight);
+      const height = maxScale ? Math.round((count / maxScale) * chartHeight) : 0;
       return `
         <g>
           <rect x="${idx * 24}" y="${chartBase - height}" width="16" height="${height}" rx="2" class="pub-bar" />
@@ -208,11 +210,12 @@
     }).join('');
 
     const labels = years.map((year, idx) => `
-      <text x="${idx * 24 + 8}" y="74" text-anchor="middle" class="pub-bar-label">${String(year).slice(2)}</text>
+      <text x="${idx * 24 + 8}" y="82" text-anchor="middle" class="pub-bar-label">${String(year).slice(2)}</text>
     `).join('');
 
-    const gridLines = [0.5, 1].map((fraction, idx) => {
-      const value = Math.round(maxCount * fraction);
+    const tickFractions = [0.33, 0.66, 1];
+    const gridLines = tickFractions.map((fraction) => {
+      const value = Math.round(maxScale * fraction);
       const y = chartBase - Math.round(chartHeight * fraction);
       return `
         <g class="pub-grid">
@@ -222,7 +225,8 @@
     }).join('');
 
     chartEl.innerHTML = `
-      <svg class="pub-chart" viewBox="0 0 240 80" role="img" aria-label="Total citations over last ten years">
+      <div class="citations-summary-total">Total citations (10 years): ${totalSum}</div>
+      <svg class="pub-chart" viewBox="0 0 240 88" role="img" aria-label="Total citations over last ten years">
         ${gridLines}
         ${bars}
         ${labels}

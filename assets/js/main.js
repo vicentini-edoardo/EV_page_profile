@@ -138,4 +138,8 @@
     window.addEventListener('resize', resize);
     resize();
   }
+
+  if (document.getElementById('research-page') && window.initResearchToggle) {
+    window.initResearchToggle();
+  }
 })();
