@@ -66,8 +66,8 @@ The conference page provides download links only (no inline preview).
 
 Award photos are loaded from per-award folders using a manifest file:
 
-- Folder: `images/Awards/<award_slug>/`
-- Manifest: `images/Awards/<award_slug>/images.json`
+- Folder: `assets/img/awards/<award_slug>/`
+- Manifest: `assets/img/awards/<award_slug>/images.json`
 
 Example `images.json`:
 
@@ -102,3 +102,7 @@ Project pages checklist:
 - Open projects.html and click through each project page
 - Confirm dark mode works within /projects/*.html
 -->
+
+## Maintenance
+
+See `MAINTENANCE.md` for the folder structure and editing guidelines.

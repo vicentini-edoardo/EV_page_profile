@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-AWARDS_DIR = ROOT / 'images' / 'Awards'
+AWARDS_DIR = ROOT / 'assets' / 'img' / 'awards'
 ALLOWED = {'.jpg', '.jpeg', '.png', '.webp'}
 
 
