@@ -105,4 +105,9 @@ Project pages checklist:
 
 ## Maintenance
 
+## Update website text
+
+- Edit Markdown in `content/` (research + CV intros).
+- Structured lists live in `assets/data/*.json`.
+
 See `MAINTENANCE.md` for the folder structure and editing guidelines.

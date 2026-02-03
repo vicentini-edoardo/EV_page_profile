@@ -20,7 +20,8 @@
 
 ## Editing content
 
-- Research: `research.html`
+- Narrative text (Research + CV intros): edit `/content/*.md`
+- Research page: `research.html` (structure only)
 - Publications: `assets/data/publications.json` (generated via OpenAlex script)
 - Projects: `assets/data/projects.json`
 - Funding: `assets/data/funding.json`

@@ -1068,6 +1068,35 @@ blockquote {
   display: none;
 }
 
+
+.mode-cv-scientific .view-industry {
+  display: none;
+}
+
+.mode-cv-industry .view-scientific {
+  display: none;
+}
+
+.md-block h1,
+.md-block h2,
+.md-block h3 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.md-block p {
+  margin: 0.4rem 0 0.8rem;
+}
+
+.md-block ul {
+  margin: 0.4rem 0 0.9rem;
+  padding-left: 1.2rem;
+}
+
+.md-block li {
+  margin: 0.25rem 0;
+}
+
 .card-block {
   background: var(--bg-alt, #fff);
   border: 1px solid var(--border, rgba(0, 0, 0, 0.08));

@@ -1,0 +1,1 @@
+Applied physicist with 8+ years of experience building complex systems, developing data pipelines, and solving hard technical problems. Skilled in lasers, imaging, precision sensing, and automation with strong Python/MATLAB workflows, clean-code practices, and collaborative delivery.

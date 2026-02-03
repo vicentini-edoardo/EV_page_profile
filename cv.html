@@ -38,6 +38,10 @@
           <p class="tagline">Download the scientific or industry CV below.</p>
         </div>
       </div>
+      <div class="view-toggle no-print" role="tablist" aria-label="CV view toggle">
+        <button type="button" class="view-toggle-btn" data-view="scientific" role="tab" aria-selected="true">Scientific view</button>
+        <button type="button" class="view-toggle-btn" data-view="industry" role="tab" aria-selected="false">Industry view</button>
+      </div>
       <div class="cv-downloads no-print">
         <a class="btn primary" href="CV/CV_Edoardo Vicentini.pdf">Download scientific CV</a>
         <a class="btn" href="CV/CV_EV.pdf">Download industry CV</a>
@@ -45,9 +49,8 @@
     </section>
 
     <section class="card-block">
-      <h2>Profile</h2>
-      <p class="lead">MSCA post-doctoral researcher, CIC nanoGUNE, Nanooptics.</p>
-      <p>Optical engineer and applied physicist with 8+ years of experience building complex systems, developing data pipelines, and solving hard technical problems.</p>
+      <div class="md-block view-scientific" data-md="content/cv_scientific_intro.md"></div>
+      <div class="md-block view-industry" data-md="content/cv_industry_intro.md"></div>
       <p class="meta">San Sebastian, Spain · e.vicentini@nanogune.eu · ORCID: 0000-0003-1850-2327</p>
     </section>
 
@@ -73,8 +76,6 @@
       </div>
     </section>
 
-    
-
     <section class="card-block">
       <h2>Key skills</h2>
       <div class="skills-grid">
@@ -86,8 +87,6 @@
         <div><strong>Project leadership</strong><br/>Experiment planning, documentation, and cross-team communication.</div>
       </div>
     </section>
-
-    
 
     <section class="card-block">
       <h2>Languages</h2>
@@ -117,6 +116,8 @@
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
+  <script src="assets/js/core/markdown.js"></script>
+  <script src="assets/js/core/content.js"></script>
   <script src="assets/js/features/toggleView.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

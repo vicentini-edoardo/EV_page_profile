@@ -1,0 +1,1 @@
+MSCA post-doctoral researcher at CIC nanoGUNE (Nanooptics Group) working on pump–probe nanospectroscopy, s-SNOM, nano-FTIR, and optical frequency-comb metrology. I develop instrumentation that merges near-field imaging with ultrafast timing and spectral traceability to extract quantitative observables from surface light–matter interaction.

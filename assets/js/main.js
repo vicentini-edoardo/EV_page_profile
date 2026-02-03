@@ -154,6 +154,50 @@
     resize();
   }
 
+
+  function initMarkdownBlocks() {
+    if (!global.ContentLoader) return;
+    const blocks = qsa('.md-block[data-md]');
+    if (!blocks.length) return;
+    blocks.forEach((block) => {
+      const path = block.getAttribute('data-md');
+      if (!path) return;
+      global.ContentLoader.renderMarkdownInto(block, path);
+    });
+  }
+
+  function initCvToggle() {
+    const cvRoot = qs('#cv-page') || qs('main#main');
+    if (!cvRoot) return;
+    const cvToggle = qsa('.view-toggle-btn[data-view="scientific"], .view-toggle-btn[data-view="industry"]', cvRoot);
+    if (!cvToggle.length) return;
+    const storageKey = 'cvView';
+    const stored = global.StorageUtil ? global.StorageUtil.get(storageKey, 'scientific') : 'scientific';
+    const initial = stored === 'industry' ? 'industry' : 'scientific';
+
+    const applyMode = (mode) => {
+      document.body.classList.remove('mode-cv-scientific', 'mode-cv-industry');
+      document.body.classList.add(mode === 'industry' ? 'mode-cv-industry' : 'mode-cv-scientific');
+      if (global.StorageUtil) {
+        global.StorageUtil.set(storageKey, mode);
+      } else {
+        localStorage.setItem(storageKey, mode);
+      }
+      cvToggle.forEach((btn) => {
+        const isActive = btn.dataset.view === mode;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        btn.tabIndex = isActive ? 0 : -1;
+      });
+    };
+
+    cvToggle.forEach((btn) => {
+      btn.addEventListener('click', () => applyMode(btn.dataset.view));
+    });
+
+    applyMode(initial);
+  }
+
   function initPageModules() {
     const modules = global.PageModules || {};
     if (qs('#research-page') && modules.research) modules.research();
@@ -170,6 +214,8 @@
     initSelectedPublications();
     initCopyEmail();
     initDemo();
+    initMarkdownBlocks();
+    initCvToggle();
     initPageModules();
   });
 })(window);
