@@ -1070,7 +1070,7 @@ blockquote {
 
 @media (max-width: 900px) {
     .card-block {
-  background: var(--surface, #fff);
+  background: var(--bg-alt, #fff);
   border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
   border-radius: 18px;
   padding: 22px;
