@@ -109,6 +109,15 @@ def extract_pages(biblio: Dict[str, Any]) -> str:
     return first_page or last_page or ""
 
 
+
+
+def last_ten_years_counts(counts_by_year: List[Dict[str, Any]]) -> Dict[str, Any]:
+    current_year = datetime.utcnow().year
+    years = [current_year - i for i in range(9, -1, -1)]
+    counts_lookup = {item.get("year"): item.get("cited_by_count", 0) for item in counts_by_year}
+    counts = [int(counts_lookup.get(year, 0) or 0) for year in years]
+    return {"years": years, "counts": counts}
+
 def last_five_years_counts(counts_by_year: List[Dict[str, Any]]) -> Dict[str, Any]:
     current_year = datetime.utcnow().year
     years = [current_year - i for i in range(4, -1, -1)]
@@ -144,6 +153,7 @@ def map_work(work: Dict[str, Any]) -> Dict[str, Any]:
     biblio = work.get("biblio", {}) or {}
 
     counts = last_five_years_counts(work.get("counts_by_year", []) or [])
+    counts_10 = last_ten_years_counts(work.get("counts_by_year", []) or [])
 
     year = work.get("publication_year")
     if not year:
@@ -165,6 +175,7 @@ def map_work(work: Dict[str, Any]) -> Dict[str, Any]:
         "doi_url": doi_url,
         "citations_total": int(work.get("cited_by_count") or 0),
         "citations_last5": counts,
+        "citations_by_year": counts_10,
     }
 
 

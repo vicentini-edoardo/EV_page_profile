@@ -54,7 +54,15 @@
         </div>
       </div>
 
-      <div class="filter-bar">
+            <div class="card" id="citations-summary">
+        <div class="citations-summary-header">
+          <h2>Total citations by year (last 10 years)</h2>
+          <p class="meta">Aggregated from OpenAlex counts_by_year.</p>
+        </div>
+        <div id="citations-summary-chart" class="citations-summary-chart">Loading citation trends...</div>
+      </div>
+
+<div class="filter-bar">
         <select id="filter-year" aria-label="Filter by year"></select>
         <select id="filter-type" aria-label="Filter by type"></select>
         <input id="filter-search" type="search" placeholder="Search by keyword" aria-label="Search publications" />

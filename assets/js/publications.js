@@ -11,6 +11,11 @@
   let activeTags = new Set();
   let publications = [];
 
+  function normalizeDoi(doi) {
+    if (!doi) return "";
+    return String(doi).replace(/^https?:\/\/doi\.org\//i, "").trim().toLowerCase();
+  }
+
   function escapeHtml(value) {
     return String(value || '')
       .replace(/&/g, '&amp;')
@@ -64,51 +69,6 @@
     return `<div class="pub-doi"><a href="${pub.doi_url || `https://doi.org/${doi}`}" target="_blank" rel="noopener">doi: ${doi}</a></div>`;
   }
 
-  function renderCitationPanel(pub) {
-    const total = pub.citations_total || 0;
-    const years = pub.citations_last5 ? pub.citations_last5.years : [];
-    const counts = pub.citations_last5 ? pub.citations_last5.counts : [];
-    const maxCount = Math.max(1, ...counts);
-
-    const chartHeight = 40;
-    const chartTop = 4;
-    const chartBase = chartTop + chartHeight;
-    const tickValues = [0, Math.round(maxCount / 2), maxCount];
-
-    const gridLines = tickValues.map((value) => {
-      const y = chartBase - Math.round((value / maxCount) * chartHeight);
-      return `
-        <g class="pub-grid">
-          <line x1="0" y1="${y}" x2="110" y2="${y}" />
-          <text x="108" y="${y - 2}" text-anchor="end" class="pub-grid-label">${value}</text>
-        </g>`;
-    }).join('');
-
-    const bars = counts.map((count, idx) => {
-      const height = Math.round((count / maxCount) * chartHeight);
-      const yearLabel = years[idx] || '';
-      return `
-        <g>
-          <rect x="${idx * 22}" y="${chartBase - height}" width="14" height="${height}" rx="2" class="pub-bar" />
-          <title>${yearLabel}: ${count} citations</title>
-        </g>`;
-    }).join('');
-
-    const labels = years.map((year, idx) => `
-      <text x="${idx * 22 + 7}" y="58" text-anchor="middle" class="pub-bar-label">${year ? String(year).slice(2) : ''}</text>
-    `).join('');
-
-    return `
-      <a class="pub-metrics" href="${pub.openalex_url}" target="_blank" rel="noopener" aria-label="Open OpenAlex page for this work">
-        <div class="pub-metrics-total">Citations: ${total}</div>
-        <svg class="pub-chart" viewBox="0 0 110 60" role="img" aria-label="Citations over last five years">
-          ${gridLines}
-          ${bars}
-          ${labels}
-        </svg>
-      </a>`;
-  }
-
   function renderPublication(pub) {
     const authors = formatAuthors(pub);
     const titleLink = pub.doi_url || pub.openalex_url || '#';
@@ -121,15 +81,20 @@
           ${buildVenueLine(pub)}
           ${renderDoiLine(pub)}
         </div>
-        <div class="pub-side">
-          ${renderCitationPanel(pub)}
-        </div>
       </article>`;
   }
 
+  let selectedDois = [];
+
   function renderSelected(items) {
     if (!selectedList) return;
-    const selected = items.filter((pub) => pub.selected);
+    const selected = selectedDois.length
+      ? items.filter((pub) => selectedDois.includes(normalizeDoi(pub.doi)))
+      : items.filter((pub) => pub.selected);
+    if (selectedDois.length && !selected.length) {
+      selectedList.innerHTML = "<p>No selected publications found.</p>";
+      return;
+    }
     const list = selected.length ? selected.slice(0, 8) : items.slice(0, 5);
     selectedList.innerHTML = list.map(renderPublication).join('');
   }
@@ -203,12 +168,82 @@
     return haystack.includes(query);
   }
 
+
+  function renderSummaryChart(items) {
+    const chartEl = document.getElementById('citations-summary-chart');
+    if (!chartEl) return;
+    const currentYear = new Date().getFullYear();
+    const years = Array.from({ length: 10 }, (_, idx) => currentYear - 9 + idx);
+    const totals = years.map(() => 0);
+
+    items.forEach((pub) => {
+      const byYear = pub.citations_by_year || pub.citations_last5 || null;
+      if (!byYear) return;
+      let y = [];
+      let c = [];
+      if (byYear.years && byYear.counts) {
+        y = byYear.years;
+        c = byYear.counts;
+      }
+      y.forEach((year, idx) => {
+        const pos = years.indexOf(year);
+        if (pos !== -1) {
+          totals[pos] += Number(c[idx] || 0);
+        }
+      });
+    });
+
+    const maxCount = Math.max(1, ...totals);
+    const chartHeight = 60;
+    const chartTop = 6;
+    const chartBase = chartTop + chartHeight;
+
+    const bars = totals.map((count, idx) => {
+      const height = Math.round((count / maxCount) * chartHeight);
+      return `
+        <g>
+          <rect x="${idx * 24}" y="${chartBase - height}" width="16" height="${height}" rx="2" class="pub-bar" />
+          <title>${years[idx]}: ${count} citations</title>
+        </g>`;
+    }).join('');
+
+    const labels = years.map((year, idx) => `
+      <text x="${idx * 24 + 8}" y="74" text-anchor="middle" class="pub-bar-label">${String(year).slice(2)}</text>
+    `).join('');
+
+    const gridLines = [0.5, 1].map((fraction, idx) => {
+      const value = Math.round(maxCount * fraction);
+      const y = chartBase - Math.round(chartHeight * fraction);
+      return `
+        <g class="pub-grid">
+          <line x1="0" y1="${y}" x2="240" y2="${y}" />
+          <text x="238" y="${y - 2}" text-anchor="end" class="pub-grid-label">${value}</text>
+        </g>`;
+    }).join('');
+
+    chartEl.innerHTML = `
+      <svg class="pub-chart" viewBox="0 0 240 80" role="img" aria-label="Total citations over last ten years">
+        ${gridLines}
+        ${bars}
+        ${labels}
+      </svg>`;
+  }
+
   function renderList() {
     const filtered = publications.filter(matchesFilters);
     listEl.innerHTML = filtered.map(renderPublication).join('');
   }
 
-  fetch('assets/data/publications.json')
+  const selectedFetch = fetch('assets/data/publications.selected.json')
+    .then((response) => response.json())
+    .then((data) => {
+      if (Array.isArray(data)) {
+        selectedDois = data.map((d) => normalizeDoi(d)).filter(Boolean);
+      }
+    })
+    .catch(() => {});
+
+  selectedFetch.then(() => fetch('assets/data/publications.json'))
     .then((response) => response.json())
     .then((data) => {
       publications = Array.isArray(data) ? data : data.publications;
@@ -223,6 +258,7 @@
         return (a.title || '').localeCompare(b.title || '');
       });
 
+      renderSummaryChart(publications);
       renderSelected(publications);
       renderTags(publications);
       renderYearOptions(publications);

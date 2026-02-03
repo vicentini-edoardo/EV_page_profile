@@ -37,24 +37,41 @@
 
   const selectedList = document.getElementById('selected-publications');
   if (selectedList) {
+
+    const normalizeDoi = (doi) => {
+      if (!doi) return '';
+      return String(doi).replace(/^https?:\/\/doi\.org\//i, '').trim().toLowerCase();
+    };
+
     const formatAuthors = (pub) => {
       if (Array.isArray(pub.authors)) return pub.authors.join(', ');
       if (typeof pub.authors === 'string') return pub.authors;
       return '';
     };
 
-    fetch('assets/data/publications.json')
-      .then((response) => response.json())
-      .then((data) => {
-        const publications = Array.isArray(data) ? data : (data.publications || []);
+    Promise.all([
+      fetch('assets/data/publications.json').then((r) => r.json()).catch(() => []),
+      fetch('assets/data/publications.selected.json').then((r) => r.json()).catch(() => [])
+    ])
+      .then(([pubData, selectedData]) => {
+        const publications = Array.isArray(pubData) ? pubData : (pubData.publications || []);
+        const selectedDois = Array.isArray(selectedData) ? selectedData.map((d) => normalizeDoi(d)).filter(Boolean) : [];
         const sorted = publications.slice().sort((a, b) => {
           const yearA = a.year || 0;
           const yearB = b.year || 0;
           if (yearA !== yearB) return yearB - yearA;
           return (a.title || '').localeCompare(b.title || '');
         });
-        const selected = sorted.filter((pub) => pub.selected);
-        const items = selected.length ? selected : sorted.slice(0, 3);
+        let items = [];
+        if (selectedDois.length) {
+          items = sorted.filter((pub) => selectedDois.includes(normalizeDoi(pub.doi)));
+        } else {
+          items = sorted.filter((pub) => pub.selected);
+        }
+        if (!items.length) {
+          selectedList.innerHTML = '<p>Selected publications are not available yet.</p>';
+          return;
+        }
         selectedList.innerHTML = items
           .map((pub) => {
             const authors = formatAuthors(pub);

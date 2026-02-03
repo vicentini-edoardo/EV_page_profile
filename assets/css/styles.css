@@ -1012,3 +1012,12 @@ blockquote {
 .award-slideshow {
   cursor: pointer;
 }
+
+
+.citations-summary-chart {
+  margin-top: 0.8rem;
+}
+
+#citations-summary {
+  margin-bottom: 1.5rem;
+}
