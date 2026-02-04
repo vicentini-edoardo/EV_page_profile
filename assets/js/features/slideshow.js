@@ -169,6 +169,10 @@
         if (this.isRunning || globalPaused) return;
         this.isRunning = true;
         this.intervalId = setInterval(() => {
+          if (document.visibilityState !== 'visible' || globalPaused) {
+            this.stop();
+            return;
+          }
           this.next();
         }, intervalMs);
       },
