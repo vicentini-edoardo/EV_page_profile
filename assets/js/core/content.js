@@ -23,7 +23,10 @@
       el.innerHTML = '<p>Content unavailable. Please refresh or check deployment.</p>';
       return;
     }
-    const renderer = global.Markdown ? global.Markdown.renderMarkdownToHtml : (t) => t;
+    let renderer = global.Markdown ? global.Markdown.renderMarkdownToHtml : (t) => t;
+    if (el.dataset.mdLayout === 'cards' && global.Markdown && global.Markdown.renderMarkdownToHtmlWithSections) {
+      renderer = global.Markdown.renderMarkdownToHtmlWithSections;
+    }
     el.innerHTML = renderer(markdown);
   }
 
