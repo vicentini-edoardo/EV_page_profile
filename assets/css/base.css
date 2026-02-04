@@ -951,6 +951,11 @@ blockquote {
   height: 60px;
 }
 
+#citations-summary .pub-chart {
+  height: 180px;
+  min-width: 420px;
+}
+
 
 .pub-grid line {
   stroke: var(--border);
@@ -1225,7 +1230,8 @@ blockquote {
 
 
 .citations-summary-chart {
-  margin-top: 0.8rem;
+  margin-top: var(--space-3);
+  overflow-x: auto;
 }
 
 #citations-summary {
@@ -1236,9 +1242,22 @@ blockquote {
 .citations-summary-total {
   font-size: var(--step--1);
   color: var(--muted);
-  margin-bottom: 0.4rem;
+  margin-bottom: var(--space-3);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  flex-wrap: wrap;
 }
 
+.citations-total-value {
+  font-size: var(--step-2);
+  font-weight: 700;
+  color: var(--text);
+}
+
+#citations-summary .citations-summary-header h2 {
+  font-size: var(--step-1);
+}
 
 .view-toggle {
   display: inline-flex;
@@ -1414,6 +1433,10 @@ html[data-theme="dark"] #research-page .card-block {
 
 .pub-media {
   width: 100%;
+}
+
+.pub-slideshow {
+  cursor: pointer;
 }
 
 .pub-media img {

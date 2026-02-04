@@ -181,22 +181,26 @@
 
       const maxCount = Math.max(1, ...totals);
       const totalSum = totals.reduce((acc, val) => acc + val, 0);
-      const chartHeight = 64;
-      const chartTop = 10;
+      const chartHeight = 120;
+      const chartTop = 12;
       const chartBase = chartTop + chartHeight;
       const maxScale = Math.ceil(maxCount * 1.15);
+      const slotWidth = 36;
+      const barWidth = 18;
+      const chartWidth = years.length * slotWidth;
 
       const bars = totals.map((count, idx) => {
         const height = maxScale ? Math.round((count / maxScale) * chartHeight) : 0;
+        const x = idx * slotWidth + (slotWidth - barWidth) / 2;
         return `
         <g>
-          <rect x="${idx * 24}" y="${chartBase - height}" width="16" height="${height}" rx="2" class="pub-bar" />
+          <rect x="${x}" y="${chartBase - height}" width="${barWidth}" height="${height}" rx="2" class="pub-bar" />
           <title>${years[idx]}: ${count} citations</title>
         </g>`;
       }).join('');
 
       const labels = years.map((year, idx) => `
-      <text x="${idx * 24 + 8}" y="82" text-anchor="middle" class="pub-bar-label">${String(year).slice(2)}</text>
+      <text x="${idx * slotWidth + slotWidth / 2}" y="${chartBase + 22}" text-anchor="middle" class="pub-bar-label">${year}</text>
     `).join('');
 
       const tickFractions = [0.33, 0.66, 1];
@@ -205,14 +209,14 @@
         const y = chartBase - Math.round(chartHeight * fraction);
         return `
         <g class="pub-grid">
-          <line x1="0" y1="${y}" x2="240" y2="${y}" />
-          <text x="238" y="${y - 2}" text-anchor="end" class="pub-grid-label">${value}</text>
+          <line x1="0" y1="${y}" x2="${chartWidth}" y2="${y}" />
+          <text x="${chartWidth - 2}" y="${y - 2}" text-anchor="end" class="pub-grid-label">${value}</text>
         </g>`;
       }).join('');
 
       chartEl.innerHTML = `
-      <div class="citations-summary-total">Total citations (10 years): ${totalSum}</div>
-      <svg class="pub-chart" viewBox="0 0 240 88" role="img" aria-label="Total citations over last ten years">
+      <div class="citations-summary-total">Total citations (10 years): <span class="citations-total-value">${totalSum}</span></div>
+      <svg class="pub-chart" viewBox="0 0 ${chartWidth} 180" role="img" aria-label="Total citations over last ten years">
         ${gridLines}
         ${bars}
         ${labels}
@@ -328,7 +332,7 @@
           images,
           intervalMs: 2000,
           altBase: title,
-          enableLightbox: false
+          enableLightbox: true
         });
       });
     }
