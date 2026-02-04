@@ -12,6 +12,7 @@
     let activeTags = new Set();
     let publications = [];
     let selectedDois = [];
+    let imageMap = {};
 
     function normalizeDoi(doi) {
       if (!doi) return '';
@@ -71,6 +72,54 @@
       return `<div class="pub-doi"><a href="${pub.doi_url || `https://doi.org/${doi}`}" target="_blank" rel="noopener">doi: ${doi}</a></div>`;
     }
 
+    function normalizeImagePath(path, baseDir) {
+      if (!path) return '';
+      if (/^(https?:)?\/\//.test(path) || path.startsWith('assets/')) return path;
+      const cleanBase = baseDir.replace(/\/$/, '');
+      return `${cleanBase}/${path}`;
+    }
+
+    function fetchFolderImages(dir) {
+      if (!dir) return Promise.resolve([]);
+      const cleanDir = String(dir).replace(/\/$/, '');
+      if (!cleanDir) return Promise.resolve([]);
+      return fetch(`${cleanDir}/images.json`)
+        .then((response) => (response.ok ? response.json() : []))
+        .then((data) => {
+          const list = Array.isArray(data) ? data : (data.images || []);
+          if (!Array.isArray(list)) return [];
+          return list.filter(Boolean).map((img) => normalizeImagePath(img, cleanDir));
+        })
+        .catch(() => []);
+    }
+
+    function resolveImageMap(data) {
+      imageMap = data || {};
+      Object.keys(imageMap).forEach((key) => {
+        if (key.startsWith('_')) delete imageMap[key];
+      });
+
+      const tasks = Object.entries(imageMap).map(([doi, value]) => {
+        if (Array.isArray(value)) {
+          imageMap[doi] = value.filter(Boolean);
+          return Promise.resolve();
+        }
+        if (typeof value === 'string') {
+          return fetchFolderImages(value).then((images) => {
+            imageMap[doi] = images;
+          });
+        }
+        if (value && typeof value === 'object' && typeof value.dir === 'string') {
+          return fetchFolderImages(value.dir).then((images) => {
+            imageMap[doi] = images;
+          });
+        }
+        imageMap[doi] = [];
+        return Promise.resolve();
+      });
+
+      return Promise.all(tasks);
+    }
 
     function getPublicationImages(pub) {
       if (!pub.doi) return [];
@@ -296,12 +345,7 @@
 
     selectedFetch.then(() => fetch('assets/data/publication_images.json')
       .then((response) => response.json())
-      .then((data) => {
-        imageMap = data || {};
-        Object.keys(imageMap).forEach((key) => {
-          if (key.startsWith('_')) delete imageMap[key];
-        });
-      })
+      .then((data) => resolveImageMap(data))
       .catch(() => {
         imageMap = {};
       }))

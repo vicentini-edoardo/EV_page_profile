@@ -16,7 +16,7 @@
                 <p>${project.summary}</p>
                 <p class="meta"><strong>Role:</strong> ${project.role}</p>
                 <div class="tag-list">${(project.methods || []).map((m) => `<span class="badge">${m}</span>`).join('')}</div>
-                <a href="projects/${project.slug}.html">Open project</a>
+                <a class="btn ghost" href="projects/${project.slug}.html">Open project</a>
               </article>`;
           })
           .join('');

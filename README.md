@@ -23,7 +23,7 @@ A multi-page, academic-first personal website designed for GitHub Pages. It uses
 ## Customize
 
 - Run the OpenAlex sync to update publications; update `assets/data/projects.json` for projects.
-- Replace `CV/CV_placeholder.pdf` with your real CV.
+- Replace the PDFs in `CV/` (for example, `CV_Edoardo Vicentini.pdf`, `CV_EV.pdf`) with your real CVs.
 - Swap SVGs in `assets/img/` with real figures or photos.
 - Update content text directly in the HTML files.
 

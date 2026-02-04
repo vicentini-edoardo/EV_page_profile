@@ -21,6 +21,11 @@
     const lines = safe.split(/\r?\n/);
     const blocks = [];
     let inList = false;
+    const extractHeading = (text) => {
+      const match = text.match(/^(.*?)(?:\s*\{#([\w-]+)\})?$/);
+      if (!match) return { label: text, id: null };
+      return { label: match[1].trim(), id: match[2] || null };
+    };
 
     const flushList = () => {
       if (inList) {
@@ -38,17 +43,23 @@
 
       if (trimmed.startsWith('### ')) {
         flushList();
-        blocks.push(`<h3>${renderInline(trimmed.slice(4))}</h3>`);
+        const { label, id } = extractHeading(trimmed.slice(4));
+        const idAttr = id ? ` id="${id}"` : '';
+        blocks.push(`<h3${idAttr}>${renderInline(label)}</h3>`);
         return;
       }
       if (trimmed.startsWith('## ')) {
         flushList();
-        blocks.push(`<h2>${renderInline(trimmed.slice(3))}</h2>`);
+        const { label, id } = extractHeading(trimmed.slice(3));
+        const idAttr = id ? ` id="${id}"` : '';
+        blocks.push(`<h2${idAttr}>${renderInline(label)}</h2>`);
         return;
       }
       if (trimmed.startsWith('# ')) {
         flushList();
-        blocks.push(`<h1>${renderInline(trimmed.slice(2))}</h1>`);
+        const { label, id } = extractHeading(trimmed.slice(2));
+        const idAttr = id ? ` id="${id}"` : '';
+        blocks.push(`<h1${idAttr}>${renderInline(label)}</h1>`);
         return;
       }
 

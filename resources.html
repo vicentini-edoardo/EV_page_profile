@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resources | Edoardo Vicentini</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/print.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav-wrap">
-      <div class="brand">Edoardo Vicentini</div>
+      <div class="brand" data-site="name">Edoardo Vicentini</div>
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -19,14 +19,14 @@
         <a href="projects.html">Projects</a>
         <a href="funding.html">Funding</a>
         <a href="awards.html">Awards</a>
-                <a href="conference.html">Conference</a>
+        <a href="conference.html">Conference</a>
         <a href="resources.html">Resources</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
         <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
-              </div>
+      </div>
     </div>
   </header>
 
@@ -114,18 +114,18 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <strong>Edoardo Vicentini</strong>
-        <p class="footer-note">Postdoctoral Researcher  -  CIC nanoGUNE, Nanooptics Group</p>
-        <p class="footer-note">San Sebastian, Spain</p>
+        <strong data-site="name">Edoardo Vicentini</strong>
+        <p class="footer-note"><span data-site="role">Postdoctoral Researcher</span> - <span data-site="affiliation">CIC nanoGUNE, Nanooptics Group</span></p>
+        <p class="footer-note" data-site="location">San Sebastian, Spain</p>
       </div>
       <div>
         <strong>Contact</strong>
-        <p class="footer-note">e.vicentini@nanogune.eu</p>
-        <p class="footer-note">ORCID: 0000-0003-1850-2327</p>
+        <p class="footer-note"><a data-site="email" href="mailto:e.vicentini@nanogune.eu">e.vicentini@nanogune.eu</a></p>
+        <p class="footer-note">ORCID: <span data-site="orcid">0000-0003-1850-2327</span></p>
       </div>
       <div>
         <strong>Quick links</strong>
-        <p class="footer-note"><a href="publications.html">Publications</a>  -  <a href="projects.html">Projects</a>  -  <a href="cv.html">CV</a></p>
+        <p class="footer-note"><a href="publications.html">Publications</a> - <a href="projects.html">Projects</a> - <a href="cv.html">CV</a></p>
       </div>
     </div>
   </footer>
@@ -133,7 +133,6 @@
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
-  <script src="assets/js/features/toggleView.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

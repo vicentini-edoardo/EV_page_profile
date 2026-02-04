@@ -3,10 +3,7 @@
 ## Folder structure
 
 - Root HTML pages: `index.html`, `research.html`, `publications.html`, `projects.html`, `funding.html`, `awards.html`, `conference.html`, `cv.html`, `contact.html`, `talks.html` (redirect stub).
-- CSS: `assets/css/styles.css` (imports base/components/page files).
-  - Base styles: `assets/css/base.css`
-  - Components: `assets/css/components.css`
-  - Page overrides: `assets/css/pages/*.css`
+- CSS: `assets/css/base.css` (site-wide styles) and `assets/css/print.css` (print overrides).
 - JS: `assets/js/`
   - Core helpers: `assets/js/core/`
   - Shared features: `assets/js/features/`
@@ -47,9 +44,13 @@
 - Awards slideshow uses `assets/js/features/slideshow.js`.
 - Research view toggle uses `assets/js/features/toggleView.js`.
 - `talks.html` remains a redirect to `conference.html` for backward compatibility.
+- Repeated site metadata (name, affiliation, email, ORCID) is centralized in `assets/js/main.js` and applied via `data-site` attributes.
 
 ## Publication images
 
-- Map DOI to one or more images in `assets/data/publication_images.json`.
-- Example: `"10.1038/s41566-021-00892-x": ["assets/img/publications/dual-comb-1.jpg", "assets/img/publications/dual-comb-2.jpg"]`
-- Place images in `assets/img/publications/`.
+- Map DOI to a folder path in `assets/data/publication_images.json` (leave empty string if no images).
+- Example: `"10.1038/s41566-021-00892-x": "assets/img/publications/dual-comb-hyperspectral-digital-holography-nat-phot"`
+- Place images in `assets/img/publications/<folder>/` and add an `images.json` manifest:
+  ```
+  { "images": ["fig1.webp", "fig2.webp"] }
+  ```

@@ -151,6 +151,8 @@
       container.appendChild(imgEl);
     }
 
+    imgEl.loading = 'lazy';
+    imgEl.decoding = 'async';
     imgEl.src = normalized[0].src;
     imgEl.alt = normalized[0].alt || altBase;
     imgEl.classList.add('is-visible');

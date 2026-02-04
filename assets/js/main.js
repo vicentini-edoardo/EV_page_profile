@@ -1,5 +1,46 @@
 (function (global) {
   const { qs, qsa } = global.DOM || { qs: (s, c) => (c || document).querySelector(s), qsa: (s, c) => Array.from((c || document).querySelectorAll(s)) };
+  const basePath = global.location.pathname.includes('/projects/') ? '../' : '';
+  const SITE = {
+    name: 'Edoardo Vicentini',
+    role: 'Postdoctoral Researcher',
+    affiliation: 'CIC nanoGUNE, Nanooptics Group',
+    location: 'San Sebastian, Spain',
+    email: 'e.vicentini@nanogune.eu',
+    orcid: '0000-0003-1850-2327',
+    cvScientific: `${basePath}CV/CV_Edoardo%20Vicentini.pdf`,
+    cvIndustry: `${basePath}CV/CV_EV.pdf`
+  };
+
+  function applySiteConfig() {
+    const setText = (key, value) => {
+      qsa(`[data-site="${key}"]`).forEach((el) => {
+        el.textContent = value;
+        if (key === 'email' && el.tagName === 'A') {
+          el.setAttribute('href', `mailto:${value}`);
+        }
+      });
+    };
+
+    setText('name', SITE.name);
+    setText('role', SITE.role);
+    setText('affiliation', SITE.affiliation);
+    setText('location', SITE.location);
+    setText('email', SITE.email);
+    setText('orcid', SITE.orcid);
+
+    qsa('[data-site="cv-scientific"]').forEach((el) => {
+      el.setAttribute('href', SITE.cvScientific);
+    });
+
+    qsa('[data-site="cv-industry"]').forEach((el) => {
+      el.setAttribute('href', SITE.cvIndustry);
+    });
+
+    qsa('[data-site="copy-email"]').forEach((el) => {
+      el.setAttribute('data-copy-email', SITE.email);
+    });
+  }
 
   function initThemeToggle() {
     const root = document.documentElement;
@@ -35,12 +76,15 @@
     const navLinks = qsa('.nav a');
     const currentPath = global.location.pathname.replace(/\/$/, '/index.html');
     navLinks.forEach((link) => {
+      link.classList.remove('active');
+      link.removeAttribute('aria-current');
       const href = link.getAttribute('href');
       if (!href) return;
       const linkPath = new URL(href, global.location.href).pathname;
       const isProjectPage = currentPath.includes('/projects/') && linkPath.endsWith('/projects.html');
       if (currentPath === linkPath || isProjectPage) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
       }
     });
   }
@@ -209,6 +253,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
+    applySiteConfig();
     initThemeToggle();
     initActiveNav();
     initSelectedPublications();

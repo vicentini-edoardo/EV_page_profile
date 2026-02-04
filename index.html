@@ -4,14 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Edoardo Vicentini | Nano-optics & Ultrafast Spectroscopy</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/print.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav-wrap">
-      <div class="brand">Edoardo Vicentini</div>
+      <div class="brand" data-site="name">Edoardo Vicentini</div>
       <nav class="nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -19,29 +19,34 @@
         <a href="projects.html">Projects</a>
         <a href="funding.html">Funding</a>
         <a href="awards.html">Awards</a>
-                <a href="conference.html">Conference</a>
+        <a href="conference.html">Conference</a>
         <a href="resources.html">Resources</a>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
       <div class="header-actions">
         <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
-              </div>
+      </div>
     </div>
   </header>
 
   <main id="main">
     <section class="hero container">
       <div>
-        <p class="hero-subtitle">Postdoctoral Researcher  -  CIC nanoGUNE  -  Nanooptics Group</p>
-        <h1>Edoardo Vicentini</h1>
+        <p class="hero-kicker" data-site="role">Postdoctoral Researcher</p>
+        <p class="hero-subtitle" data-site="affiliation">CIC nanoGUNE, Nanooptics Group</p>
+        <h1 data-site="name">Edoardo Vicentini</h1>
         <p class="tagline">I develop ultrafast nano-spectroscopy and frequency-comb methods to probe and control light-matter interaction at surfaces with nanometer spatial and femtosecond resolution.</p>
+        <div class="hero-meta">
+          <span data-site="location">San Sebastian, Spain</span>
+        </div>
         <div class="hero-actions">
-                    <a class="btn" href="contact.html">Contact</a>
+          <a class="btn primary" data-site="cv-scientific" href="CV/CV_Edoardo%20Vicentini.pdf">Download CV</a>
+          <a class="btn ghost" href="contact.html">Contact</a>
         </div>
       </div>
       <div class="hero-card">
-        <img src="assets/img/hero-pattern.svg" alt="Abstract visualization of light-matter dynamics" />
+        <img src="assets/img/hero-pattern.svg" width="800" height="500" alt="Abstract visualization of light-matter dynamics" decoding="async" />
         <p class="notice">Nano-optics | Ultrafast pump-probe | Dual-comb spectroscopy | Polaritons</p>
       </div>
     </section>
@@ -92,7 +97,7 @@
           </div>
         </div>
         <figure class="hero-figure">
-          <img src="assets/img/comb-figure.svg" alt="Frequency comb illustration" />
+          <img src="assets/img/comb-figure.svg" width="480" height="320" alt="Frequency comb illustration" loading="lazy" decoding="async" />
           <figcaption>Comb-referenced near-field platform for phase-stable ultrafast measurements.</figcaption>
         </figure>
       </div>
@@ -106,7 +111,7 @@
         </div>
         <a class="btn ghost" href="publications.html">View all</a>
       </div>
-      <div id="selected-publications" class="list"></div>
+      <div id="selected-publications" class="list list-cards"></div>
     </section>
 
     <section class="section container">
@@ -116,7 +121,7 @@
           <p class="tagline">Updates on talks, collaborations, and lab milestones.</p>
         </div>
       </div>
-      <div class="list">
+      <div class="list news-list">
         <div class="list-item">
           <strong>Feb 2026</strong> - Launching a new pump-probe nano-FTIR campaign on phonon-polariton materials.
         </div>
@@ -133,18 +138,18 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <strong>Edoardo Vicentini</strong>
-        <p class="footer-note">Postdoctoral Researcher  -  CIC nanoGUNE, Nanooptics Group</p>
-        <p class="footer-note">San Sebastian, Spain</p>
+        <strong data-site="name">Edoardo Vicentini</strong>
+        <p class="footer-note"><span data-site="role">Postdoctoral Researcher</span> - <span data-site="affiliation">CIC nanoGUNE, Nanooptics Group</span></p>
+        <p class="footer-note" data-site="location">San Sebastian, Spain</p>
       </div>
       <div>
         <strong>Contact</strong>
-        <p class="footer-note">e.vicentini@nanogune.eu</p>
-        <p class="footer-note">ORCID: 0000-0003-1850-2327</p>
+        <p class="footer-note"><a data-site="email" href="mailto:e.vicentini@nanogune.eu">e.vicentini@nanogune.eu</a></p>
+        <p class="footer-note">ORCID: <span data-site="orcid">0000-0003-1850-2327</span></p>
       </div>
       <div>
         <strong>Quick links</strong>
-        <p class="footer-note"><a href="projects.html">Projects</a>  -  <a href="resources.html">Resources</a>  -  <a href="cv.html">CV</a></p>
+        <p class="footer-note"><a href="projects.html">Projects</a> - <a href="resources.html">Resources</a> - <a href="cv.html">CV</a></p>
       </div>
     </div>
   </footer>
@@ -152,7 +157,6 @@
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
-  <script src="assets/js/features/toggleView.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

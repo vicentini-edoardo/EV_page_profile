@@ -1,6 +1,8 @@
+## Surface light–matter interaction {#questions}
+
 I build advanced optical instruments to study how light interacts with materials at very small scales and very short times. My training spans frequency-comb metrology (PhD in Milan and work at MPQ) and near-field microscopy (nanoGUNE since 2022).
 
-**Pillar — s-SNOM**
+## Pillar — s-SNOM {#pillar-snom}
 
 s-SNOM concentrates light with a sharp probe to observe optical behavior far below conventional microscope resolution.
 
@@ -8,7 +10,7 @@ s-SNOM concentrates light with a sharp probe to observe optical behavior far bel
 - **Nanospectroscopy** — Connects chemical composition with local optical response.
 - **Ultrafast nanospectroscopy** — Tracks how materials respond immediately after excitation.
 
-**Pillar — Optical frequency combs**
+## Pillar — Optical frequency combs {#pillar-ofc}
 
 Optical frequency combs are specialized lasers that produce perfectly ordered colors of light, enabling extremely accurate optical measurements.
 
