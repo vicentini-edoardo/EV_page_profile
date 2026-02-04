@@ -911,8 +911,8 @@ blockquote {
 }
 
 .pub-media {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  place-items: center;
 }
 
 .pub-title a {
@@ -1441,7 +1441,8 @@ html[data-theme="dark"] #research-page .card-block {
 
 .pub-media img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   border-radius: 12px;
   border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
   background: var(--bg-alt, #fff);

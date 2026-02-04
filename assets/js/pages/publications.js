@@ -13,6 +13,9 @@
     let publications = [];
     let selectedDois = [];
     let imageMap = {};
+    const mediaSizeMap = new Map();
+    const naturalSizeCache = new Map();
+    let resizeBound = false;
 
     function normalizeDoi(doi) {
       if (!doi) return '';
@@ -317,6 +320,34 @@
       const containers = Array.from(document.querySelectorAll('.pub-slideshow'));
       if (!containers.length) return;
       global.SlideshowManager.clear();
+      mediaSizeMap.clear();
+      const loadImageSize = (src) => {
+        if (naturalSizeCache.has(src)) return Promise.resolve(naturalSizeCache.get(src));
+        return new Promise((resolve) => {
+          const img = new Image();
+          img.onload = () => {
+            const size = { width: img.naturalWidth || 1, height: img.naturalHeight || 1 };
+            naturalSizeCache.set(src, size);
+            resolve(size);
+          };
+          img.onerror = () => resolve(null);
+          img.src = src;
+        });
+      };
+
+      const setFixedMediaSize = (container, images) => {
+        const width = container.clientWidth || 160;
+        const srcList = images.map((img) => (typeof img === 'string' ? img : img.src)).filter(Boolean);
+        mediaSizeMap.set(container, srcList);
+        return Promise.all(srcList.map(loadImageSize)).then((sizes) => {
+          const heights = sizes
+            .filter(Boolean)
+            .map((size) => width * (size.height / size.width));
+          const maxHeight = heights.length ? Math.max(...heights) : width * 0.65;
+          container.style.height = `${Math.ceil(maxHeight)}px`;
+        });
+      };
+
       containers.forEach((container) => {
         const data = container.dataset.images || '';
         let images = [];
@@ -334,7 +365,26 @@
           altBase: title,
           enableLightbox: true
         });
+        setFixedMediaSize(container, images);
       });
+
+      const recalcMediaSizes = () => {
+        mediaSizeMap.forEach((images, container) => {
+          if (!images || !images.length) return;
+          const width = container.clientWidth || 160;
+          const heights = images
+            .map((src) => naturalSizeCache.get(src))
+            .filter(Boolean)
+            .map((size) => width * (size.height / size.width));
+          const maxHeight = heights.length ? Math.max(...heights) : width * 0.65;
+          container.style.height = `${Math.ceil(maxHeight)}px`;
+        });
+      };
+
+      if (!resizeBound) {
+        resizeBound = true;
+        global.addEventListener('resize', recalcMediaSizes);
+      }
     }
 
 
