@@ -15,6 +15,7 @@ PROJECTS_JSON = os.path.join(ROOT, "assets", "data", "projects.json")
 TEMPLATE_PATH = os.path.join(ROOT, "projects", "project-template.html")
 OUTPUT_DIR = os.path.join(ROOT, "projects")
 INDEX_PATH = os.path.join(OUTPUT_DIR, "index.html")
+BASE_URL = "https://vicentini-edoardo.github.io/EV_page_profile"
 
 
 def load_json(path: str) -> Dict[str, Any]:
@@ -62,6 +63,8 @@ def render_project(template: str, project: Dict[str, Any]) -> str:
     role = html.escape(str(project.get("role", ""))) or "(to be added)"
     methods = project.get("methods") if isinstance(project.get("methods"), list) else []
     methods = [str(m) for m in methods]
+    slug = sanitize_slug(str(project.get("slug", "project")))
+    canonical = f"{BASE_URL}/projects/{slug}.html"
 
     replacements = {
         "{{TITLE}}": title,
@@ -73,6 +76,8 @@ def render_project(template: str, project: Dict[str, Any]) -> str:
         "{{WHY_IT_MATTERS}}": make_why_it_matters(summary),
         "{{TIMELINE}}": year or "(to be added)",
         "{{NAV_ACTIVE_PROJECTS}}": "active",
+        "{{SLUG}}": slug,
+        "{{CANONICAL}}": canonical,
     }
 
     output = template
@@ -92,7 +97,9 @@ def write_index_redirect(path: str) -> None:
 <head>
   <meta charset=\"utf-8\" />
   <meta http-equiv=\"refresh\" content=\"0; url=../projects.html\" />
-  <title>Projects</title>
+  <meta name=\"description\" content=\"Project index for Edoardo Vicentini.\" />
+  <link rel=\"canonical\" href=\"https://vicentini-edoardo.github.io/EV_page_profile/projects.html\" />
+  <title>Projects | Edoardo Vicentini</title>
 </head>
 <body>
   <p>Redirecting to <a href=\"../projects.html\">projects</a>...</p>

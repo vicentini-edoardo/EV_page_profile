@@ -9,3 +9,5 @@
 - Streamlined CSS loading by removing unused page/component styles and referencing `assets/css/base.css` directly.
 - Optimized award slideshow assets to WebP, updated manifests, and removed legacy JPG/JPEG duplicates.
 - Cleaned redirect stubs (`talks.html`, `teaching.html`) to use shared section spacing styles.
+- Added canonical URLs and meta descriptions across all pages, plus Person JSON-LD on the homepage to improve search visibility.
+- Added `robots.txt` and `sitemap.xml`, and aligned the project index redirect with the canonical `/projects.html` URL.
