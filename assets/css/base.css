@@ -1330,6 +1330,16 @@ blockquote {
   margin: 0.4rem 0 0.8rem;
 }
 
+.md-block .md-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.5rem 0 0.9rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
+  background: var(--bg-alt, #fff);
+}
+
 .md-block ul {
   margin: 0.4rem 0 0.9rem;
   padding-left: 1.2rem;

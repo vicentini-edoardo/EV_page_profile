@@ -4,6 +4,8 @@ I build advanced optical instruments to study how light interacts with materials
 
 ## Pillar — s-SNOM {#pillar-snom}
 
+![s-SNOM near-field imaging](assets/img/research-pillars/pillar-snom.svg)
+
 s-SNOM concentrates light with a sharp probe to observe optical behavior far below conventional microscope resolution.
 
 - **IR–THz nanoimaging** — Visualizes surface waves and their propagation at the nanoscale.
@@ -11,6 +13,8 @@ s-SNOM concentrates light with a sharp probe to observe optical behavior far bel
 - **Ultrafast nanospectroscopy** — Tracks how materials respond immediately after excitation.
 
 ## Pillar — Optical frequency combs {#pillar-ofc}
+
+![Optical frequency combs](assets/img/research-pillars/pillar-ofc.svg)
 
 Optical frequency combs are specialized lasers that produce perfectly ordered colors of light, enabling extremely accurate optical measurements.
 

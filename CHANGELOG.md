@@ -11,3 +11,4 @@
 - Cleaned redirect stubs (`talks.html`, `teaching.html`) to use shared section spacing styles.
 - Added canonical URLs and meta descriptions across all pages, plus Person JSON-LD on the homepage to improve search visibility.
 - Added `robots.txt` and `sitemap.xml`, and aligned the project index redirect with the canonical `/projects.html` URL.
+- Added research pillar image placeholders and enabled markdown image rendering for the research card layout.

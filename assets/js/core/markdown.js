@@ -10,6 +10,7 @@
 
   function renderInline(text) {
     return text
+      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img class="md-figure" src="$2" alt="$1" loading="lazy" decoding="async" />')
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
       .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
