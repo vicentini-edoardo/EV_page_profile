@@ -326,6 +326,24 @@ button:active,
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
+.pillars .pillars-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pillars .pillars-grid .focus-card {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+  .pillars .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars .pillars-grid .focus-card {
+    grid-column: auto;
+  }
+}
+
 .grid-2 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -365,6 +383,14 @@ button:active,
   align-items: center;
   gap: 0.4rem;
   font-weight: 600;
+}
+
+.pillars .pillar-figure {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.08));
+  background: var(--bg-alt, #fff);
 }
 
 .highlight {
