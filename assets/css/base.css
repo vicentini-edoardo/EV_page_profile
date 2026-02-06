@@ -331,18 +331,9 @@ button:active,
   grid-auto-flow: row;
 }
 
-.pillars .pillars-grid .focus-card {
-  grid-column: 1 / -1;
-  order: 2;
-}
-
 @media (max-width: 700px) {
   .pillars .pillars-grid {
     grid-template-columns: 1fr;
-  }
-
-  .pillars .pillars-grid .focus-card {
-    grid-column: auto;
   }
 }
 
@@ -1350,12 +1341,12 @@ blockquote {
 .md-block h1,
 .md-block h2,
 .md-block h3 {
-  margin-top: 0.8rem;
-  margin-bottom: 0.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 
 .md-block p {
-  margin: 0.4rem 0 0.8rem;
+  margin: 0.15rem 0 0.5rem;
 }
 
 .md-block .md-figure {
@@ -1461,6 +1452,53 @@ html[data-theme="dark"] #research-page .card-block {
   background: rgba(255, 255, 255, 0.06);
   border-color: rgba(255, 255, 255, 0.12);
   box-shadow: none;
+}
+
+/* Readability improvement — research page */
+#research-page .research-cards {
+  gap: var(--space-4);
+}
+
+#research-page .md-section.card {
+  padding: var(--space-4);
+}
+
+#research-page .md-block h2 {
+  font-size: 1.22rem;
+  margin: 0 0 0.3rem;
+  letter-spacing: 0.01em;
+}
+
+#research-page .md-block h3 {
+  font-size: 1.05rem;
+  margin: 0.35rem 0 0.2rem;
+}
+
+#research-page .md-block h2 + p,
+#research-page .md-block h3 + p {
+  margin-top: 0.15rem;
+}
+
+#research-page .md-block p {
+  margin: 0.2rem 0 0.55rem;
+  line-height: 1.5;
+}
+
+#research-page .md-block p + p {
+  margin-top: 0.15rem;
+}
+
+#research-page .md-block ul {
+  margin: 0.3rem 0 0.6rem;
+  padding-left: 1.1rem;
+}
+
+#research-page .md-block li {
+  margin: 0.2rem 0;
+}
+
+#research-page .md-block .md-figure {
+  margin: 0.35rem 0 0.65rem;
 }
 
 
