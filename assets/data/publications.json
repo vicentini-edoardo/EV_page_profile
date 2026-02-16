@@ -792,68 +792,6 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W3217098938",
-    "openalex_url": "https://openalex.org/W3217098938",
-    "title": "Dual-comb hyperspectral digital holography",
-    "authors": [
-      "Edoardo Vicentini",
-      "Zhenhai Wang",
-      "Kasper Van Gasse",
-      "Theodor W. H\u00e4nsch",
-      "N. Picqu\u00e9"
-    ],
-    "journal": "",
-    "year": 2021,
-    "volume": "",
-    "issue": "",
-    "pages": "",
-    "doi": "",
-    "doi_url": "",
-    "citations_total": 99,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        21,
-        23,
-        29,
-        24,
-        1
-      ]
-    },
-    "citations_by_year": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        21,
-        23,
-        29,
-        24,
-        1
-      ]
-    }
-  },
-  {
     "openalex_id": "https://openalex.org/W3190352467",
     "openalex_url": "https://openalex.org/W3190352467",
     "title": "Dual-comb digital holography with high spectral resolution",
@@ -1302,29 +1240,24 @@
     }
   },
   {
-    "openalex_id": "https://openalex.org/W4297826911",
-    "openalex_url": "https://openalex.org/W4297826911",
-    "title": "An on-chip III-V-semiconductor-on-silicon laser frequency comb for\\n gas-phase molecular spectroscopy in real-time",
+    "openalex_id": "https://openalex.org/W3217098938",
+    "openalex_url": "https://openalex.org/W3217098938",
+    "title": "Dual-comb hyperspectral digital holography",
     "authors": [
-      "Kasper Van Gasse",
-      "Zaijun Chen",
       "Edoardo Vicentini",
-      "Jeonghyun Huh",
-      "Stijn Poelman",
-      "Zhechao Wang",
-      "G\u00fcnther Roelkens",
+      "Zhenhai Wang",
+      "Kasper Van Gasse",
       "Theodor W. H\u00e4nsch",
-      "Bart Kuyken",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
-    "year": 2020,
+    "journal": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
+    "year": 2021,
     "volume": "",
     "issue": "",
     "pages": "",
     "doi": "",
     "doi_url": "",
-    "citations_total": 11,
+    "citations_total": 99,
     "citations_last5": {
       "years": [
         2022,
@@ -1334,11 +1267,11 @@
         2026
       ],
       "counts": [
-        5,
-        2,
-        2,
-        1,
-        0
+        21,
+        23,
+        29,
+        24,
+        1
       ]
     },
     "citations_by_year": {
@@ -1358,13 +1291,13 @@
         0,
         0,
         0,
-        1,
         0,
-        5,
-        2,
-        2,
         1,
-        0
+        21,
+        23,
+        29,
+        24,
+        1
       ]
     }
   },
@@ -1430,6 +1363,73 @@
         3,
         1,
         1,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "openalex_id": "https://openalex.org/W4297826911",
+    "openalex_url": "https://openalex.org/W4297826911",
+    "title": "An on-chip III-V-semiconductor-on-silicon laser frequency comb for\\n gas-phase molecular spectroscopy in real-time",
+    "authors": [
+      "Kasper Van Gasse",
+      "Zaijun Chen",
+      "Edoardo Vicentini",
+      "Jeonghyun Huh",
+      "Stijn Poelman",
+      "Zhechao Wang",
+      "G\u00fcnther Roelkens",
+      "Theodor W. H\u00e4nsch",
+      "Bart Kuyken",
+      "N. Picqu\u00e9"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "year": 2020,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "",
+    "doi_url": "",
+    "citations_total": 11,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        5,
+        2,
+        2,
+        1,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        5,
+        2,
+        2,
         1,
         0
       ]
