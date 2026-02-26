@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edoardo Vicentini | Nano-Optics & Ultrafast Spectroscopy</title>
+  <meta name="description" content="Edoardo Vicentini researches light-matter interaction at the nanoscale, with a focus on nano-optics, ultrafast spectroscopy, and near-field imaging.">
+  <meta property="og:title" content="Edoardo Vicentini | Nano-Optics & Ultrafast Spectroscopy">
+  <meta property="og:description" content="Exploring light-matter interaction at the nanoscale through nano-optics, ultrafast spectroscopy, and near-field imaging.">
+  <meta property="og:type" content="website">
+
+  <!--
+    Multi-Agent Planning Summary (AGENTS.md aligned)
+    Phase 1: Positioning emphasizes frontier nano-optics research with clear institutional credibility.
+    Phase 2: Single-page architecture with transparent top navigation and hero-embedded quick navigation.
+    Phase 3: Content preserves scientific precision and fixed messaging hierarchy.
+    Phase 4: Futuristic but restrained visual language with readability-first overlays and responsive behavior.
+    Phase 5: Semantic HTML, metadata, CSS variables, and lightweight performance-minded implementation.
+    Phase 6: Review simulation mitigations applied: visible credibility cues, limited stylistic excess, approachable structure.
+
+    Replace hero image path in .hero background-image as needed.
+  -->
+
+  <style>
+    /* =========================
+       :root tokens
+    ========================== */
+    :root {
+      --bg-deep: #040b1d;
+      --bg-mid: #0a1f4a;
+      --accent-blue: #2da6ff;
+      --accent-orange: #ff9b3d;
+      --text-primary: #f5f9ff;
+      --text-secondary: #bcd2ef;
+      --overlay-left: rgba(4, 11, 29, 0.92);
+      --overlay-mid: rgba(4, 11, 29, 0.62);
+      --overlay-right: rgba(4, 11, 29, 0.28);
+      --focus-ring: #8ed0ff;
+
+      --space-xs: 0.5rem;
+      --space-sm: 0.875rem;
+      --space-md: 1.25rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+
+      --radius-sm: 0.5rem;
+      --max-content: 44rem;
+
+      --font-main: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* =========================
+       base + layout
+    ========================== */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family: var(--font-main);
+      color: var(--text-primary);
+      background: var(--bg-deep);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.45;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       top navigation
+    ========================== */
+    .site-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 20;
+      padding: var(--space-md) clamp(1rem, 3vw, 2.5rem);
+      background: linear-gradient(
+        to bottom,
+        rgba(4, 11, 29, 0.45) 0%,
+        rgba(4, 11, 29, 0) 100%
+      );
+    }
+
+    .nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: clamp(0.8rem, 2.2vw, 2rem);
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.1rem;
+      transition: color 180ms ease, text-shadow 180ms ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible {
+      color: var(--text-primary);
+      text-shadow: 0 0 10px rgba(45, 166, 255, 0.55);
+    }
+
+    .nav-link:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 4px;
+      border-radius: var(--radius-sm);
+    }
+
+    /* =========================
+       hero + overlay
+    ========================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(6rem, 16vh, 10rem) clamp(1rem, 4.5vw, 4rem) 2rem;
+      isolation: isolate;
+      overflow: hidden;
+      background-color: var(--bg-deep);
+      /* Placeholder: replace `home_back.PNG` with your preferred hero image file path */
+      background-image: url("home_back.PNG");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(
+          100deg,
+          var(--overlay-left) 0%,
+          var(--overlay-mid) 40%,
+          var(--overlay-right) 100%
+        ),
+        radial-gradient(
+          circle at 72% 62%,
+          rgba(255, 155, 61, 0.24) 0%,
+          rgba(255, 155, 61, 0) 34%
+        ),
+        radial-gradient(
+          circle at 70% 40%,
+          rgba(45, 166, 255, 0.22) 0%,
+          rgba(45, 166, 255, 0) 40%
+        );
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: radial-gradient(circle at 68% 58%, rgba(255, 155, 61, 0.18), transparent 32%);
+      mix-blend-mode: screen;
+    }
+
+    /* =========================
+       typography + content
+    ========================== */
+    .hero__content {
+      max-width: var(--max-content);
+      animation: fadeUp 800ms ease-out both;
+    }
+
+    .hero__eyebrow {
+      margin: 0 0 var(--space-sm);
+      color: var(--text-secondary);
+      font-size: clamp(0.86rem, 1.45vw, 1rem);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .hero__title {
+      margin: 0;
+      font-size: clamp(1.85rem, 5.2vw, 4.3rem);
+      line-height: 1.03;
+      letter-spacing: 0.035em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-wrap: balance;
+      text-shadow: 0 8px 24px rgba(3, 12, 26, 0.55);
+    }
+
+    .hero__focus {
+      margin: var(--space-md) 0 var(--space-lg);
+      color: var(--text-secondary);
+      font-size: clamp(0.94rem, 1.8vw, 1.18rem);
+      letter-spacing: 0.04em;
+    }
+
+    .hero__name {
+      margin: 0 0 0.2rem;
+      font-size: clamp(1.1rem, 2.3vw, 1.55rem);
+      font-weight: 650;
+      color: var(--text-primary);
+    }
+
+    .hero__role,
+    .hero__cred {
+      margin: 0.12rem 0;
+      font-size: clamp(0.92rem, 1.6vw, 1.05rem);
+      color: var(--text-secondary);
+    }
+
+    .hero__cred {
+      color: #dceaff;
+      text-shadow: 0 0 14px rgba(45, 166, 255, 0.2);
+    }
+
+    /* =========================
+       bottom quick navigation
+    ========================== */
+    .hero__quicknav {
+      margin-top: var(--space-xl);
+      animation: fadeUp 950ms ease-out both;
+      animation-delay: 90ms;
+    }
+
+    .quicknav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      flex-wrap: wrap;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .quicknav-link {
+      padding: 0.2rem 0.1rem;
+      transition: color 180ms ease, text-shadow 180ms ease;
+    }
+
+    .quicknav-link:hover,
+    .quicknav-link:focus-visible {
+      color: var(--text-primary);
+      text-shadow: 0 0 9px rgba(45, 166, 255, 0.45);
+    }
+
+    .quicknav-link:focus-visible {
+      outline: 2px solid var(--focus-ring);
+      outline-offset: 4px;
+      border-radius: var(--radius-sm);
+    }
+
+    .quicknav-sep {
+      color: rgba(188, 210, 239, 0.6);
+      user-select: none;
+    }
+
+    /* Anchor targets for future sections while preserving stable nav IDs */
+    .anchor-target {
+      display: block;
+      position: relative;
+      top: -90px;
+      height: 0;
+      visibility: hidden;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* =========================
+       responsive
+    ========================== */
+    @media (max-width: 768px) {
+      .site-header {
+        padding-top: var(--space-sm);
+      }
+
+      .nav-list {
+        justify-content: flex-start;
+        gap: 0.9rem 1.1rem;
+      }
+
+      .hero {
+        padding-top: clamp(5.3rem, 14vh, 7rem);
+        padding-bottom: 1.3rem;
+      }
+
+      .hero__focus {
+        margin-bottom: var(--space-md);
+      }
+
+      .quicknav-list {
+        font-size: 0.82rem;
+        gap: 0.45rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero__title {
+        letter-spacing: 0.02em;
+      }
+
+      .hero__focus {
+        letter-spacing: 0.02em;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html,
+      body {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#research">Research</a></li>
+        <li><a class="nav-link" href="#publications">Publications</a></li>
+        <li><a class="nav-link" href="#innovation">Innovation</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Homepage hero: nano-optics and ultrafast spectroscopy">
+      <div class="hero__content">
+        <p class="hero__eyebrow">EXPLORING</p>
+        <h1 class="hero__title">LIGHT&ndash;MATTER INTERACTION<br>AT THE NANOSCALE</h1>
+        <p class="hero__focus">Nano-Optics &bull; Ultrafast Spectroscopy &bull; Near-Field Imaging</p>
+        <p class="hero__name">Edoardo Vicentini</p>
+        <p class="hero__role">Nano-Optics &amp; Ultrafast Spectroscopy</p>
+        <p class="hero__cred">Marie Curie Fellow &bull; CIC nanoGUNE</p>
+      </div>
+
+      <nav class="hero__quicknav" aria-label="Hero quick navigation">
+        <ul class="quicknav-list">
+          <li><a class="quicknav-link" href="#research">Research</a></li>
+          <li class="quicknav-sep" aria-hidden="true">|</li>
+          <li><a class="quicknav-link" href="#publications">Publications</a></li>
+          <li class="quicknav-sep" aria-hidden="true">|</li>
+          <li><a class="quicknav-link" href="#innovation">Innovation</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Future expansion anchors preserving stable nav contracts -->
+    <span id="research" class="anchor-target" aria-hidden="true"></span>
+    <span id="publications" class="anchor-target" aria-hidden="true"></span>
+    <span id="innovation" class="anchor-target" aria-hidden="true"></span>
+    <span id="contact" class="anchor-target" aria-hidden="true"></span>
+  </main>
+</body>
+</html>

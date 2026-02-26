@@ -1,0 +1,9 @@
+Reference and orphan candidate scan should be regenerated after major edits.
+
+Suggested commands:
+- rg -n "src=|href=|url\(" *.html assets/css/*.css assets/js/*.js assets/js/**/*.js
+- rg --files assets | sort
+- compare referenced vs existing assets to identify orphan candidates
+
+Initial clear archive move in this cleanup:
+- index_2.html (legacy alternate homepage)
