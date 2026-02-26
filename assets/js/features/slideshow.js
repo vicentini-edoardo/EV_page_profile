@@ -9,7 +9,8 @@
   const lightboxState = {
     images: [],
     index: 0,
-    title: ''
+    title: '',
+    lastFocusedElement: null
   };
 
   const ensureLightbox = () => {
@@ -19,8 +20,11 @@
       modal.id = 'lightbox-modal';
       modal.className = 'lightbox';
       modal.setAttribute('aria-hidden', 'true');
+      modal.setAttribute('role', 'dialog');
+      modal.setAttribute('aria-modal', 'true');
+      modal.setAttribute('aria-label', 'Image viewer');
       modal.innerHTML = `
-        <div class="lightbox-content">
+        <div class="lightbox-content" tabindex="-1">
           <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close">&times;</button>
           <button id="lightbox-prev" class="lightbox-nav" type="button" aria-label="Previous image">&#10094;</button>
           <button id="lightbox-next" class="lightbox-nav" type="button" aria-label="Next image">&#10095;</button>
@@ -30,6 +34,14 @@
       `;
       document.body.appendChild(modal);
     }
+    modal.setAttribute('aria-hidden', modal.classList.contains('open') ? 'false' : 'true');
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Image viewer');
+    const existingContent = modal.querySelector('.lightbox-content');
+    if (existingContent && !existingContent.hasAttribute('tabindex')) {
+      existingContent.setAttribute('tabindex', '-1');
+    }
     if (lightboxBound) return modal;
 
     const modalImg = modal.querySelector('#lightbox-image');
@@ -37,14 +49,20 @@
     const modalClose = modal.querySelector('#lightbox-close');
     const modalPrev = modal.querySelector('#lightbox-prev');
     const modalNext = modal.querySelector('#lightbox-next');
-
     const closeModal = () => {
+      if (!modal.classList.contains('open')) return;
       modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
       modalImg.src = '';
       modalCaption.textContent = '';
+      document.body.classList.remove('lightbox-open');
+      if (lightboxState.lastFocusedElement && typeof lightboxState.lastFocusedElement.focus === 'function') {
+        lightboxState.lastFocusedElement.focus();
+      }
       lightboxState.images = [];
       lightboxState.index = 0;
       lightboxState.title = '';
+      lightboxState.lastFocusedElement = null;
     };
 
     const stepModal = (dir) => {
@@ -63,9 +81,25 @@
       if (event.target === modal) closeModal();
     });
     document.addEventListener('keydown', (event) => {
+      if (!modal.classList.contains('open')) return;
       if (event.key === 'Escape') closeModal();
       if (event.key === 'ArrowLeft') stepModal(-1);
       if (event.key === 'ArrowRight') stepModal(1);
+      if (event.key === 'Tab') {
+        const focusable = Array.from(modal.querySelectorAll(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        ));
+        if (!focusable.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
     });
 
     lightboxBound = true;
@@ -77,6 +111,7 @@
     const modal = ensureLightbox();
     const modalImg = modal.querySelector('#lightbox-image');
     const modalCaption = modal.querySelector('#lightbox-caption');
+    lightboxState.lastFocusedElement = document.activeElement;
     lightboxState.images = images;
     lightboxState.index = index;
     lightboxState.title = title || '';
@@ -85,6 +120,17 @@
     modalImg.alt = current.alt || title || 'Photo';
     modalCaption.textContent = current.alt || title || '';
     modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('lightbox-open');
+    const closeBtn = modal.querySelector('#lightbox-close');
+    if (closeBtn && typeof closeBtn.focus === 'function') {
+      closeBtn.focus();
+    } else {
+      const content = modal.querySelector('.lightbox-content');
+      if (content && typeof content.focus === 'function') {
+        content.focus();
+      }
+    }
   };
 
   const stopAll = () => {
@@ -157,6 +203,11 @@
     imgEl.alt = normalized[0].alt || altBase;
     imgEl.classList.add('is-visible');
     container.dataset.index = '0';
+    if (enableLightbox) {
+      container.setAttribute('role', 'button');
+      container.setAttribute('tabindex', '0');
+      container.setAttribute('aria-label', `Open image viewer for ${altBase || 'publication image'}`);
+    }
 
     const instance = {
       container,
@@ -209,6 +260,12 @@
 
     if (enableLightbox) {
       container.addEventListener('click', () => {
+        const idx = parseInt(container.dataset.index || '0', 10) || 0;
+        openLightbox(normalized, idx, altBase);
+      });
+      container.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
         const idx = parseInt(container.dataset.index || '0', 10) || 0;
         openLightbox(normalized, idx, altBase);
       });

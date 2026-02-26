@@ -149,9 +149,9 @@
     ],
     "journal": "Nature Materials",
     "year": 2025,
-    "volume": "",
-    "issue": "",
-    "pages": "",
+    "volume": "25",
+    "issue": "2",
+    "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
     "citations_total": 0,
@@ -496,7 +496,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 48,
+    "citations_total": 49,
     "citations_last5": {
       "years": [
         2022,
@@ -510,7 +510,7 @@
         8,
         20,
         19,
-        1
+        2
       ]
     },
     "citations_by_year": {
@@ -536,7 +536,7 @@
         8,
         20,
         19,
-        1
+        2
       ]
     }
   },
@@ -1257,7 +1257,7 @@
     "pages": "",
     "doi": "",
     "doi_url": "",
-    "citations_total": 99,
+    "citations_total": 100,
     "citations_last5": {
       "years": [
         2022,
@@ -1271,7 +1271,7 @@
         23,
         29,
         24,
-        1
+        2
       ]
     },
     "citations_by_year": {
@@ -1297,7 +1297,7 @@
         23,
         29,
         24,
-        1
+        2
       ]
     }
   },
@@ -1709,7 +1709,7 @@
     "pages": "9119-9123",
     "doi": "10.1109/tim.2020.3001369",
     "doi_url": "https://doi.org/10.1109/tim.2020.3001369",
-    "citations_total": 7,
+    "citations_total": 8,
     "citations_last5": {
       "years": [
         2022,
@@ -1723,7 +1723,7 @@
         2,
         1,
         2,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -1749,7 +1749,7 @@
         2,
         1,
         2,
-        0
+        1
       ]
     }
   },

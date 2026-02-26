@@ -4,6 +4,33 @@
     if (!container) return;
 
     const CACHE_PREFIX = 'conference-pdf-exists:';
+    const DATA_URL = 'assets/data/conference.json';
+    const FETCH_TIMEOUT_MS = 10000;
+
+    const escapeHtml = (value) => String(value || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+
+    const withTimeout = (url, options, timeoutMs = FETCH_TIMEOUT_MS) => {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+      return fetch(url, { ...options, signal: controller.signal }).finally(() => {
+        clearTimeout(timeoutId);
+      });
+    };
+
+    const renderErrorState = (message) => {
+      container.innerHTML = `
+        <div class="card">
+          <p>${escapeHtml(message)}</p>
+          <button type="button" class="btn ghost" data-conference-retry>Retry</button>
+        </div>`;
+      const retry = container.querySelector('[data-conference-retry]');
+      if (retry) retry.addEventListener('click', loadConference);
+    };
 
     const formatDateRange = global.FormatUtil ? global.FormatUtil.formatDateRange : (start, end) => {
       if (!start) return '';
@@ -11,9 +38,10 @@
       const endDate = new Date(end || start);
       if (Number.isNaN(startDate.getTime())) return '';
       const sameDay = start === end || startDate.toDateString() === endDate.toDateString();
-      const monthFormatter = new Intl.DateTimeFormat('en-GB', { month: 'short' });
-      const dayFormatter = new Intl.DateTimeFormat('en-GB', { day: 'numeric' });
-      const yearFormatter = new Intl.DateTimeFormat('en-GB', { year: 'numeric' });
+      const locale = document.documentElement.lang || navigator.language || 'en-GB';
+      const monthFormatter = new Intl.DateTimeFormat(locale, { month: 'short' });
+      const dayFormatter = new Intl.DateTimeFormat(locale, { day: 'numeric' });
+      const yearFormatter = new Intl.DateTimeFormat(locale, { year: 'numeric' });
       const startMonth = monthFormatter.format(startDate);
       const startDay = dayFormatter.format(startDate);
       const startYear = yearFormatter.format(startDate);
@@ -60,40 +88,89 @@
         })
         .catch(() => attemptGet())
         .then((exists) => {
-          clearTimeout(timeoutId);
           sessionStorage.setItem(cacheKey, exists ? 'true' : 'false');
           return exists;
+        })
+        .finally(() => {
+          clearTimeout(timeoutId);
         });
     };
 
     const renderPresentation = (item) => {
       const dateRange = formatDateRange(item.dates?.start, item.dates?.end);
-      const location = item.location ? ` - ${item.location}` : '';
-      const authors = Array.isArray(item.authors) && item.authors.length ? item.authors.join(', ') : '';
-      const notes = item.notes ? `<div class="conference-notes">${item.notes}</div>` : '';
-      const downloadLabel = item.download?.label || 'Download PDF';
-      const downloadPath = item.download?.path || '';
+      const location = item.location ? ` - ${escapeHtml(item.location)}` : '';
+      const authors = Array.isArray(item.authors) && item.authors.length
+        ? item.authors.map((name) => escapeHtml(name)).join(', ')
+        : '';
+      const notes = item.notes ? `<div class="conference-notes">${escapeHtml(item.notes)}</div>` : '';
+      const downloadLabel = escapeHtml(item.download?.label || 'Download PDF');
+      const downloadPath = escapeHtml(item.download?.path || '');
+      const hasDownload = Boolean(item.download?.path);
+      const downloadAttrs = hasDownload
+        ? `data-download-path="${downloadPath}" data-download-enabled="pending"`
+        : 'data-download-enabled="false" aria-disabled="true" disabled';
 
       return `
-      <article class="conference-card" data-slug="${item.slug}">
+      <article class="conference-card" data-slug="${escapeHtml(item.slug)}">
         <div class="conference-main">
           <div class="conference-header">
-            <h3 class="conference-title">${item.title}</h3>
-            <span class="badge">${item.type}</span>
+            <h3 class="conference-title">${escapeHtml(item.title)}</h3>
+            <span class="badge">${escapeHtml(item.type)}</span>
           </div>
-          <div class="conference-event">${item.event}${location}</div>
+          <div class="conference-event">${escapeHtml(item.event)}${location}</div>
           ${dateRange ? `<div class="conference-date">${dateRange}</div>` : ''}
           ${authors ? `<div class="conference-authors">${authors}</div>` : ''}
           ${notes}
-          <a class="btn small conference-download" data-download-path="${downloadPath}">${downloadLabel}</a>
+          <button type="button" class="btn small conference-download" ${downloadAttrs}>${downloadLabel}</button>
         </div>
       </article>`;
     };
 
-    fetch('assets/data/conference.json')
-      .then((response) => response.json())
+    const bindDownloadButtons = () => {
+      const downloadButtons = Array.from(container.querySelectorAll('.conference-download'));
+      downloadButtons.forEach((button) => {
+        const path = button.getAttribute('data-download-path');
+        if (!path) {
+          button.classList.add('disabled');
+          button.setAttribute('aria-disabled', 'true');
+          button.setAttribute('disabled', 'true');
+          button.textContent = 'PDF coming soon';
+          return;
+        }
+
+        checkFileExists(path).then((exists) => {
+          if (exists) {
+            button.classList.remove('disabled');
+            button.removeAttribute('aria-disabled');
+            button.removeAttribute('disabled');
+            button.dataset.downloadEnabled = 'true';
+            button.addEventListener('click', () => {
+              global.open(path, '_blank', 'noopener');
+            }, { once: true });
+          } else {
+            button.classList.add('disabled');
+            button.setAttribute('aria-disabled', 'true');
+            button.setAttribute('disabled', 'true');
+            button.textContent = 'PDF coming soon';
+          }
+        });
+      });
+    };
+
+    const loadConference = () => withTimeout(DATA_URL)
+      .then((response) => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
       .then((data) => {
         const presentations = data.presentations || [];
+        if (!presentations.length) {
+          container.innerHTML = `
+            <div class="card">
+              <p>No conference entries available yet.</p>
+            </div>`;
+          return;
+        }
         const sorted = presentations.slice().sort((a, b) => {
           const dateA = new Date(a.dates?.end || a.dates?.start || '1970-01-01');
           const dateB = new Date(b.dates?.end || b.dates?.start || '1970-01-01');
@@ -101,36 +178,13 @@
         });
 
         container.innerHTML = sorted.map(renderPresentation).join('');
-
-        const downloadButtons = Array.from(container.querySelectorAll('.conference-download'));
-        downloadButtons.forEach((button) => {
-          const path = button.getAttribute('data-download-path');
-          if (!path) {
-            button.classList.add('disabled');
-            button.setAttribute('aria-disabled', 'true');
-            button.textContent = 'PDF coming soon';
-            return;
-          }
-
-          checkFileExists(path).then((exists) => {
-            if (exists) {
-              button.setAttribute('href', path);
-              button.setAttribute('target', '_blank');
-              button.setAttribute('rel', 'noopener');
-              button.classList.remove('disabled');
-              button.removeAttribute('aria-disabled');
-            } else {
-              button.removeAttribute('href');
-              button.classList.add('disabled');
-              button.setAttribute('aria-disabled', 'true');
-              button.textContent = 'PDF coming soon';
-            }
-          });
-        });
+        bindDownloadButtons();
       })
       .catch(() => {
-        container.innerHTML = '<p>Conference data is not available at the moment.</p>';
+        renderErrorState('Conference data is not available at the moment.');
       });
+
+    loadConference();
   };
 
   global.PageModules = global.PageModules || {};
