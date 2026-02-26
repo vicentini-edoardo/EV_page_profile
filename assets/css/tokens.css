@@ -1,0 +1,44 @@
+/* Design tokens layer (incrementally extracted). */
+:root {
+  --font-serif:
+    "IBM Plex Serif", "Source Serif 4", "Georgia", "Times New Roman", serif;
+  --font-sans:
+    "IBM Plex Sans", "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+  --bg: #0f1214;
+  --bg-alt: #171b1f;
+  --text: #eef1f4;
+  --text-inverse: #ffffff;
+  --muted: #b1bbc6;
+  --accent: #5fd0e5;
+  --accent-2: #f2b0a2;
+  --accent-soft: rgba(95, 208, 229, 0.16);
+  --border: #2a323a;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --pub-media-size: 180px;
+  --pub-media-size-mobile: 220px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-1: 0 12px 26px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --shadow: var(--shadow-1);
+  --radius: var(--radius-md);
+  --max-width: 1120px;
+  --content-width: 68ch;
+  --step--1: clamp(0.82rem, 0.78rem + 0.2vw, 0.92rem);
+  --step-0: clamp(0.98rem, 0.95rem + 0.25vw, 1.08rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.3rem + 1vw, 1.9rem);
+  --step-3: clamp(2rem, 1.6rem + 2vw, 2.7rem);
+  --step-4: clamp(2.6rem, 2.1rem + 3vw, 3.3rem);
+  color-scheme: dark;
+}

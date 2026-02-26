@@ -1,0 +1,6 @@
+_archive_unused/
+_site/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -9,11 +9,51 @@
   }
 
   function renderInline(text) {
+    const sanitizeSrc = (src) => {
+      const value = String(src || '').trim();
+      if (!value) return '';
+      if (value.startsWith('/') || value.startsWith('./') || value.startsWith('../')) return value;
+      try {
+        const parsed = new URL(value, window.location.href);
+        if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+          return parsed.href;
+        }
+      } catch (error) {
+        return '';
+      }
+      return '';
+    };
+
+    const sanitizeHref = (href) => {
+      const value = String(href || '').trim();
+      if (!value) return '#';
+      if (value.startsWith('#') || value.startsWith('/')) return value;
+      try {
+        const parsed = new URL(value, window.location.href);
+        if (parsed.protocol === 'http:' || parsed.protocol === 'https:' || parsed.protocol === 'mailto:') {
+          return parsed.href;
+        }
+      } catch (error) {
+        return '#';
+      }
+      return '#';
+    };
+
     return text
-      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img class="md-figure" src="$2" alt="$1" loading="lazy" decoding="async" />')
+      .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) => {
+        const safeSrc = sanitizeSrc(src);
+        if (!safeSrc) return '';
+        return `<img class="md-figure" src="${safeSrc}" alt="${alt}" loading="lazy" decoding="async" />`;
+      })
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
       .replace(/\*([^*]+)\*/g, '<em>$1</em>')
-      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {
+        const safeHref = sanitizeHref(href);
+        const isExternal = /^https?:\/\//.test(safeHref);
+        const rel = isExternal ? ' rel="noopener noreferrer"' : '';
+        const target = isExternal ? ' target="_blank"' : '';
+        return `<a href="${safeHref}"${target}${rel}>${label}</a>`;
+      });
   }
 
   const extractHeading = (text) => {

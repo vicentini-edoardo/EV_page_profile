@@ -1,105 +1,114 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications | Edoardo Vicentini</title>
   <meta name="description" content="Publications and citation trends for Edoardo Vicentini sourced from OpenAlex." />
+  <meta property="og:title" content="Publications | Edoardo Vicentini" />
+  <meta property="og:description" content="Publications and citation trends for Edoardo Vicentini sourced from OpenAlex." />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://vicentini-edoardo.github.io/EV_page_profile/publications.html" />
 
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/print.css" />
 </head>
-<body>
+<body id="publications-page-body">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <div class="brand" data-site="name">Edoardo Vicentini</div>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="projects.html">Projects</a>
-        <a href="funding.html">Funding</a>
-        <a href="awards.html">Awards</a>
-        <a href="conference.html">Conference</a>
-        <a href="resources.html">Resources</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
-      </div>
-    </div>
-  </header>
+  <header class="site-header" aria-label="Site header" data-partial="header"></header>
 
-  <main id="main" class="container">
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h1>Publications</h1>
-          <p class="tagline">OpenAlex-sourced publications with citation snapshots.</p>
+  <main id="main">
+    <section class="hero" aria-label="Publications hero">
+      <section class="section container publications-intro" aria-label="Publications introduction">
+        <div class="hero__content">
+          <p class="hero__eyebrow">PUBLICATIONS</p>
+          <h1 class="hero__title">Publications</h1>
+          <p class="hero__focus">OpenAlex-sourced records, citation snapshots, and conference contributions.</p>
         </div>
-      </div>
 
-      <div class="card">
-        <h2>Selected publications</h2>
-        <div id="selected-publications-list"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h2>All publications</h2>
-          <p class="tagline">Filter by year, type, and topic.</p>
+        <div class="page-shortcuts" aria-label="Publications page shortcuts">
+          <a class="pill" href="#all-publications">All publications</a>
+          <a class="pill" href="#conference-access">Conferences</a>
         </div>
-      </div>
 
-      <div class="card" id="citations-summary">
-        <div class="citations-summary-header">
-          <h2>Total citations by year (last 10 years)</h2>
-          <p class="meta">Aggregated from OpenAlex counts_by_year.</p>
+        <div class="card">
+          <h2>Selected publications</h2>
+          <div id="selected-publications-list"></div>
         </div>
-        <div id="citations-summary-chart" class="citations-summary-chart">Loading citation trends...</div>
-      </div>
+      </section>
 
-      <div class="filter-bar">
-        <select id="filter-year" aria-label="Filter by year"></select>
-        <select id="filter-type" aria-label="Filter by type"></select>
-        <input id="filter-search" type="search" placeholder="Search by keyword" aria-label="Search publications" />
-      </div>
+      <section class="section container" id="all-publications">
+        <div class="section-header">
+          <div>
+            <h2>All publications</h2>
+            <p class="tagline">Refine the list by year, publication type, and topic tags.</p>
+          </div>
+        </div>
 
-      <div class="tag-list" id="filter-tags" aria-label="Filter by topic tag"></div>
+        <div class="card" id="citations-summary">
+          <div class="citations-summary-header">
+            <div class="citations-summary-header-top">
+              <h2>Total citations by year (last 10 years)</h2>
+              <nav class="citations-summary-links" aria-label="Citation profiles">
+                <a class="citations-summary-link" href="https://scholar.google.it/citations?user=6h68BzEAAAAJ&hl=it" target="_blank" rel="noopener">Google Scholar</a>
+                <a class="citations-summary-link" href="https://www.webofscience.com/wos/author/record/2391087" target="_blank" rel="noopener">Web of Science</a>
+                <a class="citations-summary-link" href="https://orcid.org/0000-0003-1850-2327" target="_blank" rel="noopener">ORCID</a>
+              </nav>
+            </div>
+            <p class="meta">Aggregated from OpenAlex counts_by_year.</p>
+          </div>
+          <div id="citations-summary-chart" class="citations-summary-chart">Loading citation trends...</div>
+        </div>
 
-      <div id="publications-list" class="list"></div>
+        <section class="card publications-filter-panel" aria-label="Publication filters">
+          <h3>Filter publications</h3>
+          <div class="publications-filter-grid">
+            <div class="publications-filter-field">
+              <label for="filter-year">Year</label>
+              <select id="filter-year" aria-label="Filter by year"></select>
+            </div>
+            <div class="publications-filter-field">
+              <label for="filter-type">Type</label>
+              <select id="filter-type" aria-label="Filter by type"></select>
+            </div>
+            <div class="publications-filter-field">
+              <label for="filter-search">Keyword</label>
+              <input id="filter-search" type="search" placeholder="Search by keyword" aria-label="Search publications" />
+            </div>
+          </div>
+          <div class="tag-list" id="filter-tags" aria-label="Filter by topic tag"></div>
+        </section>
+
+        <div id="publications-list" class="list"></div>
+      </section>
+
+      <section class="section container" id="conference-access">
+        <div class="section-header">
+          <div>
+            <h2>Conference contributions</h2>
+            <p class="tagline">Talks and conference materials connected to the publications timeline.</p>
+          </div>
+          <a class="btn ghost" href="conference.html">Open standalone Conference page</a>
+        </div>
+        <div id="conference-content">
+          <p>Loading conference entries...</p>
+        </div>
+        <noscript>
+          <p>Enable JavaScript to view conference entries.</p>
+        </noscript>
+      </section>
+
+      <footer class="footer" data-partial="footer"></footer>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong data-site="name">Edoardo Vicentini</strong>
-        <p class="footer-note"><span data-site="role">Postdoctoral Researcher</span> - <span data-site="affiliation">CIC nanoGUNE, Nanooptics Group</span></p>
-        <p class="footer-note" data-site="location">San Sebastian, Spain</p>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <p class="footer-note"><a data-site="email" href="mailto:e.vicentini@nanogune.eu">e.vicentini@nanogune.eu</a></p>
-        <p class="footer-note">ORCID: <span data-site="orcid">0000-0003-1850-2327</span></p>
-      </div>
-      <div>
-        <strong>Quick links</strong>
-        <p class="footer-note"><a href="projects.html">Projects</a> - <a href="resources.html">Resources</a> - <a href="cv.html">CV</a></p>
-      </div>
-    </div>
-  </footer>
 
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
   <script src="assets/js/features/slideshow.js"></script>
   <script src="assets/js/pages/publications.js"></script>
+  <script src="assets/js/pages/conference.js"></script>
+  <script src="assets/js/core/layout.js"></script>
   <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>

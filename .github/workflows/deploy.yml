@@ -26,19 +26,27 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Generate project pages
-        run: python scripts/generate_projects_pages.py
+        run: python3 scripts/generate_projects_pages.py
+
+      - name: Build Pages artifact directory
+        run: |
+          mkdir -p _site
+          rsync -a --delete ./ ./_site \
+            --exclude .git/ \
+            --exclude .github/ \
+            --exclude _site/ \
+            --exclude _archive_unused/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
