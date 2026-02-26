@@ -1,84 +1,116 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research | Edoardo Vicentini</title>
   <meta name="description" content="Research overview of Edoardo Vicentini in nano-optics, ultrafast spectroscopy, and optical frequency combs." />
+  <meta property="og:title" content="Research | Edoardo Vicentini" />
+  <meta property="og:description" content="Research overview of Edoardo Vicentini in nano-optics, ultrafast spectroscopy, and optical frequency combs." />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://vicentini-edoardo.github.io/EV_page_profile/research.html" />
 
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/print.css" />
 </head>
-<body>
+<body id="research-page-body">
   <a class="skip-link" href="#research-page">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <div class="brand" data-site="name">Edoardo Vicentini</div>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="projects.html">Projects</a>
-        <a href="funding.html">Funding</a>
-        <a href="awards.html">Awards</a>
-        <a href="conference.html">Conference</a>
-        <a href="resources.html">Resources</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
-      </div>
-    </div>
-  </header>
+  <header class="site-header" aria-label="Site header" data-partial="header"></header>
 
-  <main id="research-page" class="container">
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h1>Research</h1>
-          <p class="tagline">Nano-optics, ultrafast spectroscopy, and optical frequency-comb metrology — a broad point of view on light–matter interaction.</p>
+  <main id="research-page">
+    <section class="hero" aria-label="Research hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">RESEARCH</p>
+        <h1 class="hero__title">Research</h1>
+        <p class="hero__focus">Nano optics, ultrafast spectroscopy, optical frequency comb metrology.</p>
+      </div>
+
+      <section class="section research-focus container" aria-label="Research focus areas">
+        <div class="research-focus-grid">
+          <div class="research-focus-card-wrapper">
+            <article class="research-focus-card research-focus-card--snom" data-focus-card>
+              <button
+                id="focus-card-1-button"
+                type="button"
+                class="research-focus-card__trigger"
+                aria-expanded="false"
+                aria-controls="focus-card-1-panel"
+                data-focus-trigger
+              >
+                <span class="research-focus-card__title">Nano optics and polaritons</span>
+                <span class="research-focus-card__summary">Near-field imaging, polaritons, nano-FTIR.</span>
+              </button>
+              <div
+                id="focus-card-1-panel"
+                class="research-focus-card__panel"
+                role="region"
+                aria-labelledby="focus-card-1-button"
+                data-focus-panel
+              >
+                <button type="button" class="research-focus-card__close" data-focus-close aria-label="Close expanded card">Close</button>
+                <p>I develop nano-optical methods to observe and control optical and vibrational modes below the diffraction limit, with emphasis on surface phonon polaritons and plasmon polaritons, near-field interferometry, and nanoscale spectroscopy.</p>
+                <div class="research-focus-divider" aria-hidden="true"></div>
+                <ul>
+                  <li>s-SNOM, nano-FTIR, and hyperspectral nano-imaging across Mid-IR to THz</li>
+                  <li>Surface phonon polaritons (SPhPs) and surface plasmon polaritons (SPPs) in 2D materials</li>
+                  <li>Strong and ultrastrong light-matter coupling in nanophotonic resonators</li>
+                  <li>Real-space dispersion mapping and polaritonic interferometry</li>
+                  <li>Development of cryogenic and time-resolved near-field measurement techniques</li>
+                  <li>Nano-metrology for semiconductor and quantum materials characterization</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="research-focus-card-wrapper">
+            <article class="research-focus-card research-focus-card--ofc" data-focus-card>
+              <button
+                id="focus-card-2-button"
+                type="button"
+                class="research-focus-card__trigger"
+                aria-expanded="false"
+                aria-controls="focus-card-2-panel"
+                data-focus-trigger
+              >
+                <span class="research-focus-card__title">Ultrafast spectroscopy and frequency combs</span>
+                <span class="research-focus-card__summary">Pump-probe dynamics, dual-comb metrology, broadband spectroscopy.</span>
+              </button>
+              <div
+                id="focus-card-2-panel"
+                class="research-focus-card__panel"
+                role="region"
+                aria-labelledby="focus-card-2-button"
+                data-focus-panel
+              >
+                <button type="button" class="research-focus-card__close" data-focus-close aria-label="Close expanded card">Close</button>
+                <p>I build and apply ultrafast and frequency comb-based measurement approaches to access dynamics and precision spectroscopy, bridging time-domain pump-probe methods with broadband coherent metrology.</p>
+                <div class="research-focus-divider" aria-hidden="true"></div>
+                <ul>
+                  <li>Pump-probe nanospectroscopy for ultrafast carrier and phonon dynamics</li>
+                  <li>Optical frequency comb metrology and high-resolution coherent spectroscopy</li>
+                  <li>Dual-comb spectroscopy and hyperspectral digital holography</li>
+                  <li>Precision timing, phase control, and broadband mid-infrared sources</li>
+                  <li>Hyperspectral data analysis pipelines and signal processing for physics</li>
+                  <li>Nonlinear optics and supercontinuum generation in photonic structures</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
+      <div class="container research-funding-link" id="funding-access">
+        <a class="research-funding-link__anchor" href="funding.html">Funding and grants</a>
       </div>
-      <div class="view-toggle" role="tablist" aria-label="Research view toggle">
-        <button type="button" class="view-toggle-btn" data-view="scientific" role="tab" aria-selected="true">Scientific view</button>
-        <button type="button" class="view-toggle-btn" data-view="general" role="tab" aria-selected="false">General view</button>
-      </div>
-    </section>
-
-    <section class="section research-block">
-      <div class="md-block view-scientific research-cards" data-md-layout="cards" data-md="content/research_scientific.md"></div>
-      <div class="md-block view-general research-cards" data-md-layout="cards" data-md="content/research_general.md"></div>
+      <footer class="footer" data-partial="footer"></footer>
+      <div class="research-focus-overlay" data-focus-overlay aria-hidden="true"></div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong data-site="name">Edoardo Vicentini</strong>
-        <p class="footer-note"><span data-site="role">Postdoctoral Researcher</span> - <span data-site="affiliation">CIC nanoGUNE, Nanooptics Group</span></p>
-        <p class="footer-note" data-site="location">San Sebastian, Spain</p>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <p class="footer-note"><a data-site="email" href="mailto:e.vicentini@nanogune.eu">e.vicentini@nanogune.eu</a></p>
-        <p class="footer-note">ORCID: <span data-site="orcid">0000-0003-1850-2327</span></p>
-      </div>
-      <div>
-        <strong>Quick links</strong>
-        <p class="footer-note"><a href="projects.html">Projects</a> - <a href="resources.html">Resources</a> - <a href="cv.html">CV</a></p>
-      </div>
-    </div>
-  </footer>
 
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
-  <script src="assets/js/core/markdown.js"></script>
-  <script src="assets/js/core/content.js"></script>
-  <script src="assets/js/features/toggleView.js"></script>
   <script src="assets/js/pages/research.js"></script>
+  <script src="assets/js/core/layout.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

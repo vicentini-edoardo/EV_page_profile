@@ -1,126 +1,293 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CV | Edoardo Vicentini</title>
   <meta name="description" content="Download the scientific and industry CVs of Edoardo Vicentini." />
+  <meta property="og:title" content="CV | Edoardo Vicentini" />
+  <meta property="og:description" content="Download the scientific and industry CVs of Edoardo Vicentini." />
+  <meta property="og:type" content="website" />
   <link rel="canonical" href="https://vicentini-edoardo.github.io/EV_page_profile/cv.html" />
 
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/print.css" />
 </head>
-<body>
+<body id="cv-page-body">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <div class="brand" data-site="name">Edoardo Vicentini</div>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="projects.html">Projects</a>
-        <a href="funding.html">Funding</a>
-        <a href="awards.html">Awards</a>
-        <a href="conference.html">Conference</a>
-        <a href="resources.html">Resources</a>
-        <a href="cv.html">CV</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="header-actions no-print">
-        <button id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
-      </div>
-    </div>
-  </header>
+  <header class="site-header" aria-label="Site header" data-partial="header"></header>
 
-  <main id="main" class="container">
-    <section class="section">
-      <div class="section-header">
-        <div>
-          <h1>Curriculum Vitae</h1>
-          <p class="tagline">Download the scientific or industry CV below.</p>
+  <main id="main">
+    <section class="hero" aria-label="Curriculum hero">
+      <section class="section container cv-intro">
+        <div class="hero__content">
+          <p class="hero__eyebrow">CURRICULUM</p>
+          <h1 class="hero__title">Curriculum Vitae</h1>
+          <p class="hero__focus">Scientific and industry profiles, positions, education, and key project highlights.</p>
         </div>
-      </div>
-      <div class="view-toggle no-print" role="tablist" aria-label="CV view toggle">
-        <button type="button" class="view-toggle-btn" data-view="scientific" role="tab" aria-selected="true">Scientific view</button>
-        <button type="button" class="view-toggle-btn" data-view="industry" role="tab" aria-selected="false">Industry view</button>
-      </div>
-      <div class="cv-downloads no-print">
-        <a class="btn primary" data-site="cv-scientific" href="CV/CV_Edoardo%20Vicentini.pdf">Download scientific CV</a>
-        <a class="btn" data-site="cv-industry" href="CV/CV_EV.pdf">Download industry CV</a>
-      </div>
-    </section>
 
-    <section class="card-block">
-      <div class="md-block view-scientific" data-md="content/cv_scientific_intro.md"></div>
-      <div class="md-block view-industry" data-md="content/cv_industry_intro.md"></div>
-      <p class="meta">San Sebastian, Spain · e.vicentini@nanogune.eu · ORCID: 0000-0003-1850-2327</p>
-    </section>
+        <div class="view-toggle no-print" role="group" aria-label="CV view toggle">
+          <button type="button" class="view-toggle-btn" data-view="scientific" aria-pressed="true">Scientific view</button>
+          <button type="button" class="view-toggle-btn" data-view="industry" aria-pressed="false">Industry view</button>
+        </div>
+        <div class="cv-downloads no-print" aria-label="CV downloads">
+          <a class="cv-download-link" data-site="cv-scientific" href="CV/CV_Edoardo%20Vicentini.pdf">
+            <span class="cv-download-link__title">Scientific CV</span>
+            <span class="cv-download-link__cta">Download</span>
+          </a>
+          <a class="cv-download-link" data-site="cv-industry" href="CV/CV_EV.pdf">
+            <span class="cv-download-link__title">Industry CV</span>
+            <span class="cv-download-link__cta">Download</span>
+          </a>
+        </div>
+      </section>
 
-    <section class="card-block">
-      <h2>Positions</h2>
-      <div class="list">
-        <div class="list-item"><strong>MSCA post-doctoral researcher</strong> — CIC nanoGUNE — 18/03/2025–present. Advanced optical measurement systems for spectroscopy and imaging.</div>
-        <div class="list-item"><strong>Juan de la Cierva postdoctoral researcher</strong> — CIC nanoGUNE — 01/01/2023–17/03/2025. Near-field instrumentation and quantitative nano-optical analysis.</div>
-        <div class="list-item"><strong>Post-doctoral researcher</strong> — CIC nanoGUNE — 15/12/2021–31/12/2022. Ultrafast nano-FTIR platforms and data pipelines.</div>
-        <div class="list-item"><strong>Researcher</strong> — CNR-IFN — 01/11/2020–31/08/2021. Laser platforms for precision sensing.</div>
-        <div class="list-item"><strong>Visiting researcher / internship</strong> — MPQ — 2020. Dual-comb instrumentation and analysis.</div>
-        <div class="list-item"><strong>Assistant professor</strong> — Politecnico di Milano — 2018–2021. Teaching in electromagnetism and optics.</div>
-        <div class="list-item"><strong>Pre-doctoral researcher</strong> — Politecnico di Milano — 2017–2021. Experimental setups and data analysis for precision spectroscopy.</div>
-      </div>
-    </section>
+      <section class="section container cv-content">
+        <section class="card-block" data-cv-icon="user-circle">
+          <div class="md-block view-scientific" data-md="content/cv_scientific_intro.md"></div>
+          <div class="md-block view-industry" data-md="content/cv_industry_intro.md"></div>
+          <p class="meta">San Sebastian, Spain · e.vicentini@nanogune.eu · ORCID: 0000-0003-1850-2327</p>
+        </section>
 
-    <section class="card-block">
-      <h2>Education</h2>
-      <div class="list">
-        <div class="list-item"><strong>PhD in Physics</strong> — Politecnico di Milano — 2021 (cum laude)</div>
-        <div class="list-item"><strong>MSc in Physics Engineering</strong> — Politecnico di Milano — 2017</div>
-        <div class="list-item"><strong>BSc in Physics Engineering</strong> — Politecnico di Milano — 2015</div>
-      </div>
-    </section>
+        <section class="card-block" id="positions" data-cv-icon="briefcase">
+          <h2>Professional Experience</h2>
+          <div class="cv-position-list">
+            <article class="cv-position-item">
+              <div class="cv-position-head">
+                <h3 class="cv-position-role">MSCA Postdoctoral Researcher</h3>
+                <span class="cv-position-years">2025 - Present</span>
+              </div>
+              <p class="cv-position-org">CIC nanoGUNE</p>
+              <ul class="cv-position-points">
+                <li>Develop advanced optical measurement systems for spectroscopy and imaging.</li>
+                <li>Lead experimental design for nano-optical and ultrafast characterization workflows.</li>
+                <li>Coordinate collaborations across instrumentation and materials teams.</li>
+              </ul>
+            </article>
 
-    <section class="card-block">
-      <h2>Key skills</h2>
-      <div class="skills-grid">
-        <div><strong>Optical system design</strong><br/>Laser architectures, interferometry, alignment, and diagnostics.</div>
-        <div><strong>Near-field &amp; ultrafast methods</strong><br/>s-SNOM, nano-FTIR, pump–probe spectroscopy.</div>
-        <div><strong>Frequency-comb metrology</strong><br/>Dual-comb spectroscopy, phase coherence, calibration transfer.</div>
-        <div><strong>Data analysis</strong><br/>Python/MATLAB pipelines, signal processing, uncertainty-aware analysis.</div>
-        <div><strong>Hardware &amp; control</strong><br/>Instrumentation control, synchronization, lab automation.</div>
-        <div><strong>Project leadership</strong><br/>Experiment planning, documentation, and cross-team communication.</div>
-      </div>
-    </section>
+            <article class="cv-position-item">
+              <div class="cv-position-head">
+                <h3 class="cv-position-role">Juan de la Cierva Postdoctoral Researcher</h3>
+                <span class="cv-position-years">2023 - 2025</span>
+              </div>
+              <p class="cv-position-org">CIC nanoGUNE</p>
+              <ul class="cv-position-points">
+                <li>Built near-field instrumentation for quantitative nano-optical analysis.</li>
+                <li>Implemented robust data pipelines for hyperspectral and time-resolved experiments.</li>
+                <li>Contributed to publications and grant-driven experimental milestones.</li>
+              </ul>
+            </article>
 
-    <section class="card-block">
-      <h2>Languages</h2>
-      <p>Italian (native), English (fluent), Spanish (fluent).</p>
+            <article class="cv-position-item">
+              <div class="cv-position-head">
+                <h3 class="cv-position-role">Postdoctoral Researcher</h3>
+                <span class="cv-position-years">2021 - 2022</span>
+              </div>
+              <p class="cv-position-org">CIC nanoGUNE</p>
+              <ul class="cv-position-points">
+                <li>Designed and validated ultrafast nano-FTIR experimental platforms.</li>
+                <li>Integrated acquisition and signal-processing methods for reliable measurements.</li>
+                <li>Supported cross-lab initiatives in nano-spectroscopy and photonics.</li>
+              </ul>
+            </article>
+
+            <article class="cv-position-item">
+              <div class="cv-position-head">
+                <h3 class="cv-position-role">Researcher</h3>
+                <span class="cv-position-years">2020 - 2021</span>
+              </div>
+              <p class="cv-position-org">CNR-IFN</p>
+              <ul class="cv-position-points">
+                <li>Developed laser-based platforms for precision sensing applications.</li>
+                <li>Contributed to system optimization, calibration, and experimental reporting.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="card-block" id="education" data-cv-icon="graduation-cap">
+          <h2>Education</h2>
+          <div class="cv-education-list">
+            <article class="cv-education-item">
+              <div class="cv-education-head">
+                <h3 class="cv-education-degree">Ph.D. in Physics</h3>
+                <span class="cv-education-years">2017 - 2021</span>
+              </div>
+              <p class="cv-education-school">Politecnico di Milano</p>
+              <p class="cv-education-detail">Dissertation: "Advanced optical spectroscopy and light-matter interaction in complex photonic systems"</p>
+              <p class="cv-education-note">Graduated cum laude</p>
+            </article>
+
+            <article class="cv-education-item">
+              <div class="cv-education-head">
+                <h3 class="cv-education-degree">M.S. in Physics Engineering</h3>
+                <span class="cv-education-years">2015 - 2017</span>
+              </div>
+              <p class="cv-education-school">Politecnico di Milano</p>
+              <p class="cv-education-detail">Thesis: "Ultrafast spectroscopy and frequency-comb methods for precision optical measurements"</p>
+            </article>
+
+            <article class="cv-education-item">
+              <div class="cv-education-head">
+                <h3 class="cv-education-degree">B.S. in Physics Engineering</h3>
+                <span class="cv-education-years">2012 - 2015</span>
+              </div>
+              <p class="cv-education-school">Politecnico di Milano</p>
+              <p class="cv-education-note">Foundational training in electromagnetism, photonics, and applied mathematics</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card-block" data-cv-icon="sparkles">
+          <h2>Skills &amp; Expertise</h2>
+          <div class="cv-skills-groups">
+            <article class="cv-skills-group is-blue">
+              <h3 class="cv-skills-group__title">Computational &amp; Data Skills</h3>
+              <div class="cv-skills-tags">
+                <span class="cv-skills-tag">Python</span>
+                <span class="cv-skills-tag">MATLAB</span>
+                <span class="cv-skills-tag">Data Analysis</span>
+                <span class="cv-skills-tag">Signal Processing</span>
+              </div>
+            </article>
+
+            <article class="cv-skills-group is-green">
+              <h3 class="cv-skills-group__title">Nano-Optics &amp; Spectroscopy</h3>
+              <div class="cv-skills-tags">
+                <span class="cv-skills-tag">s-SNOM</span>
+                <span class="cv-skills-tag">nano-FTIR</span>
+                <span class="cv-skills-tag">Pump-Probe Spectroscopy</span>
+                <span class="cv-skills-tag">Ultrafast Dynamics</span>
+                <span class="cv-skills-tag">Near-Field Imaging</span>
+                <span class="cv-skills-tag">Mid-IR/THz Metrology</span>
+              </div>
+            </article>
+
+            <article class="cv-skills-group is-amber">
+              <h3 class="cv-skills-group__title">Frequency Combs &amp; Photonics</h3>
+              <div class="cv-skills-tags">
+                <span class="cv-skills-tag">Optical Frequency Combs</span>
+                <span class="cv-skills-tag">Dual-Comb Spectroscopy</span>
+                <span class="cv-skills-tag">Hyperspectral Holography</span>
+                <span class="cv-skills-tag">Laser Stabilization</span>
+                <span class="cv-skills-tag">Nonlinear Optics</span>
+                <span class="cv-skills-tag">Precision Metrology</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="card-block" id="awards" data-cv-icon="award">
+          <h2>Awards &amp; Honors</h2>
+          <div class="cv-awards-list">
+            <article class="cv-awards-item">
+              <div class="cv-awards-head">
+                <div class="cv-awards-main">
+                  <img
+                    class="cv-awards-logo"
+                    src="assets/img/awards/logos/optica_coherent.png"
+                    alt="Optica and Coherent logo"
+                    loading="lazy"
+                  />
+                  <h3 class="cv-awards-title">Bernard J. Couillaud Prize in Ultrafast Lasers</h3>
+                </div>
+                <span class="cv-awards-year">2023</span>
+              </div>
+              <p class="cv-awards-org">Optica Foundation and Coherent, Inc.</p>
+            </article>
+
+            <article class="cv-awards-item">
+              <div class="cv-awards-head">
+                <div class="cv-awards-main">
+                  <img
+                    class="cv-awards-logo"
+                    src="assets/img/awards/logos/Helmholtz.png"
+                    alt="Helmholtz Prize medal"
+                    loading="lazy"
+                  />
+                  <h3 class="cv-awards-title">Helmholtz Prize</h3>
+                </div>
+                <span class="cv-awards-year">2022</span>
+              </div>
+              <p class="cv-awards-org">Helmholtz Fund and Physikalisch-Technische Bundesanstalt</p>
+            </article>
+
+            <article class="cv-awards-item">
+              <div class="cv-awards-head">
+                <div class="cv-awards-main">
+                  <img
+                    class="cv-awards-logo"
+                    src="assets/img/awards/logos/iuma.png"
+                    alt="IUMA logo"
+                    loading="lazy"
+                  />
+                  <h3 class="cv-awards-title">Young Investigators Prize IUMA</h3>
+                </div>
+                <span class="cv-awards-year">2022</span>
+              </div>
+              <p class="cv-awards-org">Materials Institute, University of Alicante</p>
+            </article>
+
+            <article class="cv-awards-item">
+              <div class="cv-awards-head">
+                <div class="cv-awards-main">
+                  <img
+                    class="cv-awards-logo"
+                    src="assets/img/awards/logos/italian_physcal_society.png"
+                    alt="Italian Physical Society logo"
+                    loading="lazy"
+                  />
+                  <h3 class="cv-awards-title">Best Scientific Communication</h3>
+                </div>
+                <span class="cv-awards-year">2021</span>
+              </div>
+              <p class="cv-awards-org">Italian Physical Society · 107th National Congress</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card-block" id="projects-section" data-cv-icon="flask-conical">
+          <div class="section-header">
+            <div>
+              <h2>Projects</h2>
+              <p class="tagline">Selected project highlights.</p>
+            </div>
+          </div>
+          <div id="projects-grid" class="projects-list"></div>
+          <p class="cv-projects-link"><a href="projects.html">View full projects webpage</a></p>
+        </section>
+
+        <section class="card-block" data-cv-icon="languages">
+          <h2>Languages</h2>
+          <div class="cv-language-tags" aria-label="Language proficiency">
+            <span class="cv-language-chip is-native">
+              <span class="cv-language-name">Italian</span>
+              <span class="cv-language-level">Native</span>
+            </span>
+            <span class="cv-language-chip is-fluent">
+              <span class="cv-language-name">English</span>
+              <span class="cv-language-level">Fluent</span>
+            </span>
+            <span class="cv-language-chip is-fluent">
+              <span class="cv-language-name">Spanish</span>
+              <span class="cv-language-level">Fluent</span>
+            </span>
+          </div>
+        </section>
+      </section>
+
+      <footer class="footer" data-partial="footer"></footer>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong data-site="name">Edoardo Vicentini</strong>
-        <p class="footer-note"><span data-site="role">Postdoctoral Researcher</span> - <span data-site="affiliation">CIC nanoGUNE, Nanooptics Group</span></p>
-        <p class="footer-note" data-site="location">San Sebastian, Spain</p>
-      </div>
-      <div>
-        <strong>Contact</strong>
-        <p class="footer-note"><a data-site="email" href="mailto:e.vicentini@nanogune.eu">e.vicentini@nanogune.eu</a></p>
-        <p class="footer-note">ORCID: <span data-site="orcid">0000-0003-1850-2327</span></p>
-      </div>
-      <div>
-        <strong>Quick links</strong>
-        <p class="footer-note"><a href="projects.html">Projects</a> - <a href="resources.html">Resources</a> - <a href="cv.html">CV</a></p>
-      </div>
-    </div>
-  </footer>
 
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
   <script src="assets/js/core/markdown.js"></script>
   <script src="assets/js/core/content.js"></script>
+  <script src="assets/js/pages/projects.js"></script>
+  <script src="assets/js/pages/cv.js"></script>
+  <script src="assets/js/core/layout.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

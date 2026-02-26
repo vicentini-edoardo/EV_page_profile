@@ -19,8 +19,7 @@
       buttons.forEach((btn) => {
         const isActive = btn.dataset.view === mode;
         btn.classList.toggle('is-active', isActive);
-        btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
-        btn.tabIndex = isActive ? 0 : -1;
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
       });
     };
 

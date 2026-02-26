@@ -1,4 +1,4 @@
-## Overview {#questions}
+## Overview {#overview}
 
 **Overview.** I am an experimental physicist with expertise spanning two complementary fields: optical frequency-comb metrology and scattering-type scanning near-field optical microscopy (s-SNOM).
 
@@ -13,12 +13,12 @@
 
 **What it enables.** My current work at CIC nanoGUNE centers on developing quantitative near-field optical measurements using scattering-type scanning near-field optical microscopy. s-SNOM circumvents the diffraction limit by localizing electromagnetic fields at the apex of a sharp metallic AFM tip (~10–20 nm radius). This enables optical imaging and spectroscopy with spatial resolution determined by tip geometry rather than wavelength—revealing nanoscale phenomena invisible to conventional optics.
 
-**Why it matters.** I develop experimental approaches that transform near-field signals into quantitative observables: propagation lengths, quality factors, local conductivities, and material-specific optical constants. My goal is to establish robust methodologies that connect real-space measurements with electrodynamic models and enable reproducible, model-independent parameter extraction.
+**Why it matters.** I develop experimental approaches that transform near-field signals into quantitative observables: propagation lengths, quality factors, local conductivities, and material-specific optical constants. My goal is to establish robust methodologies that connect real-space measurements with electrodynamic models and enable reproducible, uncertainty-aware parameter extraction grounded in electrodynamic modeling.
 
 **Highlights.**
 - **IR–THz nanoimaging** — Reveals phonon-polaritons and plasmons in van der Waals materials and nanostructures with wavelengths compressed far below free-space radiation (λ/10 to λ/100). Enables direct measurement of confinement, anisotropic dispersion, and dissipation with nanometric precision across the 1–30 THz range.
 - **Nanospectroscopy** — Maps local dielectric response, chemical composition, and electronic structure within nanometric volumes. Correlates near-field spectra with theoretical predictions and analytical models, enabling material identification and quantitative extraction of optical constants at surfaces and interfaces.
-- **Ultrafast nanospectroscopy** — Combines femtosecond pump–probe excitation with near-field detection to resolve non-equilibrium carrier dynamics, phonon relaxation, and transient phase transitions. Provides simultaneous spatial (~20 nm) and temporal (~10 fs) resolution—accessing ultrafast phenomena in single nanostructures and heterogeneous materials.
+- **Ultrafast nanospectroscopy** — Combines femtosecond pump–probe excitation with near-field detection to resolve non-equilibrium carrier dynamics, phonon relaxation, and transient phase transitions. Provides simultaneous spatial (~20 nm) and temporal (few- to tens-of-femtoseconds, setup-dependent) resolution—accessing ultrafast phenomena in single nanostructures and heterogeneous materials.
 
 
 ## Pillar — Optical frequency combs {#pillar-ofc}
@@ -39,6 +39,6 @@
 
 **Progression.** My research path reflects a progression from metrological precision at macroscopic scales to quantitative measurements at the nanoscale.
 
-**Methodology.** Frequency-comb techniques taught me the value of absolute calibration, phase-coherent detection, and model-independent parameter extraction. Near-field methods now allow me to apply similar principles of quantitative measurement to phenomena that occur at surfaces, interfaces, and within individual nanostructures.
+**Methodology.** Frequency-comb techniques taught me the value of absolute calibration, phase-coherent detection, and quantitative parameter extraction with explicit model assumptions. Near-field methods now allow me to apply similar principles of quantitative measurement to phenomena that occur at surfaces, interfaces, and within individual nanostructures.
 
 **Philosophy.** While these two areas represent distinct experimental platforms, they share a common philosophy: developing measurement methodologies that provide not just qualitative images or spectra, but calibrated, reproducible observables that can be directly compared with theory and validated across laboratories.
