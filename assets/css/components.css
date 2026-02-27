@@ -1,7 +1,7 @@
 /* Component layer (incrementally extracted). */
 .nav-list {
   margin: 0;
-  padding: var(--space-4) 0;
+  padding: var(--space-4) 3rem var(--space-4) 0;
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -23,6 +23,26 @@
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+}
+
+.nav-avatar-slot {
+  position: absolute;
+  top: 50%;
+  right: 0.2rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid rgba(188, 210, 239, 0.48);
+  background: rgba(16, 24, 38, 0.9);
+  box-shadow: 0 0 0 1px rgba(4, 11, 29, 0.38) inset;
+}
+
+.nav-avatar-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .nav-link:hover,

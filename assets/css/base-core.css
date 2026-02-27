@@ -129,4 +129,5 @@ main a:not(.btn):not(.badge):not(.pill):hover {
 .site-header nav[aria-label="Primary navigation"] {
   width: min(92vw, var(--max-width));
   margin: 0 auto;
+  position: relative;
 }
