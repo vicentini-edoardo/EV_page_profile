@@ -1,0 +1,32 @@
+{
+  "profile": {
+    "url": "https://github.com/vicentini-edoardo",
+    "label": "View all repositories on GitHub"
+  },
+  "projects": [
+    {
+      "slug": "redpitaya",
+      "title": "RedPitaya Instrument Control",
+      "description": "Python-based control and acquisition software for the Red Pitaya STEMlab FPGA board. Designed for lock-in detection, PID stabilisation, and real-time signal processing in optical spectroscopy experiments.",
+      "image": "assets/img/github-projects/redpitaya.png",
+      "url": "https://github.com/vicentini-edoardo/redpitaya",
+      "topics": ["FPGA", "lock-in detection", "Python", "instrumentation", "data acquisition"]
+    },
+    {
+      "slug": "holography",
+      "title": "Digital Holography Reconstruction",
+      "description": "Numerical reconstruction toolkit for off-axis digital holography. Implements Fourier-domain filtering, wavefront propagation, and phase retrieval routines used in hyperspectral dual-comb holography experiments.",
+      "image": "assets/img/github-projects/holography.png",
+      "url": "https://github.com/vicentini-edoardo/holography",
+      "topics": ["Python", "holography", "wavefront", "phase retrieval", "optics"]
+    },
+    {
+      "slug": "transfer-matrix",
+      "title": "Multilayer Anisotropic Transfer Matrix",
+      "description": "Transfer matrix method for computing reflection, transmission, and field profiles in stratified anisotropic optical media. Supports uniaxial and biaxial layers, useful for modelling polariton and near-field responses.",
+      "image": "assets/img/github-projects/transfer-matrix.png",
+      "url": "https://github.com/vicentini-edoardo/multilayer-transfer-matrix",
+      "topics": ["Python", "transfer matrix", "anisotropy", "polaritons", "near-field optics"]
+    }
+  ]
+}

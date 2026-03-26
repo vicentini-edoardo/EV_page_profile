@@ -693,3 +693,84 @@ kbd {
   color: var(--muted);
   max-width: var(--content-width);
 }
+
+/* ── GitHub projects page ── */
+.github-projects-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: var(--space-5);
+}
+
+.github-project-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.github-project-card__img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.github-project-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.github-project-card:hover .github-project-card__img {
+  transform: scale(1.03);
+}
+
+.github-project-card__title,
+.github-project-card__desc,
+.github-project-card .tag-list,
+.github-project-card__link {
+  padding-left: var(--space-5);
+  padding-right: var(--space-5);
+}
+
+.github-project-card__title {
+  padding-top: var(--space-4);
+  margin: 0;
+}
+
+.github-project-card__desc {
+  color: var(--muted);
+  font-size: var(--step--1);
+  flex: 1;
+}
+
+.github-project-card__link {
+  margin-top: auto;
+  padding-bottom: var(--space-4);
+  align-self: flex-start;
+}
+
+.github-profile-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.github-profile-banner span {
+  flex: 1;
+  font-weight: 500;
+  min-width: 10ch;
+}
+
+.github-icon {
+  flex-shrink: 0;
+  color: var(--muted);
+}
