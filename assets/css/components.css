@@ -774,3 +774,8 @@ kbd {
   flex-shrink: 0;
   color: var(--muted);
 }
+
+.github-project-card__private-badge {
+  background: rgba(242, 176, 162, 0.15);
+  color: var(--accent-2);
+}

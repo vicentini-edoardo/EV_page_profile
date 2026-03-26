@@ -6,26 +6,27 @@
   "projects": [
     {
       "slug": "redpitaya",
-      "title": "RedPitaya Instrument Control",
-      "description": "Python-based control and acquisition software for the Red Pitaya STEMlab FPGA board. Designed for lock-in detection, PID stabilisation, and real-time signal processing in optical spectroscopy experiments.",
+      "title": "RedPitaya TTL Frequency Divider",
+      "description": "Python tools for the Red Pitaya STEMlab FPGA board implementing a TTL frequency divider. Useful for synchronisation and timing applications in optical spectroscopy experiments.",
       "image": "assets/img/github-projects/redpitaya.png",
-      "url": "https://github.com/vicentini-edoardo/redpitaya",
-      "topics": ["FPGA", "lock-in detection", "Python", "instrumentation", "data acquisition"]
+      "url": "https://github.com/vicentini-edoardo/Redpitaya_TTL_frequency_divider",
+      "topics": ["FPGA", "TTL", "Python", "frequency divider", "instrumentation"]
     },
     {
       "slug": "holography",
-      "title": "Digital Holography Reconstruction",
-      "description": "Numerical reconstruction toolkit for off-axis digital holography. Implements Fourier-domain filtering, wavefront propagation, and phase retrieval routines used in hyperspectral dual-comb holography experiments.",
+      "title": "SNOM Synthetic Holography Preview App",
+      "description": "Interactive Python application for previewing and processing synthetic holography data acquired by scattering-type scanning near-field optical microscopy (s-SNOM).",
       "image": "assets/img/github-projects/holography.png",
-      "url": "https://github.com/vicentini-edoardo/holography",
-      "topics": ["Python", "holography", "wavefront", "phase retrieval", "optics"]
+      "url": "https://github.com/vicentini-edoardo/SNOM_synthetic_holography_preview_app",
+      "topics": ["Python", "s-SNOM", "holography", "near-field optics", "data visualisation"],
+      "private": true
     },
     {
       "slug": "transfer-matrix",
       "title": "Multilayer Anisotropic Transfer Matrix",
       "description": "Transfer matrix method for computing reflection, transmission, and field profiles in stratified anisotropic optical media. Supports uniaxial and biaxial layers, useful for modelling polariton and near-field responses.",
       "image": "assets/img/github-projects/transfer-matrix.png",
-      "url": "https://github.com/vicentini-edoardo/multilayer-transfer-matrix",
+      "url": "https://github.com/vicentini-edoardo/Multilayer_anisotropic_Transfer_Matrix",
       "topics": ["Python", "transfer matrix", "anisotropy", "polaritons", "near-field optics"]
     }
   ]

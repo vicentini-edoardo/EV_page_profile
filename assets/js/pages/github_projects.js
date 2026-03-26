@@ -43,10 +43,15 @@
         </div>`;
     };
 
-    const renderTopics = (topics) => {
-      if (!Array.isArray(topics) || !topics.length) return '';
+    const renderTopics = (project) => {
+      const topics = project.topics || [];
+      const privateBadge = project.private
+        ? `<span class="badge github-project-card__private-badge" title="Repository is currently private">Private</span>`
+        : '';
+      if (!topics.length && !privateBadge) return '';
       return `
         <div class="tag-list">
+          ${privateBadge}
           ${topics.map((t) => `<span class="badge">${escapeHtml(t)}</span>`).join('')}
         </div>`;
     };
@@ -86,7 +91,7 @@
             ${renderImage(project)}
             <h3 class="github-project-card__title">${escapeHtml(project.title)}</h3>
             <p class="github-project-card__desc">${escapeHtml(project.description)}</p>
-            ${renderTopics(project.topics)}
+            ${renderTopics(project)}
             <a class="btn ghost github-project-card__link" href="${escapeHtml(project.url)}" target="_blank" rel="noopener noreferrer">
               View on GitHub ↗
             </a>
