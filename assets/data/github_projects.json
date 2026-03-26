@@ -18,8 +18,7 @@
       "description": "Interactive Python application for previewing and processing synthetic holography data acquired by scattering-type scanning near-field optical microscopy (s-SNOM).",
       "image": "assets/img/github-projects/holography.png",
       "url": "https://github.com/vicentini-edoardo/SNOM_synthetic_holography_preview_app",
-      "topics": ["Python", "s-SNOM", "holography", "near-field optics", "data visualisation"],
-      "private": true
+      "topics": ["Python", "s-SNOM", "holography", "near-field optics", "data visualisation"]
     },
     {
       "slug": "transfer-matrix",
