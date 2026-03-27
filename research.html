@@ -22,34 +22,19 @@
       <div class="hero__content">
         <p class="hero__eyebrow">RESEARCH</p>
         <h1 class="hero__title">Research</h1>
-        <p class="hero__focus">Nano optics, ultrafast spectroscopy, optical frequency comb metrology.</p>
+        <p class="hero__focus">Developing quantitative optical measurement platforms that access light–matter interaction at the nanoscale.</p>
       </div>
 
       <section class="section research-focus container" aria-label="Research focus areas">
         <div class="research-focus-grid">
           <div class="research-focus-card-wrapper">
-            <article class="research-focus-card research-focus-card--snom" data-focus-card>
-              <button
-                id="focus-card-1-button"
-                type="button"
-                class="research-focus-card__trigger"
-                aria-expanded="false"
-                aria-controls="focus-card-1-panel"
-                data-focus-trigger
-              >
-                <span class="research-focus-card__title">Nano optics and polaritons</span>
-                <span class="research-focus-card__summary">Near-field imaging, polaritons, nano-FTIR.</span>
-              </button>
-              <div
-                id="focus-card-1-panel"
-                class="research-focus-card__panel"
-                role="region"
-                aria-labelledby="focus-card-1-button"
-                data-focus-panel
-              >
-                <button type="button" class="research-focus-card__close" data-focus-close aria-label="Close expanded card">Close</button>
-                <p>I develop nano-optical methods to observe and control optical and vibrational modes below the diffraction limit, with emphasis on surface phonon polaritons and plasmon polaritons, near-field interferometry, and nanoscale spectroscopy.</p>
+            <article class="research-focus-card research-focus-card--snom">
+              <div class="research-focus-card__front" aria-hidden="true"></div>
+              <div class="research-focus-card__body">
+                <h2 class="research-focus-card__title">Nano optics and polaritons</h2>
+                <p class="research-focus-card__summary">Near-field imaging, polaritons, nano-FTIR.</p>
                 <div class="research-focus-divider" aria-hidden="true"></div>
+                <p>I develop nano-optical methods to observe and control optical and vibrational modes below the diffraction limit, with emphasis on surface phonon polaritons and plasmon polaritons, near-field interferometry, and nanoscale spectroscopy.</p>
                 <ul>
                   <li>s-SNOM, nano-FTIR, and hyperspectral nano-imaging across Mid-IR to THz</li>
                   <li>Surface phonon polaritons (SPhPs) and surface plasmon polaritons (SPPs) in 2D materials</li>
@@ -63,28 +48,13 @@
           </div>
 
           <div class="research-focus-card-wrapper">
-            <article class="research-focus-card research-focus-card--ofc" data-focus-card>
-              <button
-                id="focus-card-2-button"
-                type="button"
-                class="research-focus-card__trigger"
-                aria-expanded="false"
-                aria-controls="focus-card-2-panel"
-                data-focus-trigger
-              >
-                <span class="research-focus-card__title">Ultrafast spectroscopy and frequency combs</span>
-                <span class="research-focus-card__summary">Pump-probe dynamics, dual-comb metrology, broadband spectroscopy.</span>
-              </button>
-              <div
-                id="focus-card-2-panel"
-                class="research-focus-card__panel"
-                role="region"
-                aria-labelledby="focus-card-2-button"
-                data-focus-panel
-              >
-                <button type="button" class="research-focus-card__close" data-focus-close aria-label="Close expanded card">Close</button>
-                <p>I build and apply ultrafast and frequency comb-based measurement approaches to access dynamics and precision spectroscopy, bridging time-domain pump-probe methods with broadband coherent metrology.</p>
+            <article class="research-focus-card research-focus-card--ofc">
+              <div class="research-focus-card__front" aria-hidden="true"></div>
+              <div class="research-focus-card__body">
+                <h2 class="research-focus-card__title">Ultrafast spectroscopy and frequency combs</h2>
+                <p class="research-focus-card__summary">Pump-probe dynamics, dual-comb metrology, broadband spectroscopy.</p>
                 <div class="research-focus-divider" aria-hidden="true"></div>
+                <p>I build and apply ultrafast and frequency comb-based measurement approaches to access dynamics and precision spectroscopy, bridging time-domain pump-probe methods with broadband coherent metrology.</p>
                 <ul>
                   <li>Pump-probe nanospectroscopy for ultrafast carrier and phonon dynamics</li>
                   <li>Optical frequency comb metrology and high-resolution coherent spectroscopy</li>
@@ -98,17 +68,31 @@
           </div>
         </div>
       </section>
+
       <div class="container research-funding-link" id="funding-access">
         <a class="research-funding-link__anchor" href="funding.html">Funding and grants</a>
       </div>
-      <footer class="footer" data-partial="footer"></footer>
-      <div class="research-focus-overlay" data-focus-overlay aria-hidden="true"></div>
     </section>
+
+    <section class="section research-narrative container" aria-label="Research narrative" id="research-narrative">
+      <div class="view-toggle no-print" role="group" aria-label="Research detail level">
+        <button type="button" class="view-toggle-btn" data-research-view="general" aria-pressed="true">Overview</button>
+        <button type="button" class="view-toggle-btn" data-research-view="technical" aria-pressed="false">Technical</button>
+      </div>
+      <div class="research-narrative-content research-density-general">
+        <div class="md-block density-general" data-md="content/research_general.md"></div>
+        <div class="md-block density-technical" data-md="content/research_scientific.md"></div>
+      </div>
+    </section>
+
+    <footer class="footer" data-partial="footer"></footer>
   </main>
 
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
+  <script src="assets/js/core/markdown.js"></script>
+  <script src="assets/js/core/content.js"></script>
   <script src="assets/js/pages/research.js"></script>
   <script src="assets/js/core/layout.js"></script>
   <script src="assets/js/main.js"></script>

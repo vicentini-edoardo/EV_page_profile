@@ -894,6 +894,114 @@
   }
 }
 
+/* === Research focus cards: static section layout (replaces 3D flip/modal) === */
+
+#research-page-body .research-focus-card-wrapper {
+  aspect-ratio: auto;
+  min-height: auto;
+}
+
+#research-page-body .research-focus-card {
+  height: auto;
+  min-height: auto;
+  transform-style: flat;
+  perspective: none;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(188, 210, 239, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+#research-page-body .research-focus-card__front {
+  position: relative;
+  width: 100%;
+  height: clamp(9rem, 18vw, 13rem);
+  background-size: cover;
+  background-position: center;
+  background-color: #101826;
+  flex-shrink: 0;
+}
+
+#research-page-body .research-focus-card__front::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    140deg,
+    rgba(4, 11, 29, 0.88) 0%,
+    rgba(4, 11, 29, 0.55) 60%,
+    rgba(4, 11, 29, 0.25) 100%
+  );
+}
+
+#research-page-body .research-focus-card--snom .research-focus-card__front {
+  background-image: url('../img/research-pillars/SNOM.png');
+}
+
+#research-page-body .research-focus-card--ofc .research-focus-card__front {
+  background-image: url('../img/research-pillars/OFC.png');
+}
+
+#research-page-body .research-focus-card__body {
+  padding: var(--space-5);
+  background: rgba(16, 24, 38, 0.82);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+#research-page-body .research-focus-card__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.2;
+  color: #f5f9ff;
+  position: static;
+  z-index: auto;
+  margin: 0;
+}
+
+#research-page-body .research-focus-card__summary {
+  color: #c2d7f2;
+  font-size: var(--step-0);
+  margin: 0;
+}
+
+#research-page-body .research-focus-card__body p {
+  color: var(--text);
+  margin: 0;
+}
+
+#research-page-body .research-focus-card__body ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+#research-page-body .research-focus-card__body li {
+  margin: 0.2rem 0;
+  color: var(--text);
+}
+
+@media (max-width: 768px) {
+  .research-focus-card-wrapper,
+  #research-page-body .research-focus-card {
+    min-height: auto;
+    aspect-ratio: auto;
+  }
+}
+
+/* === Research narrative section === */
+
+#research-page-body .research-narrative {
+  padding-top: var(--space-7);
+  padding-bottom: var(--space-7);
+}
+
+#research-page-body .research-narrative .view-toggle {
+  margin-bottom: var(--space-5);
+}
+
 /* Publications page alignment to index-style hero shell */
 #publications-page-body {
   --publications-text-primary: var(--page-text-primary);
