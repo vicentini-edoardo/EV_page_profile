@@ -288,6 +288,7 @@
       modules.publications();
     if (qs("#conference-content") && modules.conference) modules.conference();
     if (qs("#cv-page-body") && modules.cv) modules.cv();
+    if (qs("#github-projects-grid") && modules.githubProjects) modules.githubProjects();
   }
 
   document.addEventListener("DOMContentLoaded", () => {
