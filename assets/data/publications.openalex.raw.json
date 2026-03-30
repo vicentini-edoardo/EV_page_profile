@@ -622,7 +622,7 @@
     "pages": "7012-7012",
     "doi": "10.1364/oe.483804",
     "doi_url": "https://doi.org/10.1364/oe.483804",
-    "citations_total": 10,
+    "citations_total": 11,
     "citations_last5": {
       "years": [
         2022,
@@ -636,7 +636,7 @@
         1,
         4,
         5,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -662,7 +662,7 @@
         1,
         4,
         5,
-        0
+        1
       ]
     }
   },
