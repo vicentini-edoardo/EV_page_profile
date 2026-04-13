@@ -1,6 +1,40 @@
 {
   "presentations": [
     {
+      "slug": "nanolight-2026-ultrastrong-coupling",
+      "type": "Invited",
+      "title": "Real-space observation of flat-band ultrastrong coupling between optical phonons and surface plasmon polaritons",
+      "event": "Nanolight",
+      "location": "Benasque, Spain",
+      "dates": {
+        "start": "2026-03-01",
+        "end": "2026-03-07"
+      },
+      "authors": [],
+      "notes": "Invited presentation",
+      "download": {
+        "label": "Download slides",
+        "path": "assets/files/conference/Nanolight2026.pdf"
+      }
+    },
+    {
+      "slug": "nanolight-2026-coupled-oscillator",
+      "type": "Poster",
+      "title": "Description of surface polaritons within a classical coupled harmonic oscillator model",
+      "event": "Nanolight",
+      "location": "Benasque, Spain",
+      "dates": {
+        "start": "2026-03-01",
+        "end": "2026-03-07"
+      },
+      "authors": [],
+      "notes": "Poster presentation",
+      "download": {
+        "label": "Download poster",
+        "path": "assets/files/conference/poster_Nanolight2026.pdf"
+      }
+    },
+    {
       "slug": "spp11-usc-2025",
       "type": "Oral presentation",
       "title": "Real-Space Observation of Ultrastrong Coupling Between Optical Phonons and Surface Plasmon Polaritons",
