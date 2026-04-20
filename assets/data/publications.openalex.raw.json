@@ -1844,7 +1844,7 @@
     "pages": "4541-4541",
     "doi": "10.1364/oe.385583",
     "doi_url": "https://doi.org/10.1364/oe.385583",
-    "citations_total": 35,
+    "citations_total": 36,
     "citations_last5": {
       "years": [
         2022,
@@ -1858,7 +1858,7 @@
         1,
         1,
         9,
-        2
+        3
       ]
     },
     "citations_by_year": {
@@ -1884,7 +1884,7 @@
         1,
         1,
         9,
-        2
+        3
       ]
     }
   },
@@ -2108,7 +2108,7 @@
     "pages": "",
     "doi": "10.1103/physreva.102.033510",
     "doi_url": "https://doi.org/10.1103/physreva.102.033510",
-    "citations_total": 4,
+    "citations_total": 5,
     "citations_last5": {
       "years": [
         2022,
@@ -2122,7 +2122,7 @@
         1,
         1,
         1,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -2148,7 +2148,7 @@
         1,
         1,
         1,
-        0
+        1
       ]
     }
   },
