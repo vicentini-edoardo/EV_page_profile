@@ -64,7 +64,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W7124169504",
@@ -128,7 +129,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4417454619",
@@ -154,7 +156,7 @@
     "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
-    "citations_total": 1,
+    "citations_total": 2,
     "citations_last5": {
       "years": [
         2022,
@@ -168,7 +170,7 @@
         0,
         0,
         0,
-        1
+        2
       ]
     },
     "citations_by_year": {
@@ -194,9 +196,10 @@
         0,
         0,
         0,
-        1
+        2
       ]
-    }
+    },
+    "selected": true
   },
   {
     "openalex_id": "https://openalex.org/W7116425985",
@@ -209,7 +212,7 @@
       "Nicolas Pajusco",
       "Felix Begemann",
       "Maria Barra Burillo",
-      "M. A. Ramos",
+      "Ramos, Maria",
       "Andrei Bylinkin",
       "Ruben Esteban",
       "Javier Aizpurua",
@@ -264,7 +267,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W7116461325",
@@ -277,7 +281,7 @@
       "Nicolas Pajusco",
       "Felix Begemann",
       "Maria Barra Burillo",
-      "M. A. Ramos",
+      "Ramos, Maria",
       "Andrei Bylinkin",
       "Ruben Esteban",
       "Javier Aizpurua",
@@ -332,7 +336,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4402263241",
@@ -397,7 +402,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4387738691",
@@ -462,7 +468,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4368374237",
@@ -496,7 +503,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 54,
+    "citations_total": 55,
     "citations_last5": {
       "years": [
         2022,
@@ -510,7 +517,7 @@
         8,
         20,
         20,
-        6
+        7
       ]
     },
     "citations_by_year": {
@@ -536,9 +543,10 @@
         8,
         20,
         20,
-        6
+        7
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4377096925",
@@ -601,7 +609,8 @@
         2,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4318161806",
@@ -664,7 +673,8 @@
         5,
         1
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4380484924",
@@ -728,7 +738,8 @@
         1,
         1
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4290711235",
@@ -789,7 +800,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3190352467",
@@ -851,7 +863,8 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3193363003",
@@ -914,7 +927,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4200612483",
@@ -979,7 +993,8 @@
         4,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4205305862",
@@ -1046,7 +1061,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3157190052",
@@ -1108,7 +1124,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": true
   },
   {
     "openalex_id": "https://openalex.org/W3164377791",
@@ -1175,7 +1192,8 @@
         2,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3162952254",
@@ -1237,7 +1255,8 @@
         7,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3217098938",
@@ -1257,7 +1276,7 @@
     "pages": "",
     "doi": "",
     "doi_url": "",
-    "citations_total": 100,
+    "citations_total": 101,
     "citations_last5": {
       "years": [
         2022,
@@ -1271,7 +1290,7 @@
         23,
         29,
         24,
-        2
+        3
       ]
     },
     "citations_by_year": {
@@ -1297,9 +1316,10 @@
         23,
         29,
         24,
-        2
+        3
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3037442291",
@@ -1366,7 +1386,8 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W4297826911",
@@ -1433,7 +1454,8 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3086303149",
@@ -1500,7 +1522,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3110907660",
@@ -1562,7 +1585,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3114178676",
@@ -1625,7 +1649,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3107329645",
@@ -1688,7 +1713,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3034506494",
@@ -1751,7 +1777,8 @@
         2,
         2
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3012175314",
@@ -1819,7 +1846,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3003051589",
@@ -1886,7 +1914,8 @@
         9,
         3
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3047278637",
@@ -1953,7 +1982,8 @@
         2,
         1
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3006377442",
@@ -2022,7 +2052,8 @@
         2,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3087937261",
@@ -2087,7 +2118,8 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3085902136",
@@ -2150,7 +2182,8 @@
         1,
         1
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2946198806",
@@ -2213,7 +2246,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2981282731",
@@ -2283,7 +2317,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3042181656",
@@ -2353,7 +2388,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2800847619",
@@ -2421,7 +2457,8 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2809568832",
@@ -2492,7 +2529,8 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2855479249",
@@ -2556,7 +2594,8 @@
         1,
         1
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2901121327",
@@ -2619,7 +2658,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2767182919",
@@ -2689,7 +2729,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W3119737890",
@@ -2747,7 +2788,8 @@
         0,
         0
       ]
-    }
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W2611277652",
@@ -2817,6 +2859,7 @@
         1,
         0
       ]
-    }
+    },
+    "selected": false
   }
 ]
