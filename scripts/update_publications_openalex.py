@@ -185,7 +185,8 @@ def load_selected_dois(path: str) -> List[str]:
     if not os.path.exists(path):
         return []
     try:
-        data = json.loads(Path(path).read_text(encoding="utf-8"))
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
     except Exception:
         return []
     if isinstance(data, list):
