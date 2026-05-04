@@ -1274,9 +1274,9 @@
     "volume": "",
     "issue": "",
     "pages": "",
-    "doi": "",
-    "doi_url": "",
-    "citations_total": 101,
+    "doi": "10.1038/s41566-021-00892-x",
+    "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
+    "citations_total": 102,
     "citations_last5": {
       "years": [
         2022,
@@ -1290,7 +1290,7 @@
         23,
         29,
         24,
-        3
+        4
       ]
     },
     "citations_by_year": {
@@ -1316,10 +1316,10 @@
         23,
         29,
         24,
-        3
+        4
       ]
     },
-    "selected": false
+    "selected": true
   },
   {
     "openalex_id": "https://openalex.org/W3037442291",
@@ -1410,8 +1410,8 @@
     "volume": "",
     "issue": "",
     "pages": "",
-    "doi": "",
-    "doi_url": "",
+    "doi": "10.48550/arxiv.2006.15113",
+    "doi_url": "https://doi.org/10.48550/arxiv.2006.15113",
     "citations_total": 11,
     "citations_last5": {
       "years": [
