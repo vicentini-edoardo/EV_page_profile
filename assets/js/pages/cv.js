@@ -73,9 +73,24 @@
       trigger.setAttribute('data-cv-trigger', '');
       trigger.setAttribute('aria-expanded', 'false');
       const iconMarkup = getIcon(section);
-      trigger.innerHTML = iconMarkup
-        ? `<span class="cv-section-trigger__label"><span class="cv-section-trigger__icon">${iconMarkup}</span><span class="cv-section-trigger__text">${title}</span></span>`
-        : `<span class="cv-section-trigger__text">${title}</span>`;
+      if (iconMarkup) {
+        const label = document.createElement('span');
+        label.className = 'cv-section-trigger__label';
+        const iconSpan = document.createElement('span');
+        iconSpan.className = 'cv-section-trigger__icon';
+        iconSpan.innerHTML = iconMarkup;
+        const textSpan = document.createElement('span');
+        textSpan.className = 'cv-section-trigger__text';
+        textSpan.textContent = title;
+        label.appendChild(iconSpan);
+        label.appendChild(textSpan);
+        trigger.appendChild(label);
+      } else {
+        const textSpan = document.createElement('span');
+        textSpan.className = 'cv-section-trigger__text';
+        textSpan.textContent = title;
+        trigger.appendChild(textSpan);
+      }
 
       section.appendChild(trigger);
       section.appendChild(panel);

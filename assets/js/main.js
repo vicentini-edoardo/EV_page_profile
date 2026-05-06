@@ -99,6 +99,14 @@
         .toLowerCase();
     };
 
+    const escapeHtml = (value) =>
+      String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+
     const formatAuthors = (pub) => {
       if (Array.isArray(pub.authors)) return pub.authors.join(", ");
       if (typeof pub.authors === "string") return pub.authors;
@@ -146,13 +154,14 @@
         }
         selectedList.innerHTML = items
           .map((pub) => {
-            const authors = formatAuthors(pub);
-            const journal = pub.journal || pub.venue || "";
+            const authors = escapeHtml(formatAuthors(pub));
+            const journal = escapeHtml(pub.journal || pub.venue || "");
+            const year = pub.year ? ` (${escapeHtml(String(pub.year))})` : "";
             return `
               <div class="list-item">
-                <strong>${pub.title}</strong>
+                <strong>${escapeHtml(pub.title)}</strong>
                 ${authors ? `<div class="meta">${authors}</div>` : ""}
-                <small>${journal}${pub.year ? ` (${pub.year})` : ""}</small>
+                <small>${journal}${year}</small>
               </div>`;
           })
           .join("");
@@ -161,6 +170,20 @@
         selectedList.innerHTML =
           "<p>Selected publications will appear here once the data file is available.</p>";
       });
+  }
+
+  function fallbackCopy(text, onSuccess) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    try {
+      if (document.execCommand("copy")) onSuccess();
+    } catch (err) {}
+    document.body.removeChild(textarea);
   }
 
   function initCopyEmail() {
@@ -179,9 +202,9 @@
         navigator.clipboard
           .writeText(email)
           .then(showCopied)
-          .catch(() => {});
+          .catch(() => fallbackCopy(email, showCopied));
       } else {
-        showCopied();
+        fallbackCopy(email, showCopied);
       }
     });
   }

@@ -38,9 +38,17 @@
             src="${escapeHtml(project.image)}"
             alt="${escapeHtml(project.title)} preview"
             loading="lazy"
-            onerror="this.closest('.github-project-card__img-wrap').style.display='none'"
           />
         </div>`;
+    };
+
+    const attachImageErrorHandlers = (root) => {
+      root.querySelectorAll('.github-project-card__img').forEach((img) => {
+        img.addEventListener('error', () => {
+          const wrap = img.closest('.github-project-card__img-wrap');
+          if (wrap) wrap.style.display = 'none';
+        }, { once: true });
+      });
     };
 
     const renderTopics = (project) => {
@@ -96,6 +104,7 @@
               View on GitHub ↗
             </a>
           </article>`).join('');
+        attachImageErrorHandlers(container);
       })
       .catch(() => renderError('GitHub projects data is not available at the moment.'));
 
