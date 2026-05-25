@@ -503,7 +503,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 55,
+    "citations_total": 56,
     "citations_last5": {
       "years": [
         2022,
@@ -517,7 +517,7 @@
         8,
         20,
         20,
-        7
+        8
       ]
     },
     "citations_by_year": {
@@ -543,7 +543,7 @@
         8,
         20,
         20,
-        7
+        8
       ]
     },
     "selected": false
@@ -1213,7 +1213,7 @@
     "pages": "3957-3957",
     "doi": "10.1364/ol.431451",
     "doi_url": "https://doi.org/10.1364/ol.431451",
-    "citations_total": 22,
+    "citations_total": 23,
     "citations_last5": {
       "years": [
         2022,
@@ -1227,7 +1227,7 @@
         6,
         5,
         7,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -1253,7 +1253,7 @@
         6,
         5,
         7,
-        0
+        1
       ]
     },
     "selected": false
@@ -1276,7 +1276,7 @@
     "pages": "",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 102,
+    "citations_total": 103,
     "citations_last5": {
       "years": [
         2022,
@@ -1290,7 +1290,7 @@
         23,
         29,
         24,
-        4
+        5
       ]
     },
     "citations_by_year": {
@@ -1316,7 +1316,7 @@
         23,
         29,
         24,
-        4
+        5
       ]
     },
     "selected": true
@@ -1412,7 +1412,7 @@
     "pages": "",
     "doi": "10.48550/arxiv.2006.15113",
     "doi_url": "https://doi.org/10.48550/arxiv.2006.15113",
-    "citations_total": 11,
+    "citations_total": 12,
     "citations_last5": {
       "years": [
         2022,
@@ -1426,7 +1426,7 @@
         2,
         2,
         1,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -1452,7 +1452,7 @@
         2,
         2,
         1,
-        0
+        1
       ]
     },
     "selected": false
@@ -1607,7 +1607,7 @@
     "pages": "LTu2F.3-LTu2F.3",
     "doi": "10.1364/ls.2020.ltu2f.3",
     "doi_url": "https://doi.org/10.1364/ls.2020.ltu2f.3",
-    "citations_total": 6,
+    "citations_total": 7,
     "citations_last5": {
       "years": [
         2022,
@@ -1621,7 +1621,7 @@
         0,
         0,
         0,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -1647,7 +1647,7 @@
         0,
         0,
         0,
-        0
+        1
       ]
     },
     "selected": false
