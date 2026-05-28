@@ -11,8 +11,18 @@
     return html.replaceAll('{{BASE}}', basePath);
   }
 
+  const FETCH_TIMEOUT_MS = 8000;
+
+  function withTimeout(url, timeoutMs = FETCH_TIMEOUT_MS) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    return fetch(url, { signal: controller.signal }).finally(() => {
+      clearTimeout(timeoutId);
+    });
+  }
+
   function loadPartial(target, name) {
-    return fetch(`${partialRoot}/${name}.html`)
+    return withTimeout(`${partialRoot}/${name}.html`)
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to fetch partial: ${name}`);
         return res.text();

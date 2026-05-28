@@ -3001,6 +3001,12 @@ blockquote {
   cursor: pointer;
 }
 
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
 #lightbox-prev {
   left: 0.6rem;
 }

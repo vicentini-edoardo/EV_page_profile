@@ -32,11 +32,7 @@ EV_page_profile/
 │
 ├── assets/
 │   ├── css/
-│   │   ├── tokens.css                # Design tokens (colors, spacing, type, radius, shadows)
-│   │   ├── base-core.css             # Reset and base typography
-│   │   ├── base.css                  # CSS importer (loads all layers)
-│   │   ├── components.css            # UI component styles
-│   │   ├── pages.css                 # Page-specific layout rules
+│   │   ├── base.css                  # Single monolithic stylesheet — the ONLY non-print CSS loaded by every page (tokens, reset, components, page rules)
 │   │   └── print.css                 # Print media overrides
 │   │
 │   ├── js/
@@ -167,15 +163,18 @@ Header and footer are loaded client-side. JS fetches `assets/partials/header.htm
 
 Global site constants (name, affiliation, email, ORCID, CV URLs) live in `main.js` under a `SITE` object and are also available as `data-site-*` attributes on the `<html>` or `<body>` element for CSS/HTML-level access.
 
-### CSS Layers (load order matters)
+### CSS Structure
 
-1. `tokens.css` — custom property definitions (colors, spacing, type scale, radius, shadows)
-2. `base-core.css` — reset + base typography
-3. `components.css` — reusable UI components
-4. `pages.css` — page-specific overrides
-5. `print.css` — `@media print` only
+Every page loads exactly two stylesheets: `base.css` (everything) and `print.css` (`@media print` only). `base.css` is a single monolithic file organised internally in conceptual layers, in this order:
 
-Always define new design values as tokens in `tokens.css`; never hardcode colors or spacing elsewhere.
+1. Design tokens — custom property definitions (colors, spacing, type scale, radius, shadows) in the `:root` block at the top
+2. Reset + base typography
+3. Reusable UI components
+4. Page-specific overrides
+
+Define new design values as CSS custom properties in the `:root` token block at the top of `base.css`; never hardcode colors or spacing in component or page rules.
+
+> Note: there are no separate `tokens.css` / `components.css` / `pages.css` files. An earlier "layered source" split existed but the layer files were never actually loaded by any page (they duplicated `base.css`) and have been removed to avoid edits that silently have no effect.
 
 ### Key Design Tokens
 
@@ -236,7 +235,7 @@ Manually maintained. Preserve existing key schemas; do not add ad-hoc fields wit
 
 ### CSS
 - 2-space indentation
-- All new values as CSS custom properties in `tokens.css`
+- All new values as CSS custom properties in the `:root` token block at the top of `base.css`
 - Mobile-first media queries
 - BEM-like class naming: `.site-header`, `.hero__title`, `.card--featured`
 
@@ -313,5 +312,5 @@ Required in repository settings for automated workflows:
 - Do not add a package.json or bundler
 - Do not add a CSS preprocessor (Sass, Less)
 - Do not add automated tests without agreeing on a testing strategy first
-- Do not hardcode colors, spacing, or font sizes outside `tokens.css`
+- Do not hardcode colors, spacing, or font sizes outside the `:root` token block in `base.css`
 - Do not commit `.DS_Store`, `_site/`, or `_archive_unused/` contents (all in `.gitignore`)
