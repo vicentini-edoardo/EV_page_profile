@@ -90,6 +90,8 @@ EV_page_profile/
 ├── scripts/
 │   ├── generate_projects_pages.py    # Generates projects/*.html from template + data
 │   ├── generate_award_manifests.py   # Generates images.json in awards image folders
+│   ├── optimize_images.py            # Convert PNG/JPG to WebP, flag oversized images (needs Pillow)
+│   ├── compress_pdfs.py              # Compress PDFs via Ghostscript (needs gs)
 │   └── update_publications_openalex.py  # Syncs publications via OpenAlex API
 │
 ├── .github/workflows/
@@ -113,6 +115,14 @@ python3 scripts/generate_projects_pages.py
 
 # Regenerate award image manifests after adding/removing award images
 python3 scripts/generate_award_manifests.py
+
+# Optimise images before committing (PNG/JPG -> WebP). --dry-run needs no deps.
+python3 scripts/optimize_images.py --dry-run        # preview + flag oversized
+python3 scripts/optimize_images.py --replace        # convert + remove originals (needs Pillow)
+
+# Compress large PDFs (e.g. conference decks) with Ghostscript
+python3 scripts/compress_pdfs.py --dry-run          # preview candidates
+python3 scripts/compress_pdfs.py --setting ebook    # compress in place (needs gs)
 
 # Manually sync publications from OpenAlex
 OPENALEX_API_KEY=<key> OPENALEX_MAILTO=you@example.com python3 scripts/update_publications_openalex.py
