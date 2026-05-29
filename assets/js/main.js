@@ -105,13 +105,18 @@
       return "";
     };
 
+    const fetchJson = (url, timeoutMs = 10000) => {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+      return fetch(url, { signal: controller.signal })
+        .then((r) => r.json())
+        .catch(() => [])
+        .finally(() => clearTimeout(timeoutId));
+    };
+
     Promise.all([
-      fetch("assets/data/publications.json")
-        .then((r) => r.json())
-        .catch(() => []),
-      fetch("assets/data/publications.selected.json")
-        .then((r) => r.json())
-        .catch(() => []),
+      fetchJson("assets/data/publications.json"),
+      fetchJson("assets/data/publications.selected.json"),
     ])
       .then(([pubData, selectedData]) => {
         const publications = Array.isArray(pubData)

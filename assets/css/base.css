@@ -58,6 +58,44 @@ body {
   padding-top: var(--site-header-height);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+::-moz-selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Branded scrollbar for the dark theme */
+* {
+  scrollbar-color: var(--border) transparent;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -576,6 +614,11 @@ figcaption {
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease;
+}
+
+.filter-bar input:hover,
+.filter-bar select:hover {
+  border-color: var(--accent);
 }
 
 label {
@@ -2582,6 +2625,11 @@ main .section:first-child {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--accent);
 }
 
 blockquote {
@@ -2729,11 +2777,18 @@ blockquote {
 
 .pub-title a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
 }
 
 .pub-title a:hover {
   color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .pub-side {
@@ -2837,6 +2892,17 @@ blockquote {
   border-radius: var(--radius-lg);
   padding: var(--space-5);
   box-shadow: var(--shadow-1);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.funding-card:hover,
+.funding-card:focus-within {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-2);
+  transform: translateY(-2px);
 }
 
 .funding-card h3 {
@@ -2994,11 +3060,40 @@ blockquote {
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.6);
   border: none;
-  color: #fff;
+  color: var(--text-inverse);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.lightbox-nav:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.lightbox-nav:active {
+  transform: translateY(-50%) scale(0.97);
+}
+
+.lightbox-close {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
 }
 
 #lightbox-prev {
@@ -3032,6 +3127,17 @@ blockquote {
   background: var(--bg-alt);
   box-shadow: var(--shadow-1);
   margin-bottom: var(--space-4);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.conference-card:hover,
+.conference-card:focus-within {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-2);
+  transform: translateY(-2px);
 }
 
 .conference-header {
@@ -3333,11 +3439,19 @@ blockquote {
   font-weight: 600;
   cursor: pointer;
   color: var(--muted);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.view-toggle-btn:hover:not(.is-active) {
+  color: var(--text);
+  background: var(--accent-soft);
 }
 
 .view-toggle-btn.is-active {
   background: var(--accent);
-  color: #fff;
+  color: var(--text-inverse);
 }
 
 .view-toggle-btn:focus-visible {

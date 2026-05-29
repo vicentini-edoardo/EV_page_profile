@@ -120,7 +120,7 @@
       if (!dir) return Promise.resolve([]);
       const cleanDir = String(dir).replace(/\/$/, '');
       if (!cleanDir) return Promise.resolve([]);
-      return fetch(`${cleanDir}/images.json`)
+      return withTimeout(`${cleanDir}/images.json`)
         .then((response) => (response.ok ? response.json() : []))
         .then((data) => {
           const list = Array.isArray(data) ? data : (data.images || []);

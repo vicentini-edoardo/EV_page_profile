@@ -1,9 +1,18 @@
 (function (global) {
   const cache = new Map();
+  const FETCH_TIMEOUT_MS = 8000;
+
+  function withTimeout(url, timeoutMs = FETCH_TIMEOUT_MS) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    return fetch(url, { signal: controller.signal }).finally(() => {
+      clearTimeout(timeoutId);
+    });
+  }
 
   async function loadMarkdown(path) {
     if (cache.has(path)) return cache.get(path);
-    const promise = fetch(path)
+    const promise = withTimeout(path)
       .then((response) => {
         if (!response.ok) throw new Error('Failed to load');
         return response.text();

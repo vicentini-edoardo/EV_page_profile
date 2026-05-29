@@ -55,7 +55,7 @@
       const safeSlug = encodeURIComponent(String(slug || '').trim());
       if (!safeSlug) return Promise.resolve([]);
       const manifestUrl = `assets/img/awards/${safeSlug}/images.json`;
-      return fetch(manifestUrl)
+      return withTimeout(manifestUrl)
         .then((response) => {
           if (!response.ok) return null;
           return response.json();
