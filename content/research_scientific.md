@@ -9,7 +9,7 @@
 
 ## Pillar — s-SNOM {#pillar-snom}
 
-![s-SNOM near-field imaging](assets/img/research-pillars/SNOM_cover.png)
+![s-SNOM near-field imaging](assets/img/research-pillars/SNOM.png)
 
 **What it enables.** My current work at CIC nanoGUNE centers on developing quantitative near-field optical measurements using scattering-type scanning near-field optical microscopy. s-SNOM circumvents the diffraction limit by localizing electromagnetic fields at the apex of a sharp metallic AFM tip (~10–20 nm radius). This enables optical imaging and spectroscopy with spatial resolution determined by tip geometry rather than wavelength—revealing nanoscale phenomena invisible to conventional optics.
 
@@ -23,7 +23,7 @@
 
 ## Pillar — Optical frequency combs {#pillar-ofc}
 
-![Optical frequency combs](assets/img/research-pillars/comb_cover.png)
+![Optical frequency combs](assets/img/research-pillars/OFC.png)
 
 **What it enables.** During my PhD and postdoctoral work, I developed expertise in optical frequency-comb techniques for precision spectroscopy and coherent imaging. Optical frequency combs are laser sources whose output consists of evenly spaced, phase-coherent spectral lines—forming a precise “ruler” in frequency space. They connect optical measurements to atomic standards and enable traceable, reproducible spectroscopy with unprecedented accuracy.
 

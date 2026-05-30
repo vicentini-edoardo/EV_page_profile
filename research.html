@@ -102,8 +102,25 @@
           </div>
         </div>
       </section>
+
+      <section class="section container research-narrative" aria-label="Research narrative">
+        <div class="section-header">
+          <div>
+            <h2>In depth</h2>
+            <p class="tagline">Choose the reading level: a plain-language overview, or the technical detail.</p>
+          </div>
+          <div class="view-toggle no-print" role="group" aria-label="Research detail level">
+            <button type="button" class="view-toggle-btn is-active" data-research-view="overview" aria-pressed="true">Overview</button>
+            <button type="button" class="view-toggle-btn" data-research-view="technical" aria-pressed="false">Technical</button>
+          </div>
+        </div>
+        <article class="research-md md-block view-research view-research--overview" data-md="content/research_general.md"></article>
+        <article class="research-md md-block view-research view-research--technical" data-md="content/research_scientific.md"></article>
+      </section>
+
       <div class="container research-funding-link" id="funding-access">
-        <a class="research-funding-link__anchor" href="funding.html">Funding and grants</a>
+        <span class="research-funding-link__label">Funding &amp; grants supporting this work</span>
+        <a class="research-funding-link__anchor" href="funding.html">View funding &amp; fellowships</a>
       </div>
       <footer class="footer" data-partial="footer"></footer>
       <div class="research-focus-overlay" data-focus-overlay aria-hidden="true"></div>
@@ -113,6 +130,8 @@
   <script src="assets/js/core/dom.js"></script>
   <script src="assets/js/core/storage.js"></script>
   <script src="assets/js/core/format.js"></script>
+  <script src="assets/js/core/markdown.js"></script>
+  <script src="assets/js/core/content.js"></script>
   <script src="assets/js/pages/research.js"></script>
   <script src="assets/js/core/layout.js"></script>
   <script src="assets/js/main.js"></script>

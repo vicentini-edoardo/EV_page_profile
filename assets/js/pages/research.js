@@ -1,7 +1,37 @@
 (function (global) {
+  const initNarrativeToggle = (root) => {
+    const buttons = Array.from(root.querySelectorAll('[data-research-view]'));
+    if (!buttons.length) return;
+    const storageKey = 'researchView';
+    const stored = global.StorageUtil
+      ? global.StorageUtil.get(storageKey, 'overview')
+      : 'overview';
+    const initial = stored === 'technical' ? 'technical' : 'overview';
+
+    const apply = (mode) => {
+      document.body.classList.remove('mode-research-overview', 'mode-research-technical');
+      document.body.classList.add(
+        mode === 'technical' ? 'mode-research-technical' : 'mode-research-overview',
+      );
+      if (global.StorageUtil) global.StorageUtil.set(storageKey, mode);
+      buttons.forEach((btn) => {
+        const isActive = btn.dataset.researchView === mode;
+        btn.classList.toggle('is-active', isActive);
+        btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+    };
+
+    buttons.forEach((btn) => {
+      btn.addEventListener('click', () => apply(btn.dataset.researchView));
+    });
+
+    apply(initial);
+  };
+
   const module = () => {
     const root = document.getElementById('research-page');
     if (!root) return;
+    initNarrativeToggle(root);
     const cards = Array.from(root.querySelectorAll('[data-focus-card]'));
     const overlay = document.querySelector('[data-focus-overlay]');
     const mobileQuery = global.matchMedia('(max-width: 768px)');

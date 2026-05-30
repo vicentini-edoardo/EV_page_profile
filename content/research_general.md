@@ -26,7 +26,7 @@ Together, these domains provide complementary perspectives:
 
 ## Pillar I — Seeing Beyond the Diffraction Limit
 
-![s-SNOM near-field imaging](assets/img/research-pillars/SNOM_cover.png)
+![s-SNOM near-field imaging](assets/img/research-pillars/SNOM.png)
 
 ### The Challenge
 Conventional optical microscopes cannot resolve features smaller than roughly half the wavelength of light (≈200–500 nm in the visible range). Many critical structures in modern materials — quantum dots, molecular layers, plasmonic antennas — lie well below this threshold.
@@ -58,7 +58,7 @@ By combining femtosecond laser pulses with near-field detection, I capture how m
 
 ## Pillar II — Ultra-Precise Optical Measurements
 
-![Optical frequency combs](assets/img/research-pillars/comb_cover.png)
+![Optical frequency combs](assets/img/research-pillars/OFC.png)
 
 Before moving into nanoscale imaging, I developed measurement strategies based on **optical frequency combs**, a technology recognized with the 2005 Nobel Prize in Physics.
 
