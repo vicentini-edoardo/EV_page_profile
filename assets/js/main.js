@@ -186,44 +186,6 @@
     });
   }
 
-  function initDemo() {
-    const demoCanvas = qs("#demo-canvas");
-    const demoSlider = qs("#demo-slider");
-    if (!demoCanvas || !demoSlider) return;
-    const ctx = demoCanvas.getContext("2d");
-    const root = document.documentElement;
-
-    const draw = (value) => {
-      const width = demoCanvas.width;
-      const height = demoCanvas.height;
-      ctx.clearRect(0, 0, width, height);
-      ctx.strokeStyle =
-        getComputedStyle(root).getPropertyValue("--accent").trim() || "#0f5c6e";
-      ctx.lineWidth = 2;
-      ctx.beginPath();
-      for (let x = 0; x < width; x += 4) {
-        const t = x / width;
-        const y =
-          height / 2 -
-          Math.sin(t * 6.28) * (value * 0.4) * height * (0.4 + 0.6 * t);
-        ctx.lineTo(x, y);
-      }
-      ctx.stroke();
-    };
-
-    const resize = () => {
-      demoCanvas.width = demoCanvas.clientWidth;
-      demoCanvas.height = demoCanvas.clientHeight;
-      draw(parseFloat(demoSlider.value));
-    };
-
-    demoSlider.addEventListener("input", () =>
-      draw(parseFloat(demoSlider.value)),
-    );
-    global.addEventListener("resize", resize);
-    resize();
-  }
-
   function initMarkdownBlocks() {
     if (!global.ContentLoader) return;
     const blocks = qsa(".md-block[data-md]");
@@ -307,7 +269,6 @@
     initActiveNav();
     initSelectedPublications();
     initCopyEmail();
-    initDemo();
     initMarkdownBlocks();
     initCvToggle();
     initPageModules();

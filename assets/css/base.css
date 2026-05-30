@@ -3667,3 +3667,224 @@ blockquote {
 .pub-media img.is-visible {
   opacity: 1;
 }
+
+/* =========================================================================
+   Navigation brand + restructured primary nav
+   ========================================================================= */
+.site-header nav.primary-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.nav-brand__name {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: 0.02em;
+}
+
+.nav-brand__role {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nav-brand:hover .nav-brand__name {
+  color: var(--accent);
+}
+
+.primary-nav .nav-list {
+  padding: var(--space-3) 0;
+}
+
+#home-page .nav-brand__name {
+  color: var(--home-text-primary);
+}
+
+#home-page .nav-brand__role {
+  color: var(--home-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .site-header nav.primary-nav {
+    gap: var(--space-2);
+  }
+  .nav-brand__role {
+    display: none;
+  }
+}
+
+/* =========================================================================
+   Homepage landing content (below the full-screen hero)
+   ========================================================================= */
+.home-content {
+  background: var(--home-bg-deep, #040b1d);
+}
+
+.home-content section[id] {
+  scroll-margin-top: calc(var(--site-header-height) + 1rem);
+}
+
+.home-content .section {
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.home-intro {
+  border-bottom: 1px solid rgba(188, 210, 239, 0.14);
+}
+
+.home-intro__lead {
+  font-size: clamp(1.1rem, 1rem + 0.9vw, 1.45rem);
+  line-height: 1.55;
+  max-width: 60ch;
+  color: var(--home-text-primary, #f5f9ff);
+  margin: 0 0 var(--space-5);
+}
+
+.home-intro__lead strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.home-intro__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.home-focus-card {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.home-focus-card h3 {
+  margin: 0;
+  font-size: var(--step-1);
+}
+
+.home-focus-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.home-focus-card__cta {
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+
+.home-focus-card:hover .home-focus-card__cta {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.home-honor {
+  gap: var(--space-2);
+}
+
+.home-honor__year {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.home-honor h3 {
+  margin: 0;
+  font-size: var(--step-1);
+}
+
+.home-honor .meta {
+  color: var(--muted);
+  margin: 0;
+}
+
+.home-selected .list-item strong {
+  font-size: 1.02rem;
+}
+
+.home-contact__panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(95, 208, 229, 0.28);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    120deg,
+    rgba(45, 166, 255, 0.12),
+    rgba(242, 176, 162, 0.08)
+  );
+}
+
+.home-contact__panel h2 {
+  margin: 0 0 var(--space-2);
+}
+
+.home-contact__panel .tagline {
+  margin: 0;
+}
+
+.home-contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* =========================================================================
+   Research narrative (Overview / Technical) + funding link label
+   ========================================================================= */
+.research-narrative {
+  position: relative;
+  z-index: 1;
+}
+
+.research-narrative .section-header {
+  align-items: center;
+}
+
+.research-md {
+  max-width: 72ch;
+}
+
+.research-md img {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  margin: var(--space-4) 0;
+}
+
+.view-research--technical {
+  display: none;
+}
+
+body.mode-research-technical .view-research--technical {
+  display: block;
+}
+
+body.mode-research-technical .view-research--overview {
+  display: none;
+}
+
+#research-page-body .research-funding-link {
+  align-items: baseline;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.research-funding-link__label {
+  color: var(--muted);
+  font-size: var(--step--1);
+}

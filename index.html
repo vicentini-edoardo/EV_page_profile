@@ -56,21 +56,112 @@
       <div class="hero__content">
         <p class="hero__eyebrow">EXPLORING</p>
         <h1 class="hero__title">LIGHT&ndash;MATTER INTERACTION<br />AT THE NANOSCALE</h1>
-        <p class="hero__focus">Nano-Optics &bull; Ultrafast Spectroscopy &bull; Near-Field Imaging</p>
+        <p class="hero__focus">Building optical instruments that see and measure how light behaves below the diffraction limit &mdash; from near-field nano-imaging to frequency-comb precision.</p>
         <p class="hero__name" data-site="name">Edoardo Vicentini</p>
-        <p class="hero__role">Nano-Optics &amp; Ultrafast Spectroscopy</p>
         <p class="hero__cred"><span data-site="role">Postdoctoral Researcher</span> &bull; <span data-site="affiliation">CIC nanoGUNE</span></p>
       </div>
 
-      <div class="hero__quicknav" aria-hidden="true"></div>
-
-      <footer class="footer" data-partial="footer"></footer>
+      <nav class="hero__quicknav" aria-label="Jump to homepage sections">
+        <ul class="quicknav-list">
+          <li><a class="quicknav-link" href="#focus">Research</a></li>
+          <li aria-hidden="true" class="quicknav-sep">/</li>
+          <li><a class="quicknav-link" href="#selected">Publications</a></li>
+          <li aria-hidden="true" class="quicknav-sep">/</li>
+          <li><a class="quicknav-link" href="#recognition">Recognition</a></li>
+          <li aria-hidden="true" class="quicknav-sep">/</li>
+          <li><a class="quicknav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </section>
 
-    <span id="research" class="anchor-target" aria-hidden="true"></span>
-    <span id="publications" class="anchor-target" aria-hidden="true"></span>
-    <span id="innovation" class="anchor-target" aria-hidden="true"></span>
-    <span id="contact" class="anchor-target" aria-hidden="true"></span>
+    <div class="home-content">
+      <section class="section container home-intro" id="about" aria-label="About">
+        <p class="home-intro__lead">I am an experimental physicist at <strong>CIC nanoGUNE</strong> (Nanooptics Group). I develop instrumentation that merges <strong>near-field nano-imaging</strong> with <strong>ultrafast timing</strong> and <strong>frequency-comb precision</strong> to turn surface light&ndash;matter interaction into quantitative, reproducible measurements &mdash; not just compelling images.</p>
+        <div class="home-intro__actions">
+          <a class="btn primary" href="research.html">Explore the research</a>
+          <a class="btn ghost" href="cv.html">View CV</a>
+        </div>
+      </section>
+
+      <section class="section container home-focus" id="focus" aria-label="Research focus">
+        <div class="section-header">
+          <div>
+            <h2>Research focus</h2>
+            <p class="tagline">Two complementary measurement traditions, brought together at the nanoscale.</p>
+          </div>
+          <a class="btn ghost" href="research.html">All research</a>
+        </div>
+        <div class="grid grid-2">
+          <a class="card home-focus-card" href="research.html#pillar-snom">
+            <h3>Nano-optics &amp; polaritons</h3>
+            <p>Near-field imaging (s-SNOM, nano-FTIR) of phonon- and plasmon-polaritons across the mid-IR to THz, resolving confinement and dissipation far below the wavelength.</p>
+            <span class="home-focus-card__cta">Read more &rarr;</span>
+          </a>
+          <a class="card home-focus-card" href="research.html#pillar-ofc">
+            <h3>Ultrafast spectroscopy &amp; frequency combs</h3>
+            <p>Pump&ndash;probe nanospectroscopy and dual-comb metrology &mdash; bridging time-domain dynamics with broadband, calibration-traceable coherent spectroscopy.</p>
+            <span class="home-focus-card__cta">Read more &rarr;</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section container home-selected" id="selected" aria-label="Selected publications">
+        <div class="section-header">
+          <div>
+            <h2>Selected publications</h2>
+            <p class="tagline">A few representative results. The full, citation-linked list lives on the Publications page.</p>
+          </div>
+          <a class="btn ghost" href="publications.html">All publications</a>
+        </div>
+        <div class="card">
+          <div id="selected-publications" class="list">
+            <p class="meta">Loading selected publications&hellip;</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container home-recognition" id="recognition" aria-label="Recognition">
+        <div class="section-header">
+          <div>
+            <h2>Recognition</h2>
+            <p class="tagline">Selected awards and competitive fellowships.</p>
+          </div>
+          <a class="btn ghost" href="cv.html#awards">Full CV</a>
+        </div>
+        <div class="grid grid-3">
+          <div class="card home-honor">
+            <span class="home-honor__year">2023</span>
+            <h3>Bernard J. Couillaud Prize</h3>
+            <p class="meta">Optica Foundation &amp; Coherent, Inc.</p>
+          </div>
+          <div class="card home-honor">
+            <span class="home-honor__year">2022</span>
+            <h3>Helmholtz Prize</h3>
+            <p class="meta">Helmholtz Fund &amp; PTB &mdash; precision measurement</p>
+          </div>
+          <div class="card home-honor">
+            <span class="home-honor__year">2024&ndash;26</span>
+            <h3>MSCA Postdoctoral Fellowship</h3>
+            <p class="meta">European Commission &mdash; NAPOLEON</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container home-contact" id="contact" aria-label="Contact">
+        <div class="home-contact__panel">
+          <div>
+            <h2>Let&rsquo;s collaborate</h2>
+            <p class="tagline">Open to collaborations, invited talks, and joint instrumentation projects in nano-optics and ultrafast spectroscopy.</p>
+          </div>
+          <div class="home-contact__actions">
+            <a class="btn primary" data-site="email" href="mailto:e.vicentini@nanogune.eu">e.vicentini@nanogune.eu</a>
+            <a class="btn ghost" href="contact.html">Contact &amp; CV</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer" data-partial="footer"></footer>
   </main>
 
   <script src="assets/js/core/dom.js"></script>
