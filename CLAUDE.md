@@ -15,7 +15,7 @@ This file provides context and conventions for AI assistants working on this rep
 ```
 EV_page_profile/
 ├── index.html                        # Homepage / hero
-├── research.html                     # Research overview (markdown-loaded narrative)
+├── research.html                     # Research overview (self-contained sections + scroll reveal)
 ├── publications.html                 # Publication list with filtering
 ├── projects.html                     # Projects overview
 ├── cv.html                           # Curriculum vitae (scientific/industry toggle)
@@ -79,9 +79,7 @@ EV_page_profile/
 │
 ├── content/                          # Markdown narrative files (loaded by JS)
 │   ├── cv_scientific_intro.md
-│   ├── cv_industry_intro.md
-│   ├── research_scientific.md
-│   └── research_general.md
+│   └── cv_industry_intro.md
 │
 ├── CV/
 │   ├── CV_Edoardo Vicentini.pdf
