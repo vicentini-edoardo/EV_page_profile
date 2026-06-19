@@ -3914,31 +3914,6 @@ blockquote {
   color: var(--accent);
 }
 
-/* Recognition cards */
-.recognition-card__year {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
-  color: var(--accent);
-}
-
-.recognition-card h3 {
-  margin: 0;
-  font-size: var(--step-1);
-  color: var(--research-text-primary, #f5f9ff);
-}
-
-.recognition-card__org {
-  margin: 0;
-  color: var(--accent-2);
-  font-size: var(--step--1);
-}
-
-.recognition-card p {
-  color: var(--text);
-  margin: 0;
-}
-
 /* Method tags */
 .method-tags {
   list-style: none;
