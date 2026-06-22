@@ -503,7 +503,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 56,
+    "citations_total": 57,
     "citations_last5": {
       "years": [
         2022,
@@ -517,7 +517,7 @@
         8,
         20,
         20,
-        8
+        9
       ]
     },
     "citations_by_year": {
@@ -543,7 +543,7 @@
         8,
         20,
         20,
-        8
+        9
       ]
     },
     "selected": false
@@ -1276,7 +1276,7 @@
     "pages": "",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 103,
+    "citations_total": 104,
     "citations_last5": {
       "years": [
         2022,
@@ -1290,7 +1290,7 @@
         23,
         29,
         24,
-        5
+        6
       ]
     },
     "citations_by_year": {
@@ -1316,7 +1316,7 @@
         23,
         29,
         24,
-        5
+        6
       ]
     },
     "selected": true
