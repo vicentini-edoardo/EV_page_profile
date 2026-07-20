@@ -156,7 +156,7 @@
     "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
-    "citations_total": 2,
+    "citations_total": 3,
     "citations_last5": {
       "years": [
         2022,
@@ -170,7 +170,7 @@
         0,
         0,
         0,
-        2
+        3
       ]
     },
     "citations_by_year": {
@@ -196,7 +196,7 @@
         0,
         0,
         0,
-        2
+        3
       ]
     },
     "selected": true
@@ -567,7 +567,7 @@
     "pages": "21482-21482",
     "doi": "10.1364/oe.491397",
     "doi_url": "https://doi.org/10.1364/oe.491397",
-    "citations_total": 4,
+    "citations_total": 5,
     "citations_last5": {
       "years": [
         2022,
@@ -581,7 +581,7 @@
         0,
         2,
         2,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -607,7 +607,7 @@
         0,
         2,
         2,
-        0
+        1
       ]
     },
     "selected": false
@@ -951,7 +951,7 @@
     "pages": "2489-2493",
     "doi": "10.1109/jlt.2021.3138278",
     "doi_url": "https://doi.org/10.1109/jlt.2021.3138278",
-    "citations_total": 20,
+    "citations_total": 21,
     "citations_last5": {
       "years": [
         2022,
@@ -964,7 +964,7 @@
         3,
         3,
         8,
-        4,
+        5,
         2
       ]
     },
@@ -990,7 +990,7 @@
         3,
         3,
         8,
-        4,
+        5,
         2
       ]
     },
@@ -1276,7 +1276,7 @@
     "pages": "",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 104,
+    "citations_total": 105,
     "citations_last5": {
       "years": [
         2022,
@@ -1290,7 +1290,7 @@
         23,
         29,
         24,
-        6
+        7
       ]
     },
     "citations_by_year": {
@@ -1316,7 +1316,7 @@
         23,
         29,
         24,
-        6
+        7
       ]
     },
     "selected": true
@@ -1940,7 +1940,7 @@
     "pages": "4948-4948",
     "doi": "10.1364/ol.401265",
     "doi_url": "https://doi.org/10.1364/ol.401265",
-    "citations_total": 9,
+    "citations_total": 10,
     "citations_last5": {
       "years": [
         2022,
@@ -1953,7 +1953,7 @@
         4,
         1,
         1,
-        2,
+        3,
         1
       ]
     },
@@ -1979,7 +1979,7 @@
         4,
         1,
         1,
-        2,
+        3,
         1
       ]
     },
