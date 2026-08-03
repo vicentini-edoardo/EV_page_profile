@@ -156,7 +156,7 @@
     "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
-    "citations_total": 3,
+    "citations_total": 4,
     "citations_last5": {
       "years": [
         2022,
@@ -170,7 +170,7 @@
         0,
         0,
         0,
-        3
+        4
       ]
     },
     "citations_by_year": {
@@ -196,7 +196,7 @@
         0,
         0,
         0,
-        3
+        4
       ]
     },
     "selected": true
@@ -503,7 +503,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 57,
+    "citations_total": 58,
     "citations_last5": {
       "years": [
         2022,
@@ -517,7 +517,7 @@
         8,
         20,
         20,
-        9
+        10
       ]
     },
     "citations_by_year": {
@@ -543,7 +543,7 @@
         8,
         20,
         20,
-        9
+        10
       ]
     },
     "selected": false
@@ -1276,7 +1276,7 @@
     "pages": "",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 105,
+    "citations_total": 106,
     "citations_last5": {
       "years": [
         2022,
@@ -1290,7 +1290,7 @@
         23,
         29,
         24,
-        7
+        8
       ]
     },
     "citations_by_year": {
@@ -1316,7 +1316,7 @@
         23,
         29,
         24,
-        7
+        8
       ]
     },
     "selected": true
@@ -2133,7 +2133,7 @@
       "P. Laporta",
       "G. Galzerano"
     ],
-    "journal": "Physical review. A/Physical review, A",
+    "journal": "Physical Review A",
     "year": 2020,
     "volume": "102",
     "issue": "3",
