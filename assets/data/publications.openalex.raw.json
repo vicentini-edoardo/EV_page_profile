@@ -631,7 +631,7 @@
     "pages": "7012-7012",
     "doi": "10.1364/oe.483804",
     "doi_url": "https://doi.org/10.1364/oe.483804",
-    "citations_total": 12,
+    "citations_total": 14,
     "citations_last5": {
       "years": [
         2022,
@@ -645,7 +645,7 @@
         1,
         4,
         5,
-        2
+        4
       ]
     },
     "citations_by_year": {
@@ -671,7 +671,7 @@
         1,
         4,
         5,
-        2
+        4
       ]
     },
     "selected": false
@@ -696,7 +696,7 @@
     "pages": "22308-22308",
     "doi": "10.1364/oe.492213",
     "doi_url": "https://doi.org/10.1364/oe.492213",
-    "citations_total": 6,
+    "citations_total": 7,
     "citations_last5": {
       "years": [
         2022,
@@ -710,7 +710,7 @@
         0,
         3,
         1,
-        2
+        3
       ]
     },
     "citations_by_year": {
@@ -736,7 +736,7 @@
         0,
         3,
         1,
-        2
+        3
       ]
     },
     "selected": false
@@ -2817,7 +2817,7 @@
     "pages": "1911-1911",
     "doi": "10.1364/ol.42.001911",
     "doi_url": "https://doi.org/10.1364/ol.42.001911",
-    "citations_total": 13,
+    "citations_total": 14,
     "citations_last5": {
       "years": [
         2022,
