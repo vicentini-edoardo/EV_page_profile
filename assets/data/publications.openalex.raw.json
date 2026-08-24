@@ -1,5 +1,188 @@
 [
   {
+    "openalex_id": "https://openalex.org/W7203972756",
+    "openalex_url": "https://openalex.org/W7203972756",
+    "title": "Description of Surface Polaritons Within a Classical Coupled Harmonic Oscillator Model",
+    "authors": [
+      "Edoardo Vicentini",
+      "Nicolas Pajusco",
+      "Carlos Maciel-Escudero",
+      "Xabier Arrieta",
+      "Javier Aizpurua",
+      "Rub\u00e9n Esteban",
+      "Rainer Hillenbrand"
+    ],
+    "journal": "Nanophotonics",
+    "year": 2026,
+    "volume": "15",
+    "issue": "16",
+    "pages": "",
+    "doi": "10.1002/nap2.70238",
+    "doi_url": "https://doi.org/10.1002/nap2.70238",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
+    "openalex_id": "https://openalex.org/W7203976740",
+    "openalex_url": "https://openalex.org/W7203976740",
+    "title": "Figure generator for \"Description of surface polaritons within a classical coupled harmonic oscillator model\"",
+    "authors": [
+      "Edoardo Vicentini"
+    ],
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.18714538",
+    "doi_url": "https://doi.org/10.5281/zenodo.18714538",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
+    "openalex_id": "https://openalex.org/W7204010696",
+    "openalex_url": "https://openalex.org/W7204010696",
+    "title": "Figure generator for \"Description of surface polaritons within a classical coupled harmonic oscillator model\"",
+    "authors": [
+      "Edoardo Vicentini"
+    ],
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.18714539",
+    "doi_url": "https://doi.org/10.5281/zenodo.18714539",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
     "openalex_id": "https://openalex.org/W4414313376",
     "openalex_url": "https://openalex.org/W4414313376",
     "title": "Microcombs for Hyperspectral Digital Holography",
@@ -821,7 +1004,7 @@
     "pages": "SM1G.1-SM1G.1",
     "doi": "10.1364/cleo_si.2021.sm1g.1",
     "doi_url": "https://doi.org/10.1364/cleo_si.2021.sm1g.1",
-    "citations_total": 2,
+    "citations_total": 3,
     "citations_last5": {
       "years": [
         2022,
@@ -835,7 +1018,7 @@
         1,
         0,
         1,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -861,7 +1044,7 @@
         1,
         0,
         1,
-        0
+        1
       ]
     },
     "selected": false
@@ -1783,7 +1966,7 @@
   {
     "openalex_id": "https://openalex.org/W3012175314",
     "openalex_url": "https://openalex.org/W3012175314",
-    "title": "Absolute frequency metrology of the CHF3 8.6-\u00b5m ro-vibrational spectrum at <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" altimg=\"si3.svg\"><mml:msup><mml:mn>10</mml:mn><mml:mrow><mml:mo>\u2212</mml:mo><mml:mn>11</mml:mn></mml:mrow></mml:msup></mml:math> level",
+    "title": "Absolute frequency metrology of the CHF3 8.6-\u00b5m ro-vibrational spectrum at 10\u221211 level",
     "authors": [
       "Edoardo Vicentini",
       "P. Maddaloni",
@@ -1920,7 +2103,7 @@
   {
     "openalex_id": "https://openalex.org/W3047278637",
     "openalex_url": "https://openalex.org/W3047278637",
-    "title": "Absolute frequency stabilization of a QCL at 8.6\u2009\u2009\u00b5m by modulation transfer spectroscopy",
+    "title": "Absolute frequency stabilization of a QCL at 8.6 \u00b5m by modulation transfer spectroscopy",
     "authors": [
       "Edoardo Vicentini",
       "Alessio Gambetta",
@@ -1988,7 +2171,7 @@
   {
     "openalex_id": "https://openalex.org/W3006377442",
     "openalex_url": "https://openalex.org/W3006377442",
-    "title": "Coherent mid-infrared supercontinuum generation in tapered suspended-core As<sub>39</sub>Se<sub>61</sub> fibers pumped by a few-optical-cycle Cr:ZnSe laser",
+    "title": "Coherent mid-infrared supercontinuum generation in tapered suspended-core As39Se61 fibers pumped by a few-optical-cycle Cr:ZnSe laser",
     "authors": [
       "Stanislav O. Leonov",
       "Yuchen Wang",
@@ -2463,7 +2646,7 @@
   {
     "openalex_id": "https://openalex.org/W2809568832",
     "openalex_url": "https://openalex.org/W2809568832",
-    "title": "Rovibrational fine structure and transition dipole moment of CF3H by frequency-comb-assisted saturated spectroscopy at 8.6\u00a0\u00b5m",
+    "title": "Rovibrational fine structure and transition dipole moment of CF3H by frequency-comb-assisted saturated spectroscopy at 8.6 \u00b5m",
     "authors": [
       "Edoardo Vicentini",
       "Alessio Gambetta",
@@ -2664,7 +2847,7 @@
   {
     "openalex_id": "https://openalex.org/W2767182919",
     "openalex_url": "https://openalex.org/W2767182919",
-    "title": "Metrology-grade sub-Doppler spectroscopy of CHF&lt;inf&gt;3&lt;/inf&gt; at 8.6 \u03bcm",
+    "title": "Metrology-grade sub-Doppler spectroscopy of CHF3 at 8.6 \u03bcm",
     "authors": [
       "Alessio Gambetta",
       "Edoardo Vicentini",
@@ -2794,7 +2977,7 @@
   {
     "openalex_id": "https://openalex.org/W2611277652",
     "openalex_url": "https://openalex.org/W2611277652",
-    "title": "Absolute frequency measurements of CHF_3 Doppler-free ro-vibrational transitions at 86\u2009\u2009\u03bcm",
+    "title": "Absolute frequency measurements of CHF_3 Doppler-free ro-vibrational transitions at 86 \u03bcm",
     "authors": [
       "Alessio Gambetta",
       "Edoardo Vicentini",
