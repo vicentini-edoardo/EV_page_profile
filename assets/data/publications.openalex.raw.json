@@ -1134,7 +1134,7 @@
     "pages": "2489-2493",
     "doi": "10.1109/jlt.2021.3138278",
     "doi_url": "https://doi.org/10.1109/jlt.2021.3138278",
-    "citations_total": 21,
+    "citations_total": 22,
     "citations_last5": {
       "years": [
         2022,
@@ -1148,7 +1148,7 @@
         3,
         8,
         5,
-        2
+        3
       ]
     },
     "citations_by_year": {
@@ -1174,7 +1174,7 @@
         3,
         8,
         5,
-        2
+        3
       ]
     },
     "selected": false
