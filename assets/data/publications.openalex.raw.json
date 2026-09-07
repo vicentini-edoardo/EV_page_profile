@@ -395,7 +395,7 @@
       "Nicolas Pajusco",
       "Felix Begemann",
       "Maria Barra Burillo",
-      "Ramos, Maria",
+      "Maria Ramos",
       "Andrei Bylinkin",
       "Ruben Esteban",
       "Javier Aizpurua",
@@ -464,7 +464,7 @@
       "Nicolas Pajusco",
       "Felix Begemann",
       "Maria Barra Burillo",
-      "Ramos, Maria",
+      "Maria Ramos",
       "Andrei Bylinkin",
       "Ruben Esteban",
       "Javier Aizpurua",
@@ -1459,7 +1459,7 @@
     "pages": "",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 106,
+    "citations_total": 107,
     "citations_last5": {
       "years": [
         2022,
@@ -1473,7 +1473,7 @@
         23,
         29,
         24,
-        8
+        9
       ]
     },
     "citations_by_year": {
@@ -1499,7 +1499,7 @@
         23,
         29,
         24,
-        8
+        9
       ]
     },
     "selected": true
