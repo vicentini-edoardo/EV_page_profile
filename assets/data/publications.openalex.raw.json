@@ -1,5 +1,64 @@
 [
   {
+    "openalex_id": "https://openalex.org/W7204010696",
+    "openalex_url": "https://openalex.org/W7204010696",
+    "title": "Figure generator for \"Description of surface polaritons within a classical coupled harmonic oscillator model\"",
+    "authors": [
+      "Edoardo Vicentini"
+    ],
+    "journal": "DIGITAL.CSIC (Spanish National Research Council (CSIC))",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.18714539",
+    "doi_url": "https://doi.org/10.5281/zenodo.18714539",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
     "openalex_id": "https://openalex.org/W7203972756",
     "openalex_url": "https://openalex.org/W7203972756",
     "title": "Description of Surface Polaritons Within a Classical Coupled Harmonic Oscillator Model",
@@ -78,65 +137,6 @@
     "pages": "",
     "doi": "10.5281/zenodo.18714538",
     "doi_url": "https://doi.org/10.5281/zenodo.18714538",
-    "citations_total": 0,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "citations_by_year": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "selected": false
-  },
-  {
-    "openalex_id": "https://openalex.org/W7204010696",
-    "openalex_url": "https://openalex.org/W7204010696",
-    "title": "Figure generator for \"Description of surface polaritons within a classical coupled harmonic oscillator model\"",
-    "authors": [
-      "Edoardo Vicentini"
-    ],
-    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
-    "year": 2026,
-    "volume": "",
-    "issue": "",
-    "pages": "",
-    "doi": "10.5281/zenodo.18714539",
-    "doi_url": "https://doi.org/10.5281/zenodo.18714539",
     "citations_total": 0,
     "citations_last5": {
       "years": [
