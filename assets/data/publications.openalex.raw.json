@@ -193,7 +193,7 @@
       "Chao Xiang",
       "Yang He",
       "Qiang Lin",
-      "John E. Bowers",
+      "John Edward Bowers",
       "Theodor W. H\u00e4nsch",
       "Kerry J. Vahala",
       "N. Picqu\u00e9"
@@ -259,7 +259,7 @@
       "Elham Talvari",
       "Edoardo Vicentini",
       "Florian Ludwig",
-      "J. A. Delgado-Notario",
+      "Juan Antonio Delgado-Notario",
       "Rainer Hillenbrand",
       "Hartmut G. Roskos"
     ],
@@ -339,7 +339,7 @@
     "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
-    "citations_total": 4,
+    "citations_total": 6,
     "citations_last5": {
       "years": [
         2022,
@@ -353,7 +353,7 @@
         0,
         0,
         0,
-        4
+        6
       ]
     },
     "citations_by_year": {
@@ -379,10 +379,69 @@
         0,
         0,
         0,
-        4
+        6
       ]
     },
     "selected": true
+  },
+  {
+    "openalex_id": "https://openalex.org/W7116056475",
+    "openalex_url": "https://openalex.org/W7116056475",
+    "title": "Dataset for \"Real-space observation of flat-band ultrastrong coupling between optical phonons and surface plasmon polaritons\"",
+    "authors": [
+      "Edoardo Vicentini"
+    ],
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "year": 2025,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.17233542",
+    "doi_url": "https://doi.org/10.5281/zenodo.17233542",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
   },
   {
     "openalex_id": "https://openalex.org/W7116425985",
@@ -662,20 +721,20 @@
       "S Chen",
       "Pengliang Leng",
       "Andrea Kone\u010dn\u00e1",
-      "Evgeny Modin",
+      "Evgeny B. Modin",
       "Martin Gutierrez\u2010Amigo",
       "Edoardo Vicentini",
       "Beatriz Mart\u00edn\u2010Garc\u00eda",
       "Mar\u00eda Barra\u2010Burillo",
       "Iris Niehues",
       "Carlos Maciel-Escudero",
-      "Xin Xie",
+      "X. Y. Xie",
       "Luis E. Hueso",
       "Emilio Artacho",
       "Javier Aizpurua",
       "Ion Errea",
       "Maia G. Vergniory",
-      "Andrey Chuvilin",
+      "Andrey L. Chuvilin",
       "Faxian Xiu",
       "Rainer Hillenbrand"
     ],
@@ -1056,7 +1115,7 @@
     "authors": [
       "Zhenhai Wang",
       "Chao Xing",
-      "Jeong Hyun Huh",
+      "Jeonghyun Huh",
       "Edoardo Vicentini",
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
@@ -1191,7 +1250,7 @@
       "Edoardo Vicentini",
       "Nicola Coluccelli",
       "Giuliano Piccinno",
-      "Antonioangelo Agnesi",
+      "Antonio Agnesi",
       "P. Laporta",
       "G. Galzerano"
     ],
@@ -1265,7 +1324,7 @@
     "pages": "890-894",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 0,
+    "citations_total": 106,
     "citations_last5": {
       "years": [
         2022,
@@ -1275,11 +1334,11 @@
         2026
       ],
       "counts": [
-        0,
-        0,
-        0,
-        0,
-        0
+        21,
+        23,
+        29,
+        24,
+        8
       ]
     },
     "citations_by_year": {
@@ -1300,12 +1359,12 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
+        1,
+        21,
+        23,
+        29,
+        24,
+        8
       ]
     },
     "selected": true
@@ -1322,7 +1381,7 @@
       "Edoardo Vicentini",
       "Nicola Coluccelli",
       "Giuliano Piccinno",
-      "A. Agnesi",
+      "Antoniangelo Agnesi",
       "P. Laporta",
       "G. Galzerano"
     ],
@@ -1383,7 +1442,7 @@
     "openalex_url": "https://openalex.org/W3162952254",
     "title": "Time-resolved dual-comb spectroscopy with a single electro-optic modulator",
     "authors": [
-      "Jeong Hyun Huh",
+      "Jeonghyun Huh",
       "Zaijun Chen",
       "Edoardo Vicentini",
       "Theodor W. H\u00e4nsch",
@@ -1440,69 +1499,6 @@
       ]
     },
     "selected": false
-  },
-  {
-    "openalex_id": "https://openalex.org/W3217098938",
-    "openalex_url": "https://openalex.org/W3217098938",
-    "title": "Dual-comb hyperspectral digital holography",
-    "authors": [
-      "Edoardo Vicentini",
-      "Zhenhai Wang",
-      "Kasper Van Gasse",
-      "Theodor W. H\u00e4nsch",
-      "N. Picqu\u00e9"
-    ],
-    "journal": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
-    "year": 2021,
-    "volume": "",
-    "issue": "",
-    "pages": "",
-    "doi": "10.1038/s41566-021-00892-x",
-    "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 107,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        21,
-        23,
-        29,
-        24,
-        9
-      ]
-    },
-    "citations_by_year": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        21,
-        23,
-        29,
-        24,
-        9
-      ]
-    },
-    "selected": true
   },
   {
     "openalex_id": "https://openalex.org/W3037442291",
@@ -1648,7 +1644,7 @@
       "Z. Chen",
       "Kasper Van Gasse",
       "Edoardo Vicentini",
-      "Jeong Hyun Huh",
+      "Jeonghyun Huh",
       "Stijn Poelman",
       "Zheng Wang",
       "G\u00fcnther Roelkens",
@@ -1713,7 +1709,7 @@
     "openalex_url": "https://openalex.org/W3110907660",
     "title": "Dual-Comb Spectroscopy based on Single Electro-Optic Modulation",
     "authors": [
-      "Jeong Hyun Huh",
+      "Jeonghyun Huh",
       "Zaijun Chen",
       "Edoardo Vicentini",
       "Theodor W. H\u00e4nsch",
@@ -1778,7 +1774,7 @@
     "authors": [
       "Edoardo Vicentini",
       "Zaijun Chen",
-      "Jeong Hyun Huh",
+      "Jeonghyun Huh",
       "G. Galzerano",
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
@@ -1790,7 +1786,7 @@
     "pages": "LTu2F.3-LTu2F.3",
     "doi": "10.1364/ls.2020.ltu2f.3",
     "doi_url": "https://doi.org/10.1364/ls.2020.ltu2f.3",
-    "citations_total": 7,
+    "citations_total": 6,
     "citations_last5": {
       "years": [
         2022,
@@ -1825,7 +1821,7 @@
         0,
         0,
         0,
-        4,
+        3,
         2,
         0,
         0,
@@ -1970,7 +1966,7 @@
     "authors": [
       "Edoardo Vicentini",
       "P. Maddaloni",
-      "Roberto Aiello",
+      "Roberto Gabriel Aiello",
       "Alessio Gambetta",
       "Nicola Coluccelli",
       "Lisa Marta Molteni",
@@ -2175,10 +2171,10 @@
     "authors": [
       "Stanislav O. Leonov",
       "Yuchen Wang",
-      "V.S. Shiryaev",
-      "\u0413. \u0415. \u0421\u043d\u043e\u043f\u0430\u0442\u0438\u043d",
+      "Vladimir S. Shiryaev",
+      "Gennady E. Snopatin",
       "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
-      "\u0412. \u0413. \u041f\u043b\u043e\u0442\u043d\u0438\u0447\u0435\u043d\u043a\u043e",
+      "Victor G. Plotnichenko",
       "Edoardo Vicentini",
       "Alessio Gambetta",
       "Nicola Coluccelli",
@@ -2443,92 +2439,21 @@
       "P. Laporta",
       "G. Galzerano",
       "Stanislav O. Leonov",
-      "V.S. Shiryaev",
-      "\u0413. \u0415. \u0421\u043d\u043e\u043f\u0430\u0442\u0438\u043d",
+      "Vladimir S. Shiryaev",
+      "Gennady E. Snopatin",
       "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
-      "\u0412. \u0413. \u041f\u043b\u043e\u0442\u043d\u0438\u0447\u0435\u043d\u043a\u043e",
+      "Victor G. Plotnichenko",
       "Valeriy E. Karasik",
       "Edoardo Vicentini",
       "Alessio Gambetta"
     ],
     "journal": "",
     "year": 2019,
-    "volume": "",
+    "volume": "2019",
     "issue": "",
     "pages": "1-1",
     "doi": "10.1109/cleoe-eqec.2019.8871782",
     "doi_url": "https://doi.org/10.1109/cleoe-eqec.2019.8871782",
-    "citations_total": 0,
-    "citations_last5": {
-      "years": [
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "citations_by_year": {
-      "years": [
-        2017,
-        2018,
-        2019,
-        2020,
-        2021,
-        2022,
-        2023,
-        2024,
-        2025,
-        2026
-      ],
-      "counts": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "selected": false
-  },
-  {
-    "openalex_id": "https://openalex.org/W3042181656",
-    "openalex_url": "https://openalex.org/W3042181656",
-    "title": "Octave-Spanning High-Repetition-Rate Mid-IR Supercontinuum for Frequency Comb Synthesis",
-    "authors": [
-      "Yuchen Wang",
-      "O Leonov Stanislav.",
-      "S Shiryaev Vladimir",
-      "E Snopatin Gennady",
-      "Shivachev Boris",
-      "G Plotnichenko Victor",
-      "E Karasik Valeriy",
-      "Edoardo Vicentini",
-      "Alessio Gambetta",
-      "Nicola Coluccelli",
-      "C. Svelto",
-      "Laporta Paolo",
-      "Galzerano Gianluca"
-    ],
-    "journal": "IEEE Conference Proceedings",
-    "year": 2019,
-    "volume": "2019",
-    "issue": "",
-    "pages": "1",
-    "doi": "",
-    "doi_url": "",
     "citations_total": 0,
     "citations_last5": {
       "years": [
@@ -2598,7 +2523,7 @@
     "pages": "",
     "doi": "10.1063/1.5025135",
     "doi_url": "https://doi.org/10.1063/1.5025135",
-    "citations_total": 10,
+    "citations_total": 11,
     "citations_last5": {
       "years": [
         2022,
@@ -2631,7 +2556,7 @@
       "counts": [
         0,
         1,
-        0,
+        1,
         2,
         0,
         2,
@@ -2670,7 +2595,7 @@
     "pages": "373-379",
     "doi": "10.1016/j.jqsrt.2018.06.013",
     "doi_url": "https://doi.org/10.1016/j.jqsrt.2018.06.013",
-    "citations_total": 3,
+    "citations_total": 4,
     "citations_last5": {
       "years": [
         2022,
@@ -2703,7 +2628,7 @@
       "counts": [
         0,
         0,
-        1,
+        2,
         1,
         0,
         0,
