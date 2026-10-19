@@ -75,7 +75,7 @@
     "year": 2026,
     "volume": "15",
     "issue": "16",
-    "pages": "",
+    "pages": "e70238-e70238",
     "doi": "10.1002/nap2.70238",
     "doi_url": "https://doi.org/10.1002/nap2.70238",
     "citations_total": 0,
@@ -986,7 +986,7 @@
     "title": "Dual-Comb Spectroscopy with Frequency Modulation",
     "authors": [
       "Zhenhai Wang",
-      "Chao Xing",
+      "Xing Chao",
       "Jeonghyun Huh",
       "Edoardo Vicentini",
       "Theodor W. H\u00e4nsch",
@@ -1128,7 +1128,7 @@
     "pages": "890-894",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 106,
+    "citations_total": 107,
     "citations_last5": {
       "years": [
         2022,
@@ -1142,7 +1142,7 @@
         21,
         29,
         24,
-        10
+        11
       ]
     },
     "citations_by_year": {
@@ -1168,7 +1168,7 @@
         21,
         29,
         24,
-        10
+        11
       ]
     },
     "selected": true
@@ -1395,7 +1395,7 @@
     "pages": "",
     "doi": "10.48550/arxiv.2006.15113",
     "doi_url": "https://doi.org/10.48550/arxiv.2006.15113",
-    "citations_total": 10,
+    "citations_total": 15,
     "citations_last5": {
       "years": [
         2022,
@@ -1405,11 +1405,11 @@
         2026
       ],
       "counts": [
-        3,
+        6,
         1,
+        2,
         1,
-        1,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -1431,11 +1431,11 @@
         0,
         2,
         2,
-        3,
+        6,
         1,
+        2,
         1,
-        1,
-        0
+        1
       ]
     },
     "selected": false
@@ -1445,12 +1445,12 @@
     "openalex_url": "https://openalex.org/W3086303149",
     "title": "High-resolution dual-comb gas-phase spectroscopy with a mode-locked laser on a photonic chip",
     "authors": [
-      "Z. Chen",
+      "Zaijun Chen",
       "Kasper Van Gasse",
       "Edoardo Vicentini",
       "Jeonghyun Huh",
       "Stijn Poelman",
-      "Zheng Wang",
+      "Zhechao Wang",
       "G\u00fcnther Roelkens",
       "Theodor W. H\u00e4nsch",
       "Bart Kuyken",
@@ -1642,7 +1642,7 @@
     "authors": [
       "Zhenhai Wang",
       "Zaijun Chen",
-      "Chao Xing",
+      "Xing Chao",
       "Edoardo Vicentini",
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
@@ -1975,7 +1975,7 @@
     "authors": [
       "Stanislav O. Leonov",
       "Yuchen Wang",
-      "Vladimir S. Shiryaev",
+      "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0421\u0435\u043c\u0435\u043d\u043e\u0432\u0438\u0447 \u0428\u0438\u0440\u044f\u0435\u0432",
       "Gennady E. Snopatin",
       "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
       "Victor G. Plotnichenko",
@@ -2243,7 +2243,7 @@
       "P. Laporta",
       "G. Galzerano",
       "Stanislav O. Leonov",
-      "Vladimir S. Shiryaev",
+      "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0421\u0435\u043c\u0435\u043d\u043e\u0432\u0438\u0447 \u0428\u0438\u0440\u044f\u0435\u0432",
       "Gennady E. Snopatin",
       "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
       "Victor G. Plotnichenko",
