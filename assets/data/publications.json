@@ -1065,7 +1065,7 @@
     "pages": "2489-2493",
     "doi": "10.1109/jlt.2021.3138278",
     "doi_url": "https://doi.org/10.1109/jlt.2021.3138278",
-    "citations_total": 23,
+    "citations_total": 24,
     "citations_last5": {
       "years": [
         2022,
@@ -1079,7 +1079,7 @@
         3,
         8,
         5,
-        4
+        5
       ]
     },
     "citations_by_year": {
@@ -1105,7 +1105,7 @@
         3,
         8,
         5,
-        4
+        5
       ]
     },
     "selected": false
@@ -1327,7 +1327,7 @@
     "pages": "3957-3957",
     "doi": "10.1364/ol.431451",
     "doi_url": "https://doi.org/10.1364/ol.431451",
-    "citations_total": 22,
+    "citations_total": 23,
     "citations_last5": {
       "years": [
         2022,
@@ -1341,7 +1341,7 @@
         6,
         5,
         6,
-        1
+        2
       ]
     },
     "citations_by_year": {
@@ -1367,7 +1367,7 @@
         6,
         5,
         6,
-        1
+        2
       ]
     },
     "selected": false
@@ -1975,7 +1975,7 @@
     "authors": [
       "Stanislav O. Leonov",
       "Yuchen Wang",
-      "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0421\u0435\u043c\u0435\u043d\u043e\u0432\u0438\u0447 \u0428\u0438\u0440\u044f\u0435\u0432",
+      "V.S. Shiryaev",
       "Gennady E. Snopatin",
       "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
       "Victor G. Plotnichenko",
@@ -2243,7 +2243,7 @@
       "P. Laporta",
       "G. Galzerano",
       "Stanislav O. Leonov",
-      "\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440 \u0421\u0435\u043c\u0435\u043d\u043e\u0432\u0438\u0447 \u0428\u0438\u0440\u044f\u0435\u0432",
+      "V.S. Shiryaev",
       "Gennady E. Snopatin",
       "\u0411.\u0421. \u0421\u0442\u0435\u043f\u0430\u043d\u043e\u0432",
       "Victor G. Plotnichenko",
