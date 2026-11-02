@@ -124,6 +124,125 @@
     "selected": false
   },
   {
+    "openalex_id": "https://openalex.org/W7224931002",
+    "openalex_url": "https://openalex.org/W7224931002",
+    "title": "Materials Library",
+    "authors": [
+      "Edoardo Vicentini"
+    ],
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.23809563",
+    "doi_url": "https://doi.org/10.5281/zenodo.23809563",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
+    "openalex_id": "https://openalex.org/W7224944204",
+    "openalex_url": "https://openalex.org/W7224944204",
+    "title": "s-SNOM Spectrum Calculator",
+    "authors": [
+      "Edoardo Vicentini",
+      "Kirill V. Voronin"
+    ],
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.23808593",
+    "doi_url": "https://doi.org/10.5281/zenodo.23808593",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
     "openalex_id": "https://openalex.org/W4414313376",
     "openalex_url": "https://openalex.org/W4414313376",
     "title": "Microcombs for Hyperspectral Digital Holography",
@@ -395,7 +514,7 @@
       "Nicolas Pajusco",
       "Felix Begemann",
       "Mar\u00eda Barra\u2010Burillo",
-      "Ramos, Maria",
+      "Maria Ramos",
       "Andrei Bylinkin",
       "Rub\u00e9n Esteban",
       "Javier Aizpurua",
@@ -1519,7 +1638,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "Frontiers in Optics + Laser Science (FiO, LS)",
+    "journal": "Frontiers in Optics",
     "year": 2020,
     "volume": "",
     "issue": "",
@@ -1583,7 +1702,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "Frontiers in Optics + Laser Science (FiO, LS)",
+    "journal": "Frontiers in Optics",
     "year": 2020,
     "volume": "",
     "issue": "",
@@ -1647,7 +1766,7 @@
       "Theodor W. H\u00e4nsch",
       "N. Picqu\u00e9"
     ],
-    "journal": "Frontiers in Optics + Laser Science (FiO, LS)",
+    "journal": "Frontiers in Optics",
     "year": 2020,
     "volume": "",
     "issue": "",
@@ -2180,7 +2299,7 @@
       "Kenneth J. McEwan",
       "Christopher R. Howle"
     ],
-    "journal": "",
+    "journal": "Chemical, Biological, Radiological, Nuclear, and Explosives (CBRNE) Sensing",
     "year": 2019,
     "volume": "90",
     "issue": "",
@@ -2729,7 +2848,7 @@
     "pages": "1911-1911",
     "doi": "10.1364/ol.42.001911",
     "doi_url": "https://doi.org/10.1364/ol.42.001911",
-    "citations_total": 14,
+    "citations_total": 13,
     "citations_last5": {
       "years": [
         2022,
