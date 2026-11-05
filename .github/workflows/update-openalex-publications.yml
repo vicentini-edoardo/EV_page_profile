@@ -32,12 +32,12 @@ jobs:
 
       - name: Commit changes
         run: |
-          if git diff --quiet assets/data/publications.json assets/data/publications.openalex.raw.json; then
+          if git diff --quiet assets/data/publications.json; then
             echo "No changes to publications"
             exit 0
           fi
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add assets/data/publications.json assets/data/publications.openalex.raw.json
+          git add assets/data/publications.json
           git commit -m "Update publications from OpenAlex"
           git push

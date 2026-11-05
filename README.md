@@ -30,13 +30,13 @@ OPENALEX_API_KEY=... OPENALEX_MAILTO=you@example.com python3 scripts/update_publ
 ## Repository structure
 - `index.html`, `research.html`, `publications.html`, `cv.html`, ...: page entry points
 - `projects/`: generated project pages + `project-template.html`
-- `assets/css/`: design layers (`tokens.css`, `base-core.css`, `components.css`, `pages.css`) + `base.css` importer
+- `assets/css/`: shared site styles (`base.css`) and print styles (`print.css`)
 - `assets/js/core/`: shared utilities and layout loader
 - `assets/js/pages/`: page-specific behavior modules
 - `assets/partials/`: shared header/footer fragments injected client-side
 - `assets/data/`: structured content data
 - `scripts/`: content generation/sync utilities
-- `/_archive_unused/`: archived legacy/unused files for rollback
+- `/_archive_unused/`: optional local archive, ignored by Git and excluded from deployment
 
 ## GitHub Pages deployment
 - Workflow: `.github/workflows/deploy.yml`

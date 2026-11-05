@@ -16,7 +16,6 @@ USER_AGENT = "openalex-to-ghpages-publications (GitHub Actions)"
 DEFAULT_ORCID = "0000-0003-1850-2327"
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-RAW_OUT = os.path.join(ROOT, "assets", "data", "publications.openalex.raw.json")
 FINAL_OUT = os.path.join(ROOT, "assets", "data", "publications.json")
 SELECTED_PATH = os.path.join(ROOT, "assets", "data", "publications.selected.json")
 
@@ -240,8 +239,6 @@ def main() -> int:
         for item in mapped:
             item["selected"] = item.get("doi", "").lower() in selected_dois
 
-    write_json(RAW_OUT, mapped)
-
     before = read_file(FINAL_OUT)
     write_json(FINAL_OUT, mapped)
     after = read_file(FINAL_OUT)
@@ -249,7 +246,6 @@ def main() -> int:
 
     print(f"Works fetched: {len(mapped)}")
     print(f"With DOI: {doi_count}")
-    print(f"Wrote: {RAW_OUT}")
     print(f"Wrote: {FINAL_OUT}")
     print(f"publications.json changed: {changed}")
     return 0

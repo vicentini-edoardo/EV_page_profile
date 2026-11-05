@@ -41,7 +41,16 @@ jobs:
             --exclude .git/ \
             --exclude .github/ \
             --exclude _site/ \
-            --exclude _archive_unused/
+            --exclude _archive_unused/ \
+            --exclude scripts/ \
+            --exclude tests/ \
+            --exclude .gitignore \
+            --exclude AGENTS.md \
+            --exclude CLAUDE.md \
+            --exclude README.md \
+            --exclude MAINTENANCE.md \
+            --exclude CHANGELOG.md \
+            --exclude CLEANUP_REPORT.md
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

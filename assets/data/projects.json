@@ -11,6 +11,12 @@
         "ultrafast near-field microscopy",
         "strong and ultrastrong coupling analysis",
         "time-resolved spectral mapping"
+      ],
+      "publications": [
+        {
+          "title": "Real-space observation of flat-band ultrastrong coupling between optical phonons and surface plasmon polaritons",
+          "url": "https://doi.org/10.1038/s41563-025-02412-6"
+        }
       ]
     },
     {
@@ -24,6 +30,12 @@
         "plasmon polariton imaging",
         "dispersion extraction",
         "near-field signal demodulation"
+      ],
+      "publications": [
+        {
+          "title": "Real-space observation of ultraconfined in-plane anisotropic acoustic terahertz plasmon polaritons",
+          "url": "https://doi.org/10.1038/s41563-023-01547-8"
+        }
       ]
     },
     {
@@ -37,6 +49,12 @@
         "pseudo-heterodyne interferometry",
         "harmonic demodulation",
         "nano-optical contrast mechanisms"
+      ],
+      "publications": [
+        {
+          "title": "Pseudoheterodyne interferometry for multicolor near-field imaging",
+          "url": "https://doi.org/10.1364/oe.492213"
+        }
       ]
     },
     {
@@ -50,6 +68,12 @@
         "weak-signal detection",
         "background suppression strategies",
         "near-field spectroscopy modeling"
+      ],
+      "publications": [
+        {
+          "title": "Identification of weak molecular absorption in single-wavelength s-SNOM images",
+          "url": "https://doi.org/10.1364/oe.483804"
+        }
       ]
     },
     {
@@ -63,6 +87,12 @@
         "digital holography",
         "frequency-comb metrology",
         "hyperspectral 3D imaging"
+      ],
+      "publications": [
+        {
+          "title": "Dual-comb hyperspectral digital holography",
+          "url": "https://doi.org/10.1038/s41566-021-00892-x"
+        }
       ]
     },
     {
@@ -76,6 +106,12 @@
         "near-infrared hyperspectral imaging",
         "frequency stabilization",
         "instrument response calibration"
+      ],
+      "publications": [
+        {
+          "title": "High-Spectral-Resolution Imaging Spectroscopy with a Dual-Comb Interferometer",
+          "url": "https://doi.org/10.1364/ls.2020.ltu2f.3"
+        }
       ]
     },
     {
@@ -89,6 +125,16 @@
         "broadband molecular spectroscopy",
         "mid-infrared optics",
         "multispecies gas detection"
+      ],
+      "publications": [
+        {
+          "title": "Direct-frequency-comb spectroscopy by a scanning Fabry-Pérot microcavity resonator",
+          "url": "https://doi.org/10.1103/physreva.102.033510"
+        },
+        {
+          "title": "High-resolution mid-infrared spectroscopy based on ultrafast Cr:ZnSe laser",
+          "url": "https://doi.org/10.1364/oe.491397"
+        }
       ]
     },
     {
@@ -102,6 +148,16 @@
         "ultra-stable laser systems",
         "high-resolution molecular spectroscopy",
         "frequency referencing"
+      ],
+      "publications": [
+        {
+          "title": "Versatile mid-infrared frequency-comb referenced sub-Doppler spectrometer",
+          "url": "https://doi.org/10.1063/1.5025135"
+        },
+        {
+          "title": "Absolute frequency metrology of the CHF3 8.6-µm ro-vibrational spectrum at 10−11 level",
+          "url": "https://doi.org/10.1016/j.jqsrt.2020.106963"
+        }
       ]
     }
   ]

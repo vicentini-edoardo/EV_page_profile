@@ -83,6 +83,7 @@
                 <p>${escapeHtml(project.summary)}</p>
                 <p class="meta"><strong>Role:</strong> ${escapeHtml(project.role)}</p>
                 <div class="tag-list">${(project.methods || []).map((m) => `<span class="badge">${escapeHtml(m)}</span>`).join('')}</div>
+                ${project.publications?.length ? `<p><strong>Related publications:</strong> ${project.publications.map((pub) => `<a href="${escapeHtml(pub.url)}">${escapeHtml(pub.title)}</a>`).join(' · ')}</p>` : ''}
                 <a class="btn ghost" href="${projectHref(project.slug)}">Open project</a>
               </article>`;
           })

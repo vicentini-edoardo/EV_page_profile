@@ -4,3 +4,6 @@ _site/
 Thumbs.db
 .vscode/
 .idea/
+
+__pycache__/
+*.py[cod]

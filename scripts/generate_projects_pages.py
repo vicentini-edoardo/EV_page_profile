@@ -74,6 +74,11 @@ def render_project(template: str, project: Dict[str, Any]) -> str:
         "{{METHODS_LIST}}": make_methods_list(methods),
         "{{METHODS_PILLS}}": make_methods_pills(methods),
         "{{WHY_IT_MATTERS}}": make_why_it_matters(summary),
+        "{{PUBLICATIONS_LIST}}": "<ul>" + "".join(
+            f'<li><a href="{html.escape(str(pub["url"]), quote=True)}">'
+            f'{html.escape(str(pub["title"]))}</a></li>'
+            for pub in project.get("publications", [])
+        ) + "</ul>" if project.get("publications") else "<p>No publications listed yet.</p>",
         "{{TIMELINE}}": year or "(to be added)",
         "{{NAV_ACTIVE_PROJECTS}}": "active",
         "{{SLUG}}": slug,

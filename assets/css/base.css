@@ -3977,3 +3977,46 @@ blockquote {
   color: var(--research-text-secondary, #bcd2ef);
   font-size: var(--step--1);
 }
+
+/* Shared page rhythm and quieter surfaces. */
+html { scroll-padding-top: 6rem; }
+h1, h2, h3 { text-wrap: balance; }
+.section { padding-block: clamp(2.5rem, 5vw, 4rem); }
+.section-header { align-items: baseline; }
+.card, .page-standard .card, .page-project .card {
+  border-radius: var(--radius-sm);
+  box-shadow: none;
+}
+.card:hover, .card:focus-within { box-shadow: none; transform: none; }
+.page-standard .page-hero, .page-project .project-hero {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: clamp(2.5rem, 5vw, 4rem) 0;
+  overflow: visible;
+}
+.page-standard .page-hero h1, .page-project .project-hero h1 { text-shadow: none; }
+.page-standard .page-hero .tagline, .page-project .project-hero .tagline { color: var(--muted); }
+#home-page .hero { min-height: min(80vh, 48rem); }
+#home-page .hero__cred { margin-bottom: 1.5rem; }
+#home-page .home-focus-card, #home-page .home-honor {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+  padding: 1.25rem 0 0;
+  box-shadow: none;
+}
+#citations-summary { margin-top: var(--space-7); }
+#research-page-body .research-content .section + .section,
+.home-content .section + .section { border-top: 1px solid var(--border); }
+@media (max-width: 900px) {
+  body { padding-top: 0; }
+  .site-header, .site-header--transparent { position: relative; }
+  .site-header nav.primary-nav { padding-top: 0.75rem; }
+  .primary-nav .nav-list { justify-content: flex-start; gap: 0 1rem; padding: 0 0 0.5rem; }
+  .nav-link { font-size: 0.8rem; letter-spacing: 0.02em; }
+  html { scroll-padding-top: 1rem; }
+}
+
+#snom-calculator { margin-bottom: var(--space-7); }
