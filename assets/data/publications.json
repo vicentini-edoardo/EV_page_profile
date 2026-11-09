@@ -1,5 +1,68 @@
 [
   {
+    "openalex_id": "https://openalex.org/W7225143098",
+    "openalex_url": "https://openalex.org/W7225143098",
+    "title": "Quantitative Analytical Spheroid Model for Scattering-Type Scanning Near-Field Optical Spectroscopy of Layered Samples",
+    "authors": [
+      "Kirill V. Voronin",
+      "Edoardo Vicentini",
+      "Lars Mester",
+      "Rainer Hillenbrand",
+      "Alexey Y. Nikitin"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.48550/arxiv.2611.01057",
+    "doi_url": "https://doi.org/10.48550/arxiv.2611.01057",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
     "openalex_id": "https://openalex.org/W7203976740",
     "openalex_url": "https://openalex.org/W7203976740",
     "title": "Figure generator for \"Description of surface polaritons within a classical coupled harmonic oscillator model\"",
@@ -183,6 +246,65 @@
     "selected": false
   },
   {
+    "openalex_id": "https://openalex.org/W7225321927",
+    "openalex_url": "https://openalex.org/W7225321927",
+    "title": "Multilayer anisotropic transfer matrix",
+    "authors": [
+      "Edoardo Vicentini"
+    ],
+    "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+    "year": 2026,
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "doi": "10.5281/zenodo.23981616",
+    "doi_url": "https://doi.org/10.5281/zenodo.23981616",
+    "citations_total": 0,
+    "citations_last5": {
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "citations_by_year": {
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "selected": false
+  },
+  {
     "openalex_id": "https://openalex.org/W7224944204",
     "openalex_url": "https://openalex.org/W7224944204",
     "title": "s-SNOM Spectrum Calculator",
@@ -258,7 +380,7 @@
       "Kerry J. Vahala",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Conference on Lasers and Electro-Optics",
     "year": 2025,
     "volume": "",
     "issue": "",
@@ -458,7 +580,7 @@
     "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
-    "citations_total": 7,
+    "citations_total": 8,
     "citations_last5": {
       "years": [
         2022,
@@ -472,7 +594,7 @@
         0,
         0,
         0,
-        7
+        8
       ]
     },
     "citations_by_year": {
@@ -498,7 +620,7 @@
         0,
         0,
         0,
-        7
+        8
       ]
     },
     "selected": true
@@ -586,7 +708,7 @@
       "Kerry J. Vahala",
       "N. Picqu\u00e9"
     ],
-    "journal": "",
+    "journal": "Conference on Lasers and Electro-Optics",
     "year": 2024,
     "volume": "",
     "issue": "",
@@ -736,7 +858,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 56,
+    "citations_total": 57,
     "citations_last5": {
       "years": [
         2022,
@@ -747,10 +869,10 @@
       ],
       "counts": [
         0,
-        8,
+        7,
         19,
         20,
-        9
+        11
       ]
     },
     "citations_by_year": {
@@ -773,10 +895,10 @@
         0,
         0,
         0,
-        8,
+        7,
         19,
         20,
-        9
+        11
       ]
     },
     "selected": false
@@ -864,7 +986,7 @@
     "pages": "7012-7012",
     "doi": "10.1364/oe.483804",
     "doi_url": "https://doi.org/10.1364/oe.483804",
-    "citations_total": 15,
+    "citations_total": 16,
     "citations_last5": {
       "years": [
         2022,
@@ -878,7 +1000,7 @@
         1,
         4,
         5,
-        5
+        6
       ]
     },
     "citations_by_year": {
@@ -904,7 +1026,7 @@
         1,
         4,
         5,
-        5
+        6
       ]
     },
     "selected": false
@@ -929,7 +1051,7 @@
     "pages": "22308-22308",
     "doi": "10.1364/oe.492213",
     "doi_url": "https://doi.org/10.1364/oe.492213",
-    "citations_total": 7,
+    "citations_total": 9,
     "citations_last5": {
       "years": [
         2022,
@@ -943,7 +1065,7 @@
         0,
         3,
         1,
-        3
+        5
       ]
     },
     "citations_by_year": {
@@ -969,7 +1091,7 @@
         0,
         3,
         1,
-        3
+        5
       ]
     },
     "selected": false
@@ -1054,7 +1176,7 @@
     "pages": "SM1G.1-SM1G.1",
     "doi": "10.1364/cleo_si.2021.sm1g.1",
     "doi_url": "https://doi.org/10.1364/cleo_si.2021.sm1g.1",
-    "citations_total": 3,
+    "citations_total": 4,
     "citations_last5": {
       "years": [
         2022,
@@ -1089,7 +1211,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         1,
         0,
@@ -1247,7 +1369,7 @@
     "pages": "890-894",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 107,
+    "citations_total": 108,
     "citations_last5": {
       "years": [
         2022,
@@ -1261,7 +1383,7 @@
         21,
         29,
         24,
-        11
+        12
       ]
     },
     "citations_by_year": {
@@ -1287,7 +1409,7 @@
         21,
         29,
         24,
-        11
+        12
       ]
     },
     "selected": true
@@ -1383,7 +1505,7 @@
     "pages": "19495-19495",
     "doi": "10.1364/oe.428603",
     "doi_url": "https://doi.org/10.1364/oe.428603",
-    "citations_total": 5,
+    "citations_total": 6,
     "citations_last5": {
       "years": [
         2022,
@@ -1397,7 +1519,7 @@
         2,
         0,
         2,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -1423,7 +1545,7 @@
         2,
         0,
         2,
-        0
+        1
       ]
     },
     "selected": false
@@ -1446,7 +1568,7 @@
     "pages": "3957-3957",
     "doi": "10.1364/ol.431451",
     "doi_url": "https://doi.org/10.1364/ol.431451",
-    "citations_total": 23,
+    "citations_total": 25,
     "citations_last5": {
       "years": [
         2022,
@@ -1459,8 +1581,8 @@
         4,
         6,
         5,
-        6,
-        2
+        7,
+        3
       ]
     },
     "citations_by_year": {
@@ -1485,8 +1607,8 @@
         4,
         6,
         5,
-        6,
-        2
+        7,
+        3
       ]
     },
     "selected": false
@@ -1514,7 +1636,7 @@
     "pages": "",
     "doi": "10.48550/arxiv.2006.15113",
     "doi_url": "https://doi.org/10.48550/arxiv.2006.15113",
-    "citations_total": 15,
+    "citations_total": 20,
     "citations_last5": {
       "years": [
         2022,
@@ -1524,11 +1646,11 @@
         2026
       ],
       "counts": [
-        6,
-        1,
+        7,
+        2,
         2,
         1,
-        1
+        2
       ]
     },
     "citations_by_year": {
@@ -1549,12 +1671,12 @@
         0,
         0,
         2,
+        4,
+        7,
         2,
-        6,
-        1,
         2,
         1,
-        1
+        2
       ]
     },
     "selected": false
@@ -1974,7 +2096,7 @@
     "pages": "4541-4541",
     "doi": "10.1364/oe.385583",
     "doi_url": "https://doi.org/10.1364/oe.385583",
-    "citations_total": 37,
+    "citations_total": 40,
     "citations_last5": {
       "years": [
         2022,
@@ -1986,9 +2108,9 @@
       "counts": [
         11,
         2,
-        1,
+        2,
         9,
-        3
+        4
       ]
     },
     "citations_by_year": {
@@ -2009,12 +2131,12 @@
         0,
         0,
         2,
-        9,
+        10,
         11,
         2,
-        1,
+        2,
         9,
-        3
+        4
       ]
     },
     "selected": false
@@ -2582,7 +2704,7 @@
     "pages": "373-379",
     "doi": "10.1016/j.jqsrt.2018.06.013",
     "doi_url": "https://doi.org/10.1016/j.jqsrt.2018.06.013",
-    "citations_total": 5,
+    "citations_total": 6,
     "citations_last5": {
       "years": [
         2022,
@@ -2596,7 +2718,7 @@
         1,
         0,
         1,
-        0
+        1
       ]
     },
     "citations_by_year": {
@@ -2622,7 +2744,7 @@
         1,
         0,
         1,
-        0
+        1
       ]
     },
     "selected": false
@@ -2848,7 +2970,7 @@
     "pages": "1911-1911",
     "doi": "10.1364/ol.42.001911",
     "doi_url": "https://doi.org/10.1364/ol.42.001911",
-    "citations_total": 13,
+    "citations_total": 15,
     "citations_last5": {
       "years": [
         2022,
@@ -2862,7 +2984,7 @@
         1,
         1,
         1,
-        0
+        2
       ]
     },
     "citations_by_year": {
@@ -2888,7 +3010,7 @@
         1,
         1,
         1,
-        0
+        2
       ]
     },
     "selected": false
