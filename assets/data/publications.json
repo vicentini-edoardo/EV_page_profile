@@ -580,7 +580,7 @@
     "pages": "216-222",
     "doi": "10.1038/s41563-025-02412-6",
     "doi_url": "https://doi.org/10.1038/s41563-025-02412-6",
-    "citations_total": 8,
+    "citations_total": 10,
     "citations_last5": {
       "years": [
         2022,
@@ -594,7 +594,7 @@
         0,
         0,
         0,
-        8
+        10
       ]
     },
     "citations_by_year": {
@@ -620,7 +620,7 @@
         0,
         0,
         0,
-        8
+        10
       ]
     },
     "selected": true
@@ -858,7 +858,7 @@
     "pages": "860-866",
     "doi": "10.1038/s41563-023-01547-8",
     "doi_url": "https://doi.org/10.1038/s41563-023-01547-8",
-    "citations_total": 57,
+    "citations_total": 60,
     "citations_last5": {
       "years": [
         2022,
@@ -871,8 +871,8 @@
         0,
         7,
         19,
-        20,
-        11
+        21,
+        13
       ]
     },
     "citations_by_year": {
@@ -897,8 +897,8 @@
         0,
         7,
         19,
-        20,
-        11
+        21,
+        13
       ]
     },
     "selected": false
@@ -1369,7 +1369,7 @@
     "pages": "890-894",
     "doi": "10.1038/s41566-021-00892-x",
     "doi_url": "https://doi.org/10.1038/s41566-021-00892-x",
-    "citations_total": 108,
+    "citations_total": 111,
     "citations_last5": {
       "years": [
         2022,
@@ -1383,7 +1383,7 @@
         21,
         29,
         24,
-        12
+        15
       ]
     },
     "citations_by_year": {
@@ -1409,7 +1409,7 @@
         21,
         29,
         24,
-        12
+        15
       ]
     },
     "selected": true
@@ -1568,7 +1568,7 @@
     "pages": "3957-3957",
     "doi": "10.1364/ol.431451",
     "doi_url": "https://doi.org/10.1364/ol.431451",
-    "citations_total": 25,
+    "citations_total": 26,
     "citations_last5": {
       "years": [
         2022,
@@ -1582,7 +1582,7 @@
         6,
         5,
         7,
-        3
+        4
       ]
     },
     "citations_by_year": {
@@ -1608,7 +1608,7 @@
         6,
         5,
         7,
-        3
+        4
       ]
     },
     "selected": false
@@ -1636,7 +1636,7 @@
     "pages": "",
     "doi": "10.48550/arxiv.2006.15113",
     "doi_url": "https://doi.org/10.48550/arxiv.2006.15113",
-    "citations_total": 20,
+    "citations_total": 24,
     "citations_last5": {
       "years": [
         2022,
@@ -1646,7 +1646,7 @@
         2026
       ],
       "counts": [
-        7,
+        9,
         2,
         2,
         1,
@@ -1671,8 +1671,8 @@
         0,
         0,
         2,
-        4,
-        7,
+        6,
+        9,
         2,
         2,
         1,
@@ -2234,7 +2234,7 @@
     "pages": "1346-1346",
     "doi": "10.1364/ol.386429",
     "doi_url": "https://doi.org/10.1364/ol.386429",
-    "citations_total": 27,
+    "citations_total": 28,
     "citations_last5": {
       "years": [
         2022,
@@ -2268,7 +2268,7 @@
         0,
         0,
         0,
-        5,
+        6,
         4,
         7,
         4,
